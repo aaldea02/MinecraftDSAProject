@@ -29,6 +29,8 @@ import baritone.api.utils.Helper;
 import baritone.api.utils.PathCalculationResult;
 import baritone.api.utils.interfaces.IGoalRenderPos;
 import baritone.pathing.calc.AStarPathFinder;
+import baritone.pathing.calc.BellmanFordPathFinder;
+import baritone.pathing.calc.DijkstraPathFinder;
 import baritone.pathing.calc.AbstractNodeCostSearch;
 import baritone.pathing.movement.CalculationContext;
 import baritone.pathing.movement.MovementHelper;
@@ -559,7 +561,8 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
             }
         }
         Favoring favoring = new Favoring(context.getBaritone().getPlayerContext(), previous, context);
-        return new AStarPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
+        return new DijkstraPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
+       // return new AStarPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
     }
 
     @Override
