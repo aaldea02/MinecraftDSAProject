@@ -76,7 +76,6 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
     private static final String CONNECTION_URL = "jdbc:mysql://localhost:3306/MinecraftPathFinder?useSSL=false&serverTimezone=UTC&user=root&password=yaryar";
 
 
-
     private PathExecutor current;
     private PathExecutor next;
 
@@ -528,7 +527,7 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
         inProgress = pathfinder;
         Baritone.getExecutor().execute(() -> {
             if (talkAboutIt) {
-                logDebug("Starting to search for path from " + start + " to " + goal);
+                logDebug("Starting to search forrrrrr path from " + start + " to " + goal);
             }
 
             PathCalculationResult calcResult = pathfinder.calculate(primaryTimeout, failureTimeout);
@@ -569,9 +568,9 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
                 }
                 if (talkAboutIt && current != null && current.getPath() != null) {
                     if (goal.isInGoal(current.getPath().getDest())) {
-                        logDebug("Finished finding a path from " + start + " to " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
+                        logDebug("Finished finding aaaaa path from " + start + " to " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
                     } else {
-                        logDebug("Found path segment from " + start + " towards " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
+                        logDebug("Found path segmenttttt from " + start + " towards " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
                     }
                 }
                 synchronized (pathCalcLock) {
@@ -581,8 +580,11 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
         });
     }
 
-    private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal, IPath previous, CalculationContext context) {
-    final Goal transformed;
+private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal, IPath previous, CalculationContext context) {
+    System.out.println("Creating pathfinder..."); // Add this line to check if the method is called
+
+    
+        final Goal transformed;
     if (Baritone.settings().simplifyUnloadedYCoord.value && goal instanceof IGoalRenderPos) {
         BlockPos pos = ((IGoalRenderPos) goal).getGoalPos();
         if (!context.bsi.worldContainsLoadedChunk(pos.getX(), pos.getZ())) {
@@ -637,6 +639,8 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
       logResultsToFile(elapsedTimeBellmanFord, elapsedTimeDijkstra);
       
       logResultsToDatabase(elapsedTimeBellmanFord, elapsedTimeDijkstra, start.getX(), start.getY(), start.getZ());
+
+      System.out.println("Pathfinder created"); // Add this line to check if the method is executed successfully
 
       return result;
   }

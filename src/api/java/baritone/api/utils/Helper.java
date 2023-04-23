@@ -147,7 +147,7 @@ public interface Helper {
         }
         // We won't log debug chat into toasts
         // Because only a madman would want that extreme spam -_-
-        logDirect(message, false);
+        logDirect(message, true);
     }
 
     /**
