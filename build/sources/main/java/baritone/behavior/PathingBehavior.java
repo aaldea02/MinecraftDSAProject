@@ -28,6 +28,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
@@ -73,7 +74,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public final class PathingBehavior extends Behavior implements IPathingBehavior, Helper {
     
-    private static final String CONNECTION_URL = "jdbc:mysql://localhost:3306/MinecraftPathFinder?useSSL=false&serverTimezone=UTC&user=root&password=yaryar";
+    private static final String CONNECTION_URL = "jdbc:mysql://localhost:3306/MinecraftPathFinder?useSSL=false&serverTimezone=UTC&user=root&password=yaryar&jdbc:mysql-connector-java-8.0.28.jar=./logs/mysql-connector-java-8.0.28.jar";
+
 
 
     private PathExecutor current;
@@ -652,6 +654,10 @@ private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal
   }
   
   private static void logResultsToDatabase(long elapsedTimeBellmanFord, long elapsedTimeDijkstra, int x, int y, int z) {
+    Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+
+
+
     String insertQuery = "INSERT INTO PathFinderResults (bellman_ford_time, dijkstra_time, x, y, z) VALUES (?, ?, ?, ?, ?)";
     
     try (Connection connection = DriverManager.getConnection(CONNECTION_URL);
@@ -670,18 +676,35 @@ private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal
 }
 
 
-  private static void logResultsToFile(long elapsedTimeBellmanFord, long elapsedTimeDijkstra) {
-      try {
-          String fastestMethod = elapsedTimeBellmanFord < elapsedTimeDijkstra ? "Bellman Ford" : "Dijkstra";
-          String logEntry = String.format("Time for Bellman Ford: %d ns, Time for Dijkstra: %d ns, Fastest method: %s%n",
-                  elapsedTimeBellmanFord, elapsedTimeDijkstra, fastestMethod);
-  
-          // Append log entry to log.txt
-          Files.write(Paths.get("log.txt"), logEntry.getBytes(), StandardOpenOption.APPEND);
-      } catch (IOException e) {
-          e.printStackTrace();
-      }
-  }
+private static void logResultsToFile(long elapsedTimeBellmanFord, long elapsedTimeDijkstra) {
+    try {
+        String fastestMethod = elapsedTimeBellmanFord < elapsedTimeDijkstra ? "Bellman Ford" : "Dijkstra";
+        String logEntry = String.format("Time for Bellman Ford: %d ns, Time for Dijkstra: %d ns, Fastest method: %s%n",
+                elapsedTimeBellmanFord, elapsedTimeDijkstra, fastestMethod);
+
+        // Set the path to the logs folder
+        Path logFolderPath = Paths.get("C:\\Users\\sense\\Desktop\\DSA\\Minecraft\\logs");
+
+        // Create the logs folder if it doesn't exist
+        if (!Files.exists(logFolderPath)) {
+            Files.createDirectories(logFolderPath);
+        }
+
+        // Set the path to the log.txt file inside the logs folder
+        Path logFilePath = logFolderPath.resolve("log.txt");
+
+        // Create the log.txt file if it doesn't exist
+        if (!Files.exists(logFilePath)) {
+            Files.createFile(logFilePath);
+        }
+
+        // Append log entry to log.txt
+        Files.write(logFilePath, logEntry.getBytes(), StandardOpenOption.APPEND);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+
     
 
 
