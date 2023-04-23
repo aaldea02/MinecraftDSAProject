@@ -73,7 +73,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public final class PathingBehavior extends Behavior implements IPathingBehavior, Helper {
     
-    private static final String CONNECTION_URL = "jdbc:sqlserver://localhost;databaseName=MinecraftPathFinder;integratedSecurity=true";
+    private static final String CONNECTION_URL = "jdbc:mysql://localhost:3306/MinecraftPathFinder?useSSL=false&serverTimezone=UTC&user=root&password=yaryar";
 
 
     private PathExecutor current;
