@@ -582,7 +582,13 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
 
 private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal, IPath previous, CalculationContext context) {
     System.out.println("Creating pathfinder..."); // Add this line to check if the method is called
-
+    try {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+    } catch (ClassNotFoundException e) {
+        System.err.println("Failed to load SQL Server JDBC driver");
+        e.printStackTrace();
+    }
+    
     
         final Goal transformed;
     if (Baritone.settings().simplifyUnloadedYCoord.value && goal instanceof IGoalRenderPos) {

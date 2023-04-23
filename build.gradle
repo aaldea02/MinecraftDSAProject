@@ -101,7 +101,8 @@ dependencies {
     }
     testImplementation 'junit:junit:4.12'
     implementation 'mysql:mysql-connector-java:8.0.28'
- 
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:9.2.1.jre8'
+
 
 
 
