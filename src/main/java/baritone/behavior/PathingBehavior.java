@@ -15,7 +15,32 @@
  * along with Baritone.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+
+
+ 
 package baritone.behavior;
+
+import java.util.concurrent.ExecutionException;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+import java.io.IOException;
+
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
+
 
 import baritone.Baritone;
 import baritone.api.behavior.IPathingBehavior;
@@ -47,6 +72,9 @@ import java.util.Optional;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public final class PathingBehavior extends Behavior implements IPathingBehavior, Helper {
+    
+    private static final String CONNECTION_URL = "jdbc:sqlserver://localhost;databaseName=MinecraftPathFinder;integratedSecurity=true";
+
 
     private PathExecutor current;
     private PathExecutor next;
@@ -553,17 +581,98 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
     }
 
     private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal, IPath previous, CalculationContext context) {
-        Goal transformed = goal;
-        if (Baritone.settings().simplifyUnloadedYCoord.value && goal instanceof IGoalRenderPos) {
-            BlockPos pos = ((IGoalRenderPos) goal).getGoalPos();
-            if (!context.bsi.worldContainsLoadedChunk(pos.getX(), pos.getZ())) {
-                transformed = new GoalXZ(pos.getX(), pos.getZ());
-            }
+    final Goal transformed;
+    if (Baritone.settings().simplifyUnloadedYCoord.value && goal instanceof IGoalRenderPos) {
+        BlockPos pos = ((IGoalRenderPos) goal).getGoalPos();
+        if (!context.bsi.worldContainsLoadedChunk(pos.getX(), pos.getZ())) {
+            transformed = new GoalXZ(pos.getX(), pos.getZ());
+        } else {
+            transformed = goal;
         }
-        Favoring favoring = new Favoring(context.getBaritone().getPlayerContext(), previous, context);
-        return new DijkstraPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
-       // return new AStarPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
+    } else {
+        transformed = goal;
     }
+    
+    Favoring favoring = new Favoring(context.getBaritone().getPlayerContext(), previous, context);
+
+    ExecutorService executor = Executors.newFixedThreadPool(2);
+    Callable<AbstractNodeCostSearch> bellmanFordTask = () -> new BellmanFordPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
+    Callable<AbstractNodeCostSearch> dijkstraTask = () -> new DijkstraPathFinder(start.getX(), start.getY(), start.getZ(), transformed, favoring, context);
+
+    Future<AbstractNodeCostSearch> bellmanFordFuture = executor.submit(bellmanFordTask);
+    Future<AbstractNodeCostSearch> dijkstraFuture = executor.submit(dijkstraTask);
+    
+    AbstractNodeCostSearch result = null;
+      // Add time measurement variables
+      long startTime, elapsedTimeBellmanFord = Long.MAX_VALUE, elapsedTimeDijkstra = Long.MAX_VALUE;
+
+      try {
+          while (result == null) {
+              try {
+                  startTime = System.nanoTime();
+                  result = bellmanFordFuture.get(100, TimeUnit.MILLISECONDS);
+                  elapsedTimeBellmanFord = System.nanoTime() - startTime;
+              } catch (TimeoutException e) {
+                  // Ignore timeout
+              }
+  
+              try {
+                  startTime = System.nanoTime();
+                  result = dijkstraFuture.get(100, TimeUnit.MILLISECONDS);
+                  elapsedTimeDijkstra = System.nanoTime() - startTime;
+              } catch (TimeoutException e) {
+                  // Ignore timeout
+              }
+          }
+      } catch (InterruptedException | ExecutionException e) {
+          e.printStackTrace();
+      } finally {
+          bellmanFordFuture.cancel(true);
+          dijkstraFuture.cancel(true);
+          executor.shutdownNow();
+      }
+  
+      // Log the results to a text file
+      logResultsToFile(elapsedTimeBellmanFord, elapsedTimeDijkstra);
+      
+      logResultsToDatabase(elapsedTimeBellmanFord, elapsedTimeDijkstra, start.getX(), start.getY(), start.getZ());
+
+      return result;
+  }
+  
+  private static void logResultsToDatabase(long elapsedTimeBellmanFord, long elapsedTimeDijkstra, int x, int y, int z) {
+    String insertQuery = "INSERT INTO PathFinderResults (bellman_ford_time, dijkstra_time, x, y, z) VALUES (?, ?, ?, ?, ?)";
+    
+    try (Connection connection = DriverManager.getConnection(CONNECTION_URL);
+         PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
+        
+        preparedStatement.setLong(1, elapsedTimeBellmanFord);
+        preparedStatement.setLong(2, elapsedTimeDijkstra);
+        preparedStatement.setInt(3, x);
+        preparedStatement.setInt(4, y);
+        preparedStatement.setInt(5, z);
+
+        preparedStatement.executeUpdate();
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+}
+
+
+  private static void logResultsToFile(long elapsedTimeBellmanFord, long elapsedTimeDijkstra) {
+      try {
+          String fastestMethod = elapsedTimeBellmanFord < elapsedTimeDijkstra ? "Bellman Ford" : "Dijkstra";
+          String logEntry = String.format("Time for Bellman Ford: %d ns, Time for Dijkstra: %d ns, Fastest method: %s%n",
+                  elapsedTimeBellmanFord, elapsedTimeDijkstra, fastestMethod);
+  
+          // Append log entry to log.txt
+          Files.write(Paths.get("log.txt"), logEntry.getBytes(), StandardOpenOption.APPEND);
+      } catch (IOException e) {
+          e.printStackTrace();
+      }
+  }
+    
+
 
     @Override
     public void onRenderPass(RenderEvent event) {
