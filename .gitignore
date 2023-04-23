@@ -5,11 +5,7 @@ run/
 autotest/
 dist/
 
-# Gradle
-build/
-.gradle/
-classes/
-*.class
+
 
 # IntelliJ Files
 .idea/

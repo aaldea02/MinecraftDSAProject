@@ -654,10 +654,12 @@ private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal
   }
   
   private static void logResultsToDatabase(long elapsedTimeBellmanFord, long elapsedTimeDijkstra, int x, int y, int z) {
-    Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-
-
-
+    try {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+    }
+    
     String insertQuery = "INSERT INTO PathFinderResults (bellman_ford_time, dijkstra_time, x, y, z) VALUES (?, ?, ?, ?, ?)";
     
     try (Connection connection = DriverManager.getConnection(CONNECTION_URL);

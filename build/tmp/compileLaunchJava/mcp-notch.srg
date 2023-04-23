@@ -1,0 +1,22 @@
+FD: baritone/launch/mixins/MixinAnvilChunkLoader/chunkSaveLocation baritone/launch/mixins/MixinAnvilChunkLoader/d
+FD: baritone/launch/mixins/MixinBitArray/longArray baritone/launch/mixins/MixinBitArray/a
+FD: baritone/launch/mixins/MixinBitArray/bitsPerEntry baritone/launch/mixins/MixinBitArray/b
+FD: baritone/launch/mixins/MixinBitArray/maxEntryValue baritone/launch/mixins/MixinBitArray/c
+FD: baritone/launch/mixins/MixinBitArray/arraySize baritone/launch/mixins/MixinBitArray/d
+FD: baritone/launch/mixins/MixinBlockStateContainer/storage baritone/launch/mixins/MixinBlockStateContainer/b
+FD: baritone/launch/mixins/MixinBlockStateContainer/palette baritone/launch/mixins/MixinBlockStateContainer/c
+FD: baritone/launch/mixins/MixinChunkProviderClient/loadedChunks baritone/launch/mixins/MixinChunkProviderClient/c
+FD: baritone/launch/mixins/MixinChunkProviderServer/chunkLoader baritone/launch/mixins/MixinChunkProviderServer/d
+FD: baritone/launch/mixins/MixinItemStack/item baritone/launch/mixins/MixinItemStack/e
+FD: baritone/launch/mixins/MixinItemStack/itemDamage baritone/launch/mixins/MixinItemStack/h
+FD: baritone/launch/mixins/MixinItemTool/toolMaterial baritone/launch/mixins/MixinItemTool/d
+FD: baritone/launch/mixins/MixinMinecraft/player baritone/launch/mixins/MixinMinecraft/h
+FD: baritone/launch/mixins/MixinMinecraft/world baritone/launch/mixins/MixinMinecraft/f
+FD: baritone/launch/mixins/MixinNetworkManager/channel baritone/launch/mixins/MixinNetworkManager/k
+FD: baritone/launch/mixins/MixinNetworkManager/direction baritone/launch/mixins/MixinNetworkManager/h
+FD: baritone/launch/mixins/MixinStateImplementation/properties baritone/launch/mixins/MixinStateImplementation/b
+FD: baritone/launch/mixins/MixinTabCompleter/textField baritone/launch/mixins/MixinTabCompleter/a
+FD: baritone/launch/mixins/MixinTabCompleter/requestedCompletions baritone/launch/mixins/MixinTabCompleter/d
+MD: baritone/launch/mixins/MixinChunkRenderWorker/isChunkExisting (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/World;)Z baritone/launch/mixins/MixinChunkRenderWorker/a (Let;Lamu;)Z
+MD: baritone/launch/mixins/MixinStateImplementation/hashCode ()I baritone/launch/mixins/MixinStateImplementation/hashCode ()I
+MD: baritone/launch/mixins/MixinTabCompleter/setCompletions ([Ljava/lang/String;)V baritone/launch/mixins/MixinTabCompleter/a ([Ljava/lang/String;)V

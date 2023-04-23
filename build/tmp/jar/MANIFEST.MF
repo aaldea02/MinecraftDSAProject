@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+MixinConfigs: mixins.baritone.json
+Implementation-Title: Baritone
+Implementation-Version: 1.2.17
+TweakClass: baritone.launch.BaritoneTweaker
+

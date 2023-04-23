@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baritone.pathing.calc.openset.OpenSetsTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2023-04-23T10:31:58" hostname="DESKTOP-2S0OCBT" time="0.852">
+  <properties/>
+  <testcase name="testSize[0]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.011"/>
+  <testcase name="testSize[1]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.558"/>
+  <testcase name="testSize[2]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[3]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[4]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[5]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[6]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[7]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[8]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[9]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[10]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[11]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[12]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[13]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[14]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[15]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[16]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[17]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[18]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.0"/>
+  <testcase name="testSize[19]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.002"/>
+  <testcase name="testSize[20]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[21]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.002"/>
+  <testcase name="testSize[22]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.003"/>
+  <testcase name="testSize[23]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.001"/>
+  <testcase name="testSize[24]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.002"/>
+  <testcase name="testSize[25]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.003"/>
+  <testcase name="testSize[26]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.002"/>
+  <testcase name="testSize[27]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.003"/>
+  <testcase name="testSize[28]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.003"/>
+  <testcase name="testSize[29]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.052"/>
+  <testcase name="testSize[30]" classname="baritone.pathing.calc.openset.OpenSetsTest" time="0.194"/>
+  <system-out><![CDATA[Testing size 1
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 2
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 3
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 4
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 5
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 6
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 7
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 8
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 9
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 10
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 11
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 12
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 13
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 14
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 15
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 16
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 17
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 18
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 19
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 100
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 200
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 300
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 400
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 500
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Testing size 600
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 700
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Testing size 800
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Testing size 900
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Testing size 1000
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 1
+Testing size 5000
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 0
+class baritone.pathing.calc.openset.LinkedListOpenSet 17
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 30
+Testing size 10000
+Insertion
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 0
+Removal round 1
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 62
+Removal round 2
+class baritone.pathing.calc.openset.BinaryHeapOpenSet 1
+class baritone.pathing.calc.openset.LinkedListOpenSet 123
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
