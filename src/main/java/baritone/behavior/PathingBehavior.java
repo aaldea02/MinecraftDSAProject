@@ -28,6 +28,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
@@ -73,7 +74,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 
 public final class PathingBehavior extends Behavior implements IPathingBehavior, Helper {
     
-    private static final String CONNECTION_URL = "jdbc:sqlserver://localhost;databaseName=MinecraftPathFinder;integratedSecurity=true";
+    private static final String CONNECTION_URL = "jdbc:mysql://localhost:3306/MinecraftPathFinder?useSSL=false&serverTimezone=UTC&user=root&password=yaryar&jdbc:mysql-connector-java-8.0.28.jar=./logs/mysql-connector-java-8.0.28.jar";
+
 
 
     private PathExecutor current;
@@ -527,7 +529,7 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
         inProgress = pathfinder;
         Baritone.getExecutor().execute(() -> {
             if (talkAboutIt) {
-                logDebug("Starting to search for path from " + start + " to " + goal);
+                logDebug("Starting to search forrrrrr path from " + start + " to " + goal);
             }
 
             PathCalculationResult calcResult = pathfinder.calculate(primaryTimeout, failureTimeout);
@@ -568,9 +570,9 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
                 }
                 if (talkAboutIt && current != null && current.getPath() != null) {
                     if (goal.isInGoal(current.getPath().getDest())) {
-                        logDebug("Finished finding a path from " + start + " to " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
+                        logDebug("Finished finding aaaaa path from " + start + " to " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
                     } else {
-                        logDebug("Found path segment from " + start + " towards " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
+                        logDebug("Found path segmenttttt from " + start + " towards " + goal + ". " + current.getPath().getNumNodesConsidered() + " nodes considered");
                     }
                 }
                 synchronized (pathCalcLock) {
@@ -580,8 +582,17 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
         });
     }
 
-    private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal, IPath previous, CalculationContext context) {
-    final Goal transformed;
+private static AbstractNodeCostSearch createPathfinder(BlockPos start, Goal goal, IPath previous, CalculationContext context) {
+    System.out.println("Creating pathfinder..."); // Add this line to check if the method is called
+    try {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+    } catch (ClassNotFoundException e) {
+        System.err.println("Failed to load SQL Server JDBC driver");
+        e.printStackTrace();
+    }
+    
+    
+        final Goal transformed;
     if (Baritone.settings().simplifyUnloadedYCoord.value && goal instanceof IGoalRenderPos) {
         BlockPos pos = ((IGoalRenderPos) goal).getGoalPos();
         if (!context.bsi.worldContainsLoadedChunk(pos.getX(), pos.getZ())) {
@@ -637,10 +648,19 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
       
       logResultsToDatabase(elapsedTimeBellmanFord, elapsedTimeDijkstra, start.getX(), start.getY(), start.getZ());
 
+      System.out.println("Pathfinder created"); // Add this line to check if the method is executed successfully
+
       return result;
   }
   
   private static void logResultsToDatabase(long elapsedTimeBellmanFord, long elapsedTimeDijkstra, int x, int y, int z) {
+    try {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+    } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+    }
+    
+
     String insertQuery = "INSERT INTO PathFinderResults (bellman_ford_time, dijkstra_time, x, y, z) VALUES (?, ?, ?, ?, ?)";
     
     try (Connection connection = DriverManager.getConnection(CONNECTION_URL);
@@ -659,18 +679,35 @@ public final class PathingBehavior extends Behavior implements IPathingBehavior,
 }
 
 
-  private static void logResultsToFile(long elapsedTimeBellmanFord, long elapsedTimeDijkstra) {
-      try {
-          String fastestMethod = elapsedTimeBellmanFord < elapsedTimeDijkstra ? "Bellman Ford" : "Dijkstra";
-          String logEntry = String.format("Time for Bellman Ford: %d ns, Time for Dijkstra: %d ns, Fastest method: %s%n",
-                  elapsedTimeBellmanFord, elapsedTimeDijkstra, fastestMethod);
-  
-          // Append log entry to log.txt
-          Files.write(Paths.get("log.txt"), logEntry.getBytes(), StandardOpenOption.APPEND);
-      } catch (IOException e) {
-          e.printStackTrace();
-      }
-  }
+private static void logResultsToFile(long elapsedTimeBellmanFord, long elapsedTimeDijkstra) {
+    try {
+        String fastestMethod = elapsedTimeBellmanFord < elapsedTimeDijkstra ? "Bellman Ford" : "Dijkstra";
+        String logEntry = String.format("Time for Bellman Ford: %d ns, Time for Dijkstra: %d ns, Fastest method: %s%n",
+                elapsedTimeBellmanFord, elapsedTimeDijkstra, fastestMethod);
+
+        // Set the path to the logs folder
+        Path logFolderPath = Paths.get("C:\\Users\\sense\\Desktop\\DSA\\Minecraft\\logs");
+
+        // Create the logs folder if it doesn't exist
+        if (!Files.exists(logFolderPath)) {
+            Files.createDirectories(logFolderPath);
+        }
+
+        // Set the path to the log.txt file inside the logs folder
+        Path logFilePath = logFolderPath.resolve("log.txt");
+
+        // Create the log.txt file if it doesn't exist
+        if (!Files.exists(logFilePath)) {
+            Files.createFile(logFilePath);
+        }
+
+        // Append log entry to log.txt
+        Files.write(logFilePath, logEntry.getBytes(), StandardOpenOption.APPEND);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+
     
 
 

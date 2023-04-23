@@ -1,0 +1,3385 @@
+baritone.Baritone -> baritone.a:
+    java.util.concurrent.ThreadPoolExecutor threadPool -> a
+    java.io.File dir -> a
+    baritone.event.GameEventHandler gameEventHandler -> a
+    baritone.behavior.PathingBehavior pathingBehavior -> a
+    baritone.behavior.LookBehavior lookBehavior -> a
+    baritone.behavior.InventoryBehavior inventoryBehavior -> a
+    baritone.behavior.WaypointBehavior waypointBehavior -> a
+    baritone.utils.InputOverrideHandler inputOverrideHandler -> a
+    baritone.process.FollowProcess followProcess -> a
+    baritone.process.MineProcess mineProcess -> a
+    baritone.process.GetToBlockProcess getToBlockProcess -> a
+    baritone.process.CustomGoalProcess customGoalProcess -> a
+    baritone.process.BuilderProcess builderProcess -> a
+    baritone.process.ExploreProcess exploreProcess -> a
+    baritone.process.BackfillProcess backfillProcess -> a
+    baritone.process.FarmProcess farmProcess -> a
+    baritone.process.InventoryPauserProcess inventoryPauserProcess -> a
+    baritone.utils.PathingControlManager pathingControlManager -> a
+    baritone.selection.SelectionManager selectionManager -> a
+    baritone.command.manager.CommandManager commandManager -> a
+    baritone.api.utils.IPlayerContext playerContext -> a
+    baritone.cache.WorldProvider worldProvider -> a
+    baritone.utils.BlockStateInterface bsi -> a
+    void <init>() -> <init>
+    baritone.api.utils.IPlayerContext getPlayerContext() -> a
+    baritone.api.event.listener.IEventBus getGameEventHandler() -> a
+    void openClick() -> a
+    baritone.api.Settings settings() -> a
+    java.io.File getDir() -> a
+    java.util.concurrent.Executor getExecutor() -> a
+    baritone.api.command.manager.ICommandManager getCommandManager() -> a
+    baritone.api.selection.ISelectionManager getSelectionManager() -> a
+    baritone.api.utils.IInputOverrideHandler getInputOverrideHandler() -> a
+    baritone.api.pathing.calc.IPathingControlManager getPathingControlManager() -> a
+    baritone.api.cache.IWorldProvider getWorldProvider() -> a
+    baritone.api.process.IGetToBlockProcess getGetToBlockProcess() -> a
+    baritone.api.process.ICustomGoalProcess getCustomGoalProcess() -> a
+    baritone.api.process.IFarmProcess getFarmProcess() -> a
+    baritone.api.process.IExploreProcess getExploreProcess() -> a
+    baritone.api.process.IBuilderProcess getBuilderProcess() -> a
+    baritone.api.process.IMineProcess getMineProcess() -> a
+    baritone.api.process.IFollowProcess getFollowProcess() -> a
+    baritone.api.behavior.ILookBehavior getLookBehavior() -> a
+    baritone.api.behavior.IPathingBehavior getPathingBehavior() -> a
+    void lambda$openClick$1() -> b
+    void lambda$null$0() -> c
+    void <clinit>() -> <clinit>
+baritone.BaritoneProvider -> baritone.BaritoneProvider:
+    baritone.Baritone primary -> a
+    java.util.List all -> a
+    void <init>() -> <init>
+    baritone.api.IBaritone getPrimaryBaritone() -> a
+    java.util.List getAllBaritones() -> a
+    baritone.api.cache.IWorldScanner getWorldScanner() -> a
+baritone.KeepName -> baritone.b:
+baritone.api.BaritoneAPI -> baritone.c:
+    baritone.api.IBaritoneProvider provider -> a
+    baritone.api.Settings settings -> a
+    baritone.api.IBaritoneProvider getProvider() -> a
+    baritone.api.Settings getSettings() -> a
+    void <clinit>() -> <clinit>
+baritone.api.IBaritone -> baritone.d:
+    baritone.api.behavior.IPathingBehavior getPathingBehavior() -> a
+    baritone.api.behavior.ILookBehavior getLookBehavior() -> a
+    baritone.api.process.IFollowProcess getFollowProcess() -> a
+    baritone.api.process.IMineProcess getMineProcess() -> a
+    baritone.api.process.IBuilderProcess getBuilderProcess() -> a
+    baritone.api.process.IExploreProcess getExploreProcess() -> a
+    baritone.api.process.IFarmProcess getFarmProcess() -> a
+    baritone.api.process.ICustomGoalProcess getCustomGoalProcess() -> a
+    baritone.api.process.IGetToBlockProcess getGetToBlockProcess() -> a
+    baritone.api.cache.IWorldProvider getWorldProvider() -> a
+    baritone.api.pathing.calc.IPathingControlManager getPathingControlManager() -> a
+    baritone.api.utils.IInputOverrideHandler getInputOverrideHandler() -> a
+    baritone.api.utils.IPlayerContext getPlayerContext() -> a
+    baritone.api.event.listener.IEventBus getGameEventHandler() -> a
+    baritone.api.selection.ISelectionManager getSelectionManager() -> a
+    baritone.api.command.manager.ICommandManager getCommandManager() -> a
+    void openClick() -> a
+baritone.api.IBaritoneProvider -> baritone.api.IBaritoneProvider:
+    baritone.api.IBaritone getPrimaryBaritone() -> a
+    java.util.List getAllBaritones() -> a
+    baritone.api.IBaritone getBaritoneForPlayer(bud) -> a
+    baritone.api.cache.IWorldScanner getWorldScanner() -> a
+baritone.api.Settings -> baritone.e:
+    baritone.api.Settings$Setting allowBreak -> allowBreak
+    baritone.api.Settings$Setting allowBreakAnyway -> allowBreakAnyway
+    baritone.api.Settings$Setting allowSprint -> allowSprint
+    baritone.api.Settings$Setting allowPlace -> allowPlace
+    baritone.api.Settings$Setting allowInventory -> allowInventory
+    baritone.api.Settings$Setting ticksBetweenInventoryMoves -> ticksBetweenInventoryMoves
+    baritone.api.Settings$Setting inventoryMoveOnlyIfStationary -> inventoryMoveOnlyIfStationary
+    baritone.api.Settings$Setting assumeExternalAutoTool -> assumeExternalAutoTool
+    baritone.api.Settings$Setting autoTool -> autoTool
+    baritone.api.Settings$Setting blockPlacementPenalty -> blockPlacementPenalty
+    baritone.api.Settings$Setting blockBreakAdditionalPenalty -> blockBreakAdditionalPenalty
+    baritone.api.Settings$Setting jumpPenalty -> jumpPenalty
+    baritone.api.Settings$Setting walkOnWaterOnePenalty -> walkOnWaterOnePenalty
+    baritone.api.Settings$Setting strictLiquidCheck -> strictLiquidCheck
+    baritone.api.Settings$Setting allowWaterBucketFall -> allowWaterBucketFall
+    baritone.api.Settings$Setting assumeWalkOnWater -> assumeWalkOnWater
+    baritone.api.Settings$Setting assumeWalkOnLava -> assumeWalkOnLava
+    baritone.api.Settings$Setting assumeStep -> assumeStep
+    baritone.api.Settings$Setting assumeSafeWalk -> assumeSafeWalk
+    baritone.api.Settings$Setting allowJumpAt256 -> allowJumpAt256
+    baritone.api.Settings$Setting allowParkourAscend -> allowParkourAscend
+    baritone.api.Settings$Setting allowDiagonalDescend -> allowDiagonalDescend
+    baritone.api.Settings$Setting allowDiagonalAscend -> allowDiagonalAscend
+    baritone.api.Settings$Setting allowDownward -> allowDownward
+    baritone.api.Settings$Setting acceptableThrowawayItems -> acceptableThrowawayItems
+    baritone.api.Settings$Setting blocksToAvoid -> blocksToAvoid
+    baritone.api.Settings$Setting blocksToDisallowBreaking -> blocksToDisallowBreaking
+    baritone.api.Settings$Setting blocksToAvoidBreaking -> blocksToAvoidBreaking
+    baritone.api.Settings$Setting avoidBreakingMultiplier -> avoidBreakingMultiplier
+    baritone.api.Settings$Setting buildIgnoreBlocks -> buildIgnoreBlocks
+    baritone.api.Settings$Setting buildSkipBlocks -> buildSkipBlocks
+    baritone.api.Settings$Setting buildValidSubstitutes -> buildValidSubstitutes
+    baritone.api.Settings$Setting buildSubstitutes -> buildSubstitutes
+    baritone.api.Settings$Setting okIfAir -> okIfAir
+    baritone.api.Settings$Setting buildIgnoreExisting -> buildIgnoreExisting
+    baritone.api.Settings$Setting buildIgnoreDirection -> buildIgnoreDirection
+    baritone.api.Settings$Setting buildIgnoreProperties -> buildIgnoreProperties
+    baritone.api.Settings$Setting avoidUpdatingFallingBlocks -> avoidUpdatingFallingBlocks
+    baritone.api.Settings$Setting allowVines -> allowVines
+    baritone.api.Settings$Setting allowWalkOnBottomSlab -> allowWalkOnBottomSlab
+    baritone.api.Settings$Setting allowParkour -> allowParkour
+    baritone.api.Settings$Setting allowParkourPlace -> allowParkourPlace
+    baritone.api.Settings$Setting considerPotionEffects -> considerPotionEffects
+    baritone.api.Settings$Setting sprintAscends -> sprintAscends
+    baritone.api.Settings$Setting overshootTraverse -> overshootTraverse
+    baritone.api.Settings$Setting pauseMiningForFallingBlocks -> pauseMiningForFallingBlocks
+    baritone.api.Settings$Setting rightClickSpeed -> rightClickSpeed
+    baritone.api.Settings$Setting blockReachDistance -> blockReachDistance
+    baritone.api.Settings$Setting randomLooking -> randomLooking
+    baritone.api.Settings$Setting costHeuristic -> costHeuristic
+    baritone.api.Settings$Setting pathingMaxChunkBorderFetch -> pathingMaxChunkBorderFetch
+    baritone.api.Settings$Setting backtrackCostFavoringCoefficient -> backtrackCostFavoringCoefficient
+    baritone.api.Settings$Setting avoidance -> avoidance
+    baritone.api.Settings$Setting mobSpawnerAvoidanceCoefficient -> mobSpawnerAvoidanceCoefficient
+    baritone.api.Settings$Setting mobSpawnerAvoidanceRadius -> mobSpawnerAvoidanceRadius
+    baritone.api.Settings$Setting mobAvoidanceCoefficient -> mobAvoidanceCoefficient
+    baritone.api.Settings$Setting mobAvoidanceRadius -> mobAvoidanceRadius
+    baritone.api.Settings$Setting rightClickContainerOnArrival -> rightClickContainerOnArrival
+    baritone.api.Settings$Setting enterPortal -> enterPortal
+    baritone.api.Settings$Setting minimumImprovementRepropagation -> minimumImprovementRepropagation
+    baritone.api.Settings$Setting cutoffAtLoadBoundary -> cutoffAtLoadBoundary
+    baritone.api.Settings$Setting maxCostIncrease -> maxCostIncrease
+    baritone.api.Settings$Setting costVerificationLookahead -> costVerificationLookahead
+    baritone.api.Settings$Setting pathCutoffFactor -> pathCutoffFactor
+    baritone.api.Settings$Setting pathCutoffMinimumLength -> pathCutoffMinimumLength
+    baritone.api.Settings$Setting planningTickLookahead -> planningTickLookahead
+    baritone.api.Settings$Setting pathingMapDefaultSize -> pathingMapDefaultSize
+    baritone.api.Settings$Setting pathingMapLoadFactor -> pathingMapLoadFactor
+    baritone.api.Settings$Setting maxFallHeightNoWater -> maxFallHeightNoWater
+    baritone.api.Settings$Setting maxFallHeightBucket -> maxFallHeightBucket
+    baritone.api.Settings$Setting allowOvershootDiagonalDescend -> allowOvershootDiagonalDescend
+    baritone.api.Settings$Setting simplifyUnloadedYCoord -> simplifyUnloadedYCoord
+    baritone.api.Settings$Setting repackOnAnyBlockChange -> repackOnAnyBlockChange
+    baritone.api.Settings$Setting movementTimeoutTicks -> movementTimeoutTicks
+    baritone.api.Settings$Setting primaryTimeoutMS -> primaryTimeoutMS
+    baritone.api.Settings$Setting failureTimeoutMS -> failureTimeoutMS
+    baritone.api.Settings$Setting planAheadPrimaryTimeoutMS -> planAheadPrimaryTimeoutMS
+    baritone.api.Settings$Setting planAheadFailureTimeoutMS -> planAheadFailureTimeoutMS
+    baritone.api.Settings$Setting slowPath -> slowPath
+    baritone.api.Settings$Setting slowPathTimeDelayMS -> slowPathTimeDelayMS
+    baritone.api.Settings$Setting slowPathTimeoutMS -> slowPathTimeoutMS
+    baritone.api.Settings$Setting doBedWaypoints -> doBedWaypoints
+    baritone.api.Settings$Setting doDeathWaypoints -> doDeathWaypoints
+    baritone.api.Settings$Setting chunkCaching -> chunkCaching
+    baritone.api.Settings$Setting pruneRegionsFromRAM -> pruneRegionsFromRAM
+    baritone.api.Settings$Setting backfill -> backfill
+    baritone.api.Settings$Setting logAsToast -> logAsToast
+    baritone.api.Settings$Setting toastTimer -> toastTimer
+    baritone.api.Settings$Setting chatDebug -> chatDebug
+    baritone.api.Settings$Setting chatControl -> chatControl
+    baritone.api.Settings$Setting chatControlAnyway -> chatControlAnyway
+    baritone.api.Settings$Setting renderPath -> renderPath
+    baritone.api.Settings$Setting renderPathAsLine -> renderPathAsLine
+    baritone.api.Settings$Setting renderGoal -> renderGoal
+    baritone.api.Settings$Setting renderGoalAnimated -> renderGoalAnimated
+    baritone.api.Settings$Setting renderSelectionBoxes -> renderSelectionBoxes
+    baritone.api.Settings$Setting renderGoalIgnoreDepth -> renderGoalIgnoreDepth
+    baritone.api.Settings$Setting renderGoalXZBeacon -> renderGoalXZBeacon
+    baritone.api.Settings$Setting renderSelectionBoxesIgnoreDepth -> renderSelectionBoxesIgnoreDepth
+    baritone.api.Settings$Setting renderPathIgnoreDepth -> renderPathIgnoreDepth
+    baritone.api.Settings$Setting pathRenderLineWidthPixels -> pathRenderLineWidthPixels
+    baritone.api.Settings$Setting goalRenderLineWidthPixels -> goalRenderLineWidthPixels
+    baritone.api.Settings$Setting fadePath -> fadePath
+    baritone.api.Settings$Setting freeLook -> freeLook
+    baritone.api.Settings$Setting antiCheatCompatibility -> antiCheatCompatibility
+    baritone.api.Settings$Setting pathThroughCachedOnly -> pathThroughCachedOnly
+    baritone.api.Settings$Setting sprintInWater -> sprintInWater
+    baritone.api.Settings$Setting blacklistClosestOnFailure -> blacklistClosestOnFailure
+    baritone.api.Settings$Setting renderCachedChunks -> renderCachedChunks
+    baritone.api.Settings$Setting cachedChunksOpacity -> cachedChunksOpacity
+    baritone.api.Settings$Setting prefixControl -> prefixControl
+    baritone.api.Settings$Setting prefix -> prefix
+    baritone.api.Settings$Setting shortBaritonePrefix -> shortBaritonePrefix
+    baritone.api.Settings$Setting echoCommands -> echoCommands
+    baritone.api.Settings$Setting censorCoordinates -> censorCoordinates
+    baritone.api.Settings$Setting censorRanCommands -> censorRanCommands
+    baritone.api.Settings$Setting itemSaver -> itemSaver
+    baritone.api.Settings$Setting itemSaverThreshold -> itemSaverThreshold
+    baritone.api.Settings$Setting preferSilkTouch -> preferSilkTouch
+    baritone.api.Settings$Setting walkWhileBreaking -> walkWhileBreaking
+    baritone.api.Settings$Setting splicePath -> splicePath
+    baritone.api.Settings$Setting maxPathHistoryLength -> maxPathHistoryLength
+    baritone.api.Settings$Setting pathHistoryCutoffAmount -> pathHistoryCutoffAmount
+    baritone.api.Settings$Setting mineGoalUpdateInterval -> mineGoalUpdateInterval
+    baritone.api.Settings$Setting maxCachedWorldScanCount -> maxCachedWorldScanCount
+    baritone.api.Settings$Setting minYLevelWhileMining -> minYLevelWhileMining
+    baritone.api.Settings$Setting allowOnlyExposedOres -> allowOnlyExposedOres
+    baritone.api.Settings$Setting allowOnlyExposedOresDistance -> allowOnlyExposedOresDistance
+    baritone.api.Settings$Setting exploreForBlocks -> exploreForBlocks
+    baritone.api.Settings$Setting worldExploringChunkOffset -> worldExploringChunkOffset
+    baritone.api.Settings$Setting exploreChunkSetMinimumSize -> exploreChunkSetMinimumSize
+    baritone.api.Settings$Setting exploreMaintainY -> exploreMaintainY
+    baritone.api.Settings$Setting replantCrops -> replantCrops
+    baritone.api.Settings$Setting replantNetherWart -> replantNetherWart
+    baritone.api.Settings$Setting extendCacheOnThreshold -> extendCacheOnThreshold
+    baritone.api.Settings$Setting buildInLayers -> buildInLayers
+    baritone.api.Settings$Setting layerOrder -> layerOrder
+    baritone.api.Settings$Setting layerHeight -> layerHeight
+    baritone.api.Settings$Setting startAtLayer -> startAtLayer
+    baritone.api.Settings$Setting skipFailedLayers -> skipFailedLayers
+    baritone.api.Settings$Setting buildOnlySelection -> buildOnlySelection
+    baritone.api.Settings$Setting buildRepeat -> buildRepeat
+    baritone.api.Settings$Setting buildRepeatCount -> buildRepeatCount
+    baritone.api.Settings$Setting buildRepeatSneaky -> buildRepeatSneaky
+    baritone.api.Settings$Setting breakFromAbove -> breakFromAbove
+    baritone.api.Settings$Setting goalBreakFromAbove -> goalBreakFromAbove
+    baritone.api.Settings$Setting mapArtMode -> mapArtMode
+    baritone.api.Settings$Setting okIfWater -> okIfWater
+    baritone.api.Settings$Setting incorrectSize -> incorrectSize
+    baritone.api.Settings$Setting breakCorrectBlockPenaltyMultiplier -> breakCorrectBlockPenaltyMultiplier
+    baritone.api.Settings$Setting schematicOrientationX -> schematicOrientationX
+    baritone.api.Settings$Setting schematicOrientationY -> schematicOrientationY
+    baritone.api.Settings$Setting schematicOrientationZ -> schematicOrientationZ
+    baritone.api.Settings$Setting schematicFallbackExtension -> schematicFallbackExtension
+    baritone.api.Settings$Setting builderTickScanRadius -> builderTickScanRadius
+    baritone.api.Settings$Setting mineScanDroppedItems -> mineScanDroppedItems
+    baritone.api.Settings$Setting mineDropLoiterDurationMSThanksLouca -> mineDropLoiterDurationMSThanksLouca
+    baritone.api.Settings$Setting distanceTrim -> distanceTrim
+    baritone.api.Settings$Setting cancelOnGoalInvalidation -> cancelOnGoalInvalidation
+    baritone.api.Settings$Setting axisHeight -> axisHeight
+    baritone.api.Settings$Setting disconnectOnArrival -> disconnectOnArrival
+    baritone.api.Settings$Setting legitMine -> legitMine
+    baritone.api.Settings$Setting legitMineYLevel -> legitMineYLevel
+    baritone.api.Settings$Setting legitMineIncludeDiagonals -> legitMineIncludeDiagonals
+    baritone.api.Settings$Setting forceInternalMining -> forceInternalMining
+    baritone.api.Settings$Setting internalMiningAirException -> internalMiningAirException
+    baritone.api.Settings$Setting followOffsetDistance -> followOffsetDistance
+    baritone.api.Settings$Setting followOffsetDirection -> followOffsetDirection
+    baritone.api.Settings$Setting followRadius -> followRadius
+    baritone.api.Settings$Setting disableCompletionCheck -> disableCompletionCheck
+    baritone.api.Settings$Setting cachedChunksExpirySeconds -> cachedChunksExpirySeconds
+    baritone.api.Settings$Setting logger -> logger
+    baritone.api.Settings$Setting notifier -> notifier
+    baritone.api.Settings$Setting toaster -> toaster
+    baritone.api.Settings$Setting yLevelBoxSize -> yLevelBoxSize
+    baritone.api.Settings$Setting colorCurrentPath -> colorCurrentPath
+    baritone.api.Settings$Setting colorNextPath -> colorNextPath
+    baritone.api.Settings$Setting colorBlocksToBreak -> colorBlocksToBreak
+    baritone.api.Settings$Setting colorBlocksToPlace -> colorBlocksToPlace
+    baritone.api.Settings$Setting colorBlocksToWalkInto -> colorBlocksToWalkInto
+    baritone.api.Settings$Setting colorBestPathSoFar -> colorBestPathSoFar
+    baritone.api.Settings$Setting colorMostRecentConsidered -> colorMostRecentConsidered
+    baritone.api.Settings$Setting colorGoalBox -> colorGoalBox
+    baritone.api.Settings$Setting colorInvertedGoalBox -> colorInvertedGoalBox
+    baritone.api.Settings$Setting colorSelection -> colorSelection
+    baritone.api.Settings$Setting colorSelectionPos1 -> colorSelectionPos1
+    baritone.api.Settings$Setting colorSelectionPos2 -> colorSelectionPos2
+    baritone.api.Settings$Setting selectionOpacity -> selectionOpacity
+    baritone.api.Settings$Setting selectionLineWidth -> selectionLineWidth
+    baritone.api.Settings$Setting renderSelection -> renderSelection
+    baritone.api.Settings$Setting renderSelectionIgnoreDepth -> renderSelectionIgnoreDepth
+    baritone.api.Settings$Setting renderSelectionCorners -> renderSelectionCorners
+    baritone.api.Settings$Setting useSwordToMine -> useSwordToMine
+    baritone.api.Settings$Setting desktopNotifications -> desktopNotifications
+    baritone.api.Settings$Setting notificationOnPathComplete -> notificationOnPathComplete
+    baritone.api.Settings$Setting notificationOnFarmFail -> notificationOnFarmFail
+    baritone.api.Settings$Setting notificationOnBuildFinished -> notificationOnBuildFinished
+    baritone.api.Settings$Setting notificationOnExploreFinished -> notificationOnExploreFinished
+    baritone.api.Settings$Setting notificationOnMineFail -> notificationOnMineFail
+    java.util.Map byLowerName -> byLowerName
+    java.util.List allSettings -> allSettings
+    java.util.Map settingTypes -> settingTypes
+    void <init>() -> <init>
+    void lambda$new$0(hh) -> a
+    bhc rayTraceTowards(vg,baritone.api.utils.Rotation,double,boolean) -> a
+    bhe inferSneakingEyePosition(vg) -> a
+    java.lang.Class resolveBaseClass(java.lang.reflect.Type) -> a
+    bhe calculateBlockCenter(amu,et) -> a
+    bhe getBlockPosCenter(et) -> a
+    double distanceToCenter(et,double,double,double) -> a
+    double entityFlatDistanceToCenter(vg,et) -> a
+baritone.api.Settings$Setting -> baritone.e$a:
+    java.lang.Object value -> a
+    java.lang.Object defaultValue -> b
+    java.lang.String name -> a
+    baritone.api.Settings this$0 -> a
+    void <init>(baritone.api.Settings,java.lang.Object) -> <init>
+    java.lang.String toString() -> toString
+    void reset() -> a
+    java.lang.reflect.Type getType() -> a
+    void <init>(baritone.api.Settings,java.lang.Object,byte) -> <init>
+    java.lang.String access$102(baritone.api.Settings$Setting,java.lang.String) -> a
+baritone.api.behavior.ILookBehavior -> baritone.f:
+    void updateTarget(baritone.api.utils.Rotation,boolean) -> a
+baritone.api.behavior.IPathingBehavior -> baritone.g:
+    java.util.Optional ticksRemainingInSegment() -> a
+    java.util.Optional ticksRemainingInSegment(boolean) -> a
+    java.util.Optional estimatedTicksToGoal() -> b
+    boolean isPathing() -> a
+    boolean hasPath() -> b
+    boolean cancelEverything() -> c
+    void forceCancel() -> a
+    baritone.api.pathing.path.IPathExecutor getCurrent() -> a
+baritone.api.cache.ICachedWorld -> baritone.h:
+    void queueForPacking(axw) -> a
+    boolean isCached(int,int) -> a
+    java.util.ArrayList getLocationsOf(java.lang.String,int,int,int,int) -> a
+    void reloadAllFromDisk() -> a
+    void save() -> b
+baritone.api.cache.IWaypoint -> baritone.i:
+    java.lang.String getName() -> a
+    baritone.api.cache.IWaypoint$Tag getTag() -> a
+    long getCreationTimestamp() -> a
+    baritone.api.utils.BetterBlockPos getLocation() -> a
+baritone.api.cache.IWaypoint$Tag -> baritone.i$a:
+    baritone.api.cache.IWaypoint$Tag HOME -> d
+    baritone.api.cache.IWaypoint$Tag DEATH -> a
+    baritone.api.cache.IWaypoint$Tag BED -> b
+    baritone.api.cache.IWaypoint$Tag USER -> c
+    java.lang.String[] names -> a
+    baritone.api.cache.IWaypoint$Tag[] $VALUES -> a
+    baritone.api.cache.IWaypoint$Tag[] values() -> values
+    baritone.api.cache.IWaypoint$Tag valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,java.lang.String[]) -> <init>
+    baritone.api.cache.IWaypoint$Tag getByName(java.lang.String) -> a
+    void <clinit>() -> <clinit>
+baritone.api.cache.IWaypointCollection -> baritone.j:
+    void addWaypoint(baritone.api.cache.IWaypoint) -> a
+    void removeWaypoint(baritone.api.cache.IWaypoint) -> b
+    java.util.Set getByTag(baritone.api.cache.IWaypoint$Tag) -> a
+    java.util.Set getAllWaypoints() -> a
+baritone.api.cache.IWorldData -> baritone.k:
+    baritone.api.cache.ICachedWorld getCachedWorld() -> a
+    baritone.api.cache.IWaypointCollection getWaypoints() -> a
+baritone.api.cache.IWorldProvider -> baritone.l:
+    baritone.api.cache.IWorldData getCurrentWorld() -> a
+baritone.api.cache.IWorldScanner -> baritone.m:
+    java.util.List scanChunkRadius$7fc9620e(baritone.api.utils.IPlayerContext,baritone.api.utils.BlockOptionalMetaLookup,int,int) -> a
+    java.util.List scanChunkRadius$1b25c07e(baritone.api.utils.IPlayerContext,java.util.List) -> a
+    int repack(baritone.api.utils.IPlayerContext) -> a
+baritone.api.cache.Waypoint -> baritone.n:
+    java.lang.String name -> a
+    baritone.api.cache.IWaypoint$Tag tag -> a
+    long creationTimestamp -> a
+    baritone.api.utils.BetterBlockPos location -> a
+    void <init>(java.lang.String,baritone.api.cache.IWaypoint$Tag,baritone.api.utils.BetterBlockPos) -> <init>
+    void <init>(java.lang.String,baritone.api.cache.IWaypoint$Tag,baritone.api.utils.BetterBlockPos,long) -> <init>
+    int hashCode() -> hashCode
+    java.lang.String getName() -> a
+    baritone.api.cache.IWaypoint$Tag getTag() -> a
+    long getCreationTimestamp() -> a
+    baritone.api.utils.BetterBlockPos getLocation() -> a
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+baritone.api.command.Command -> baritone.o:
+    baritone.api.IBaritone baritone -> a
+    baritone.api.utils.IPlayerContext ctx -> a
+    java.util.List names -> a
+    void <init>(baritone.api.IBaritone,java.lang.String[]) -> <init>
+    java.util.List getNames() -> a
+    java.lang.String lambda$new$0(java.lang.String) -> a
+baritone.api.command.IBaritoneChatControl -> baritone.p:
+    java.lang.String FORCE_COMMAND_PREFIX -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.ICommand -> baritone.q:
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    java.util.List getNames() -> a
+baritone.api.command.argparser.IArgParser -> baritone.r:
+    java.lang.Class getTarget() -> a
+baritone.api.command.argparser.IArgParser$Stateless -> baritone.r$a:
+    java.lang.Object parseArg(baritone.api.command.argument.ICommandArgument) -> a
+baritone.api.command.argument.IArgConsumer -> baritone.s:
+    java.util.LinkedList getArgs() -> a
+    boolean has(int) -> a
+    boolean hasAny() -> a
+    boolean hasExactly(int) -> b
+    boolean hasExactlyOne() -> b
+    boolean is(java.lang.Class) -> a
+    java.lang.String peekString() -> a
+    java.lang.Object peekAsOrNull(java.lang.Class) -> a
+    java.lang.Object peekDatatypeOrNull(baritone.api.command.datatypes.IDatatypePost) -> a
+    java.lang.Object peekDatatypePostOrNull(baritone.api.command.datatypes.IDatatypePost,java.lang.Object) -> a
+    baritone.api.command.argument.ICommandArgument get() -> a
+    java.lang.String getString() -> b
+    java.lang.Enum getEnum(java.lang.Class) -> a
+    java.lang.Object getAs(java.lang.Class) -> b
+    java.lang.Object getAsOrDefault(java.lang.Class,java.lang.Object) -> a
+    java.lang.Object getDatatypePost(baritone.api.command.datatypes.IDatatypePost,java.lang.Object) -> b
+    java.lang.Object getDatatypeFor(baritone.api.command.datatypes.IDatatypeFor) -> a
+    java.lang.String rawRest() -> c
+    void requireMin(int) -> a
+    void requireMax(int) -> b
+    void requireExactly(int) -> c
+    baritone.api.command.argument.ICommandArgument consumed() -> b
+    java.lang.String consumedString() -> d
+baritone.api.command.argument.ICommandArgument -> baritone.t:
+    int getIndex() -> a
+    java.lang.String getValue() -> a
+    java.lang.String getRawRest() -> b
+    java.lang.Enum getEnum(java.lang.Class) -> a
+    java.lang.Object getAs(java.lang.Class) -> a
+    boolean is(java.lang.Class) -> a
+baritone.api.command.datatypes.BlockById -> baritone.u:
+    baritone.api.command.datatypes.BlockById INSTANCE -> a
+    baritone.api.command.datatypes.BlockById[] $VALUES -> a
+    baritone.api.command.datatypes.BlockById[] values() -> values
+    baritone.api.command.datatypes.BlockById valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.EntityClassById -> baritone.v:
+    baritone.api.command.datatypes.EntityClassById INSTANCE -> a
+    baritone.api.command.datatypes.EntityClassById[] $VALUES -> a
+    baritone.api.command.datatypes.EntityClassById[] values() -> values
+    baritone.api.command.datatypes.EntityClassById valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Class get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.ForBlockOptionalMeta -> baritone.w:
+    baritone.api.command.datatypes.ForBlockOptionalMeta INSTANCE -> a
+    baritone.api.command.datatypes.ForBlockOptionalMeta[] $VALUES -> a
+    baritone.api.command.datatypes.ForBlockOptionalMeta[] values() -> values
+    baritone.api.command.datatypes.ForBlockOptionalMeta valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.ForEnumFacing -> baritone.x:
+    baritone.api.command.datatypes.ForEnumFacing INSTANCE -> a
+    baritone.api.command.datatypes.ForEnumFacing[] $VALUES -> a
+    baritone.api.command.datatypes.ForEnumFacing[] values() -> values
+    baritone.api.command.datatypes.ForEnumFacing valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.ForWaypoints -> baritone.y:
+    baritone.api.command.datatypes.ForWaypoints INSTANCE -> a
+    baritone.api.command.datatypes.ForWaypoints[] $VALUES -> a
+    baritone.api.command.datatypes.ForWaypoints[] values() -> values
+    baritone.api.command.datatypes.ForWaypoints valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    baritone.api.cache.IWaypointCollection waypoints(baritone.api.IBaritone) -> a
+    baritone.api.cache.IWaypoint[] getWaypoints(baritone.api.IBaritone) -> a
+    baritone.api.cache.IWaypoint[] getWaypointsByTag(baritone.api.IBaritone,baritone.api.cache.IWaypoint$Tag) -> a
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    baritone.api.cache.IWaypoint[] lambda$getWaypointsByName$5(int) -> a
+    boolean lambda$getWaypointsByName$4(java.lang.String,baritone.api.cache.IWaypoint) -> a
+    baritone.api.cache.IWaypoint[] lambda$getWaypointsByTag$3(int) -> b
+    baritone.api.cache.IWaypoint[] lambda$getWaypoints$0(int) -> c
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.IDatatypeContext -> baritone.z:
+    baritone.api.IBaritone getBaritone() -> a
+    baritone.api.command.argument.IArgConsumer getConsumer() -> a
+baritone.api.command.datatypes.IDatatypeFor -> baritone.aa:
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+baritone.api.command.datatypes.IDatatypePost -> baritone.ab:
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+baritone.api.command.datatypes.NearbyPlayer -> baritone.ac:
+    baritone.api.command.datatypes.NearbyPlayer INSTANCE -> a
+    baritone.api.command.datatypes.NearbyPlayer[] $VALUES -> a
+    baritone.api.command.datatypes.NearbyPlayer[] values() -> values
+    baritone.api.command.datatypes.NearbyPlayer valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object get(baritone.api.command.datatypes.IDatatypeContext) -> a
+    boolean lambda$get$0(java.lang.String,aed) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeBlockPos -> baritone.ad:
+    baritone.api.command.datatypes.RelativeBlockPos INSTANCE -> a
+    baritone.api.command.datatypes.RelativeBlockPos[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeBlockPos[] values() -> values
+    baritone.api.command.datatypes.RelativeBlockPos valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeCoordinate -> baritone.ae:
+    baritone.api.command.datatypes.RelativeCoordinate INSTANCE -> a
+    java.lang.String ScalesAliasRegex -> a
+    java.util.regex.Pattern PATTERN -> a
+    baritone.api.command.datatypes.RelativeCoordinate[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeCoordinate[] values() -> values
+    baritone.api.command.datatypes.RelativeCoordinate valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeFile -> baritone.af:
+    baritone.api.command.datatypes.RelativeFile INSTANCE -> a
+    baritone.api.command.datatypes.RelativeFile[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeFile[] values() -> values
+    baritone.api.command.datatypes.RelativeFile valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.io.File apply(baritone.api.command.datatypes.IDatatypeContext,java.io.File) -> a
+    java.io.File getCanonicalFileUnchecked(java.io.File) -> a
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeGoal -> baritone.ag:
+    baritone.api.command.datatypes.RelativeGoal INSTANCE -> a
+    baritone.api.command.datatypes.RelativeGoal[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeGoal[] values() -> values
+    baritone.api.command.datatypes.RelativeGoal valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeGoalBlock -> baritone.ah:
+    baritone.api.command.datatypes.RelativeGoalBlock INSTANCE -> a
+    baritone.api.command.datatypes.RelativeGoalBlock[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeGoalBlock[] values() -> values
+    baritone.api.command.datatypes.RelativeGoalBlock valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeGoalXZ -> baritone.ai:
+    baritone.api.command.datatypes.RelativeGoalXZ INSTANCE -> a
+    baritone.api.command.datatypes.RelativeGoalXZ[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeGoalXZ[] values() -> values
+    baritone.api.command.datatypes.RelativeGoalXZ valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.datatypes.RelativeGoalYLevel -> baritone.aj:
+    baritone.api.command.datatypes.RelativeGoalYLevel INSTANCE -> a
+    baritone.api.command.datatypes.RelativeGoalYLevel[] $VALUES -> a
+    baritone.api.command.datatypes.RelativeGoalYLevel[] values() -> values
+    baritone.api.command.datatypes.RelativeGoalYLevel valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object apply(baritone.api.command.datatypes.IDatatypeContext,java.lang.Object) -> a
+    void <clinit>() -> <clinit>
+baritone.api.command.exception.CommandErrorMessageException -> baritone.ak:
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.String,java.lang.Throwable) -> <init>
+baritone.api.command.exception.CommandException -> baritone.al:
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.String,java.lang.Throwable) -> <init>
+baritone.api.command.exception.CommandInvalidArgumentException -> baritone.am:
+    baritone.api.command.argument.ICommandArgument arg -> a
+    void <init>(baritone.api.command.argument.ICommandArgument,java.lang.String) -> <init>
+    void <init>(baritone.api.command.argument.ICommandArgument,java.lang.String,java.lang.Throwable) -> <init>
+    java.lang.String formatMessage(baritone.api.command.argument.ICommandArgument,java.lang.String) -> a
+baritone.api.command.exception.CommandInvalidTypeException -> baritone.an:
+    void <init>(baritone.api.command.argument.ICommandArgument,java.lang.String) -> <init>
+    void <init>(baritone.api.command.argument.ICommandArgument,java.lang.String,java.lang.Throwable) -> <init>
+    void <init>(baritone.api.command.argument.ICommandArgument,java.lang.String,java.lang.String) -> <init>
+baritone.api.command.exception.CommandNoParserForTypeException -> baritone.ao:
+    void <init>(java.lang.Class) -> <init>
+baritone.api.command.exception.CommandNotEnoughArgumentsException -> baritone.ap:
+    void <init>(int) -> <init>
+baritone.api.command.exception.CommandNotFoundException -> baritone.aq:
+    java.lang.String command -> a
+    void <init>(java.lang.String) -> <init>
+    void handle$400e7145() -> a
+baritone.api.command.exception.CommandUnhandledException -> baritone.ar:
+    void <init>(java.lang.String) -> <init>
+    void <init>(java.lang.Throwable) -> <init>
+    void handle$400e7145() -> a
+baritone.api.command.exception.ICommandException -> baritone.as:
+    java.lang.String getMessage() -> getMessage
+    void handle$400e7145() -> a
+baritone.api.command.helpers.Paginator -> baritone.at:
+    java.util.List entries -> a
+    int pageSize -> a
+    int page -> b
+    void <init>(java.util.List) -> <init>
+    int getMaxPage() -> a
+    boolean validPage(int) -> a
+    void paginate(baritone.api.command.argument.IArgConsumer,baritone.api.command.helpers.Paginator,java.lang.Runnable,java.util.function.Function,java.lang.String) -> a
+    void paginate(baritone.api.command.argument.IArgConsumer,java.lang.Object[],java.lang.Runnable,java.util.function.Function,java.lang.String) -> a
+baritone.api.command.manager.ICommandManager -> baritone.au:
+    baritone.api.IBaritone getBaritone() -> a
+    baritone.api.utils.NotificationHelper getRegistry$5c45ca81() -> a
+    baritone.api.command.ICommand getCommand(java.lang.String) -> a
+    boolean execute(java.lang.String) -> a
+    boolean execute(rr) -> a
+baritone.api.event.events.BlockInteractEvent -> baritone.av:
+    et pos -> a
+    int type$5f4c367b -> a
+    void <init>(et,int) -> <init>
+baritone.api.event.events.BlockInteractEvent$Type -> baritone.av$a:
+    int START_BREAK$5f4c367b -> a
+    int USE$5f4c367b -> b
+    void <clinit>() -> <clinit>
+baritone.api.event.events.ChatEvent -> baritone.aw:
+    java.lang.String message -> a
+    void <init>(java.lang.String) -> <init>
+baritone.api.event.events.ChunkEvent -> baritone.ax:
+    baritone.api.event.events.type.EventState state -> a
+    int type$43d50fbb -> a
+    int x -> b
+    int z -> c
+    void <init>(baritone.api.event.events.type.EventState,int,int,int) -> <init>
+baritone.api.event.events.ChunkEvent$Type -> baritone.ax$a:
+    int LOAD$43d50fbb -> a
+    int UNLOAD$43d50fbb -> b
+    int POPULATE_FULL$43d50fbb -> c
+    int POPULATE_PARTIAL$43d50fbb -> d
+    void <clinit>() -> <clinit>
+baritone.api.event.events.PathEvent -> baritone.ay:
+    baritone.api.event.events.PathEvent CALC_STARTED -> a
+    baritone.api.event.events.PathEvent CALC_FINISHED_NOW_EXECUTING -> b
+    baritone.api.event.events.PathEvent CALC_FAILED -> c
+    baritone.api.event.events.PathEvent NEXT_SEGMENT_CALC_STARTED -> d
+    baritone.api.event.events.PathEvent NEXT_SEGMENT_CALC_FINISHED -> e
+    baritone.api.event.events.PathEvent CONTINUING_ONTO_PLANNED_NEXT -> f
+    baritone.api.event.events.PathEvent SPLICING_ONTO_NEXT_EARLY -> g
+    baritone.api.event.events.PathEvent AT_GOAL -> h
+    baritone.api.event.events.PathEvent PATH_FINISHED_NEXT_STILL_CALCULATING -> i
+    baritone.api.event.events.PathEvent NEXT_CALC_FAILED -> j
+    baritone.api.event.events.PathEvent DISCARD_NEXT -> k
+    baritone.api.event.events.PathEvent CANCELED -> l
+    baritone.api.event.events.PathEvent[] $VALUES -> a
+    baritone.api.event.events.PathEvent[] values() -> values
+    baritone.api.event.events.PathEvent valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.event.events.PlayerUpdateEvent -> baritone.az:
+    baritone.api.event.events.type.EventState state -> a
+    void <init>(baritone.api.event.events.type.EventState) -> <init>
+baritone.api.event.events.RenderEvent -> baritone.ba:
+    float partialTicks -> a
+    void <init>(float) -> <init>
+baritone.api.event.events.RotationMoveEvent -> baritone.bb:
+    int type$18bb8649 -> a
+    float yaw -> a
+    void <init>(int,float) -> <init>
+baritone.api.event.events.RotationMoveEvent$Type -> baritone.bb$a:
+    int MOTION_UPDATE$18bb8649 -> a
+    int JUMP$18bb8649 -> b
+    void <clinit>() -> <clinit>
+baritone.api.event.events.SprintStateEvent -> baritone.bc:
+    java.lang.Boolean state -> a
+    void <init>() -> <init>
+baritone.api.event.events.TickEvent -> baritone.bd:
+    int overallTickCount -> a
+    baritone.api.event.events.type.EventState state -> a
+    baritone.api.event.events.TickEvent$Type type -> a
+    int count -> b
+    void <init>(baritone.api.event.events.type.EventState,baritone.api.event.events.TickEvent$Type,int) -> <init>
+    java.util.function.BiFunction createNextProvider() -> a
+    baritone.api.event.events.TickEvent lambda$createNextProvider$0(int,baritone.api.event.events.type.EventState,baritone.api.event.events.TickEvent$Type) -> a
+baritone.api.event.events.TickEvent$Type -> baritone.bd$a:
+    baritone.api.event.events.TickEvent$Type IN -> a
+    baritone.api.event.events.TickEvent$Type OUT -> b
+    baritone.api.event.events.TickEvent$Type[] $VALUES -> a
+    baritone.api.event.events.TickEvent$Type[] values() -> values
+    baritone.api.event.events.TickEvent$Type valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.event.events.WorldEvent -> baritone.be:
+    bsb world -> a
+    baritone.api.event.events.type.EventState state -> a
+    void <init>(bsb,baritone.api.event.events.type.EventState) -> <init>
+baritone.api.event.events.type.Cancellable -> baritone.bf:
+    boolean cancelled -> a
+    void <init>() -> <init>
+baritone.api.event.events.type.EventState -> baritone.bg:
+    baritone.api.event.events.type.EventState PRE -> a
+    baritone.api.event.events.type.EventState POST -> b
+    baritone.api.event.events.type.EventState[] $VALUES -> a
+    baritone.api.event.events.type.EventState[] values() -> values
+    baritone.api.event.events.type.EventState valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.event.listener.AbstractGameEventListener -> baritone.bh:
+    void onTick(baritone.api.event.events.TickEvent) -> a
+    void onPlayerUpdate(baritone.api.event.events.PlayerUpdateEvent) -> a
+    void onSendChatMessage(baritone.api.event.events.ChatEvent) -> a
+    void onChunkEvent(baritone.api.event.events.ChunkEvent) -> a
+    void onRenderPass(baritone.api.event.events.RenderEvent) -> a
+    void onWorldEvent(baritone.api.event.events.WorldEvent) -> a
+    void onSendPacket$1f25927f(baritone.cache.ChunkPacker) -> a
+    void onReceivePacket$1f25927f(baritone.cache.ChunkPacker) -> b
+    void onPlayerRotationMove(baritone.api.event.events.RotationMoveEvent) -> a
+    void onPlayerSprintState(baritone.api.event.events.SprintStateEvent) -> a
+    void onBlockInteract(baritone.api.event.events.BlockInteractEvent) -> a
+    void onPlayerDeath() -> b
+    void onPathEvent(baritone.api.event.events.PathEvent) -> a
+baritone.api.event.listener.IEventBus -> baritone.bi:
+    void registerEventListener(baritone.api.event.listener.IGameEventListener) -> a
+baritone.api.event.listener.IGameEventListener -> baritone.bj:
+    void onTick(baritone.api.event.events.TickEvent) -> a
+    void onPlayerUpdate(baritone.api.event.events.PlayerUpdateEvent) -> a
+    void onSendChatMessage(baritone.api.event.events.ChatEvent) -> a
+    void onChunkEvent(baritone.api.event.events.ChunkEvent) -> a
+    void onRenderPass(baritone.api.event.events.RenderEvent) -> a
+    void onWorldEvent(baritone.api.event.events.WorldEvent) -> a
+    void onSendPacket$1f25927f(baritone.cache.ChunkPacker) -> a
+    void onReceivePacket$1f25927f(baritone.cache.ChunkPacker) -> b
+    void onPlayerRotationMove(baritone.api.event.events.RotationMoveEvent) -> a
+    void onPlayerSprintState(baritone.api.event.events.SprintStateEvent) -> a
+    void onBlockInteract(baritone.api.event.events.BlockInteractEvent) -> a
+    void onPlayerDeath() -> b
+    void onPathEvent(baritone.api.event.events.PathEvent) -> a
+baritone.api.pathing.calc.IPath -> baritone.bk:
+    java.util.List movements() -> a
+    java.util.List positions() -> b
+    baritone.api.pathing.calc.IPath postProcess() -> a
+    int length() -> a
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    int getNumNodesConsidered() -> b
+    baritone.api.utils.BetterBlockPos getSrc() -> a
+    baritone.api.utils.BetterBlockPos getDest() -> b
+    double ticksRemainingFrom(int) -> a
+    baritone.api.pathing.calc.IPath cutoffAtLoadedChunks(java.lang.Object) -> a
+    baritone.api.pathing.calc.IPath staticCutoff(baritone.api.pathing.goals.Goal) -> a
+    void sanityCheck() -> a
+baritone.api.pathing.calc.IPathingControlManager -> baritone.bl:
+    void registerProcess(baritone.api.process.IBaritoneProcess) -> a
+    java.util.Optional mostRecentInControl() -> a
+    java.util.Optional mostRecentCommand() -> b
+baritone.api.pathing.goals.Goal -> baritone.bm:
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    boolean isInGoal(et) -> a
+    double heuristic() -> a
+baritone.api.pathing.goals.GoalAxis -> baritone.bn:
+    double SQRT_2_OVER_2 -> a
+    void <init>() -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    java.lang.String toString() -> toString
+    void <clinit>() -> <clinit>
+baritone.api.pathing.goals.GoalBlock -> baritone.bo:
+    int x -> b
+    int y -> a
+    int z -> c
+    void <init>(et) -> <init>
+    void <init>(int,int,int) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    java.lang.String toString() -> toString
+    et getGoalPos() -> a
+    double calculate(double,int,double) -> a
+baritone.api.pathing.goals.GoalComposite -> baritone.bp:
+    baritone.api.pathing.goals.Goal[] goals -> a
+    void <init>(baritone.api.pathing.goals.Goal[]) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    double heuristic() -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalGetToBlock -> baritone.bq:
+    int x -> a
+    int y -> b
+    int z -> c
+    void <init>(et) -> <init>
+    et getGoalPos() -> a
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalInverted -> baritone.br:
+    baritone.api.pathing.goals.Goal origin -> a
+    void <init>(baritone.api.pathing.goals.Goal) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    double heuristic() -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalNear -> baritone.bs:
+    int x -> a
+    int y -> b
+    int z -> c
+    int rangeSq -> d
+    void <init>(et,int) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    double heuristic() -> a
+    et getGoalPos() -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalRunAway -> baritone.bt:
+    et[] from -> a
+    int distanceSq -> a
+    java.lang.Integer maintainY -> a
+    void <init>(et[]) -> <init>
+    void <init>(java.lang.Integer,et[]) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    double heuristic() -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalStrictDirection -> baritone.bu:
+    int x -> a
+    int y -> b
+    int z -> c
+    int dx -> d
+    int dz -> e
+    void <init>(et,fa) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    double heuristic() -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalTwoBlocks -> baritone.bv:
+    int x -> a
+    int y -> b
+    int z -> c
+    void <init>(et) -> <init>
+    void <init>(int,int,int) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    et getGoalPos() -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.goals.GoalXZ -> baritone.bw:
+    double SQRT_2 -> a
+    int x -> a
+    int z -> b
+    void <init>(int,int) -> <init>
+    void <init>(baritone.api.utils.BetterBlockPos) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    java.lang.String toString() -> toString
+    double calculate(double,double) -> a
+    baritone.api.pathing.goals.GoalXZ fromDirection(bhe,float,double) -> a
+    void <clinit>() -> <clinit>
+baritone.api.pathing.goals.GoalYLevel -> baritone.bx:
+    int level -> a
+    void <init>(int) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    double calculate(int,int) -> a
+    java.lang.String toString() -> toString
+baritone.api.pathing.movement.ActionCosts -> baritone.by:
+    double[] FALL_N_BLOCKS_COST -> a
+    double FALL_1_25_BLOCKS_COST -> a
+    double FALL_0_25_BLOCKS_COST -> b
+    double JUMP_ONE_BLOCK_COST -> c
+    double distanceToTicks(double) -> a
+    void <clinit>() -> <clinit>
+baritone.api.pathing.movement.IMovement -> baritone.bz:
+    double getCost() -> a
+    void reset() -> a
+    boolean safeToCancel() -> a
+    baritone.api.utils.BetterBlockPos getSrc() -> a
+    baritone.api.utils.BetterBlockPos getDest() -> b
+    et getDirection() -> a
+baritone.api.pathing.movement.MovementStatus -> baritone.ca:
+    baritone.api.pathing.movement.MovementStatus PREPPING -> a
+    baritone.api.pathing.movement.MovementStatus WAITING -> b
+    baritone.api.pathing.movement.MovementStatus RUNNING -> c
+    baritone.api.pathing.movement.MovementStatus SUCCESS -> d
+    baritone.api.pathing.movement.MovementStatus UNREACHABLE -> e
+    baritone.api.pathing.movement.MovementStatus FAILED -> f
+    baritone.api.pathing.movement.MovementStatus CANCELED -> g
+    boolean complete -> a
+    baritone.api.pathing.movement.MovementStatus[] $VALUES -> a
+    baritone.api.pathing.movement.MovementStatus[] values() -> values
+    baritone.api.pathing.movement.MovementStatus valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,boolean) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.pathing.path.IPathExecutor -> baritone.cb:
+    baritone.api.pathing.calc.IPath getPath() -> a
+    int getPosition() -> a
+baritone.api.process.IBaritoneProcess -> baritone.cc:
+    boolean isActive() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    boolean isTemporary() -> b
+    void onLostControl() -> a
+    double priority() -> a
+    java.lang.String displayName() -> a
+    java.lang.String displayName0() -> b
+baritone.api.process.IBuilderProcess -> baritone.cd:
+    void build(java.lang.String,baritone.api.schematic.ISchematic,fq) -> a
+    boolean build(java.lang.String,java.io.File,fq) -> a
+    void buildOpenSchematic() -> b
+    void buildOpenLitematic(int) -> a
+    void resume() -> c
+    void clearArea(et,et) -> a
+baritone.api.process.ICustomGoalProcess -> baritone.ce:
+    void setGoal(baritone.api.pathing.goals.Goal) -> a
+    void path() -> b
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    void setGoalAndPath(baritone.api.pathing.goals.Goal) -> b
+baritone.api.process.IExploreProcess -> baritone.cf:
+    void explore(int,int) -> a
+    void applyJsonFilter(java.nio.file.Path,boolean) -> a
+baritone.api.process.IFarmProcess -> baritone.cg:
+    void farm(int,et) -> a
+baritone.api.process.IFollowProcess -> baritone.ch:
+    void follow(java.util.function.Predicate) -> a
+baritone.api.process.IGetToBlockProcess -> baritone.ci:
+    void getToBlock(baritone.api.utils.BlockOptionalMeta) -> a
+    boolean blacklistClosest() -> c
+baritone.api.process.IMineProcess -> baritone.cj:
+    void mine(int,baritone.api.utils.BlockOptionalMetaLookup) -> a
+    void mine(int,baritone.api.utils.BlockOptionalMeta[]) -> a
+    void cancel() -> b
+baritone.api.process.PathingCommand -> baritone.ck:
+    baritone.api.pathing.goals.Goal goal -> a
+    baritone.api.process.PathingCommandType commandType -> a
+    void <init>(baritone.api.pathing.goals.Goal,baritone.api.process.PathingCommandType) -> <init>
+    java.lang.String toString() -> toString
+baritone.api.process.PathingCommandType -> baritone.cl:
+    baritone.api.process.PathingCommandType SET_GOAL_AND_PATH -> a
+    baritone.api.process.PathingCommandType REQUEST_PAUSE -> b
+    baritone.api.process.PathingCommandType CANCEL_AND_SET_GOAL -> c
+    baritone.api.process.PathingCommandType REVALIDATE_GOAL_AND_PATH -> d
+    baritone.api.process.PathingCommandType FORCE_REVALIDATE_GOAL_AND_PATH -> e
+    baritone.api.process.PathingCommandType DEFER -> f
+    baritone.api.process.PathingCommandType[] $VALUES -> a
+    baritone.api.process.PathingCommandType[] values() -> values
+    baritone.api.process.PathingCommandType valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.schematic.AbstractSchematic -> baritone.cm:
+    int x -> a
+    int y -> b
+    int z -> c
+    void <init>() -> <init>
+    void <init>(int,int,int) -> <init>
+    int widthX() -> a
+    int heightY() -> b
+    int lengthZ() -> c
+baritone.api.schematic.CompositeSchematic -> baritone.cn:
+    java.util.List schematics -> a
+    baritone.api.schematic.CompositeSchematicEntry[] schematicArr -> a
+    void recalcArr() -> b
+    void <init>() -> <init>
+    void put(baritone.api.schematic.ISchematic,int,int,int) -> a
+    baritone.api.schematic.CompositeSchematicEntry getSchematic(int,int,int,awt) -> a
+    boolean inSchematic(int,int,int,awt) -> a
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+    void reset() -> a
+baritone.api.schematic.CompositeSchematicEntry -> baritone.co:
+    baritone.api.schematic.ISchematic schematic -> a
+    int x -> a
+    int y -> b
+    int z -> c
+    void <init>(baritone.api.schematic.ISchematic,int,int,int) -> <init>
+baritone.api.schematic.FillSchematic -> baritone.cp:
+    baritone.api.utils.BlockOptionalMeta bom -> a
+    void <init>(int,int,int,baritone.api.utils.BlockOptionalMeta) -> <init>
+    void <init>(int,int,int,awt) -> <init>
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+baritone.api.schematic.ISchematic -> baritone.cq:
+    boolean inSchematic(int,int,int,awt) -> a
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+    void reset() -> a
+    int widthX() -> a
+    int heightY() -> b
+    int lengthZ() -> c
+baritone.api.schematic.IStaticSchematic -> baritone.cr:
+    awt getDirect(int,int,int) -> a
+    awt[] getColumn(int,int) -> a
+baritone.api.schematic.MaskSchematic -> baritone.cs:
+    baritone.api.schematic.ISchematic schematic -> a
+    void <init>(baritone.api.schematic.ISchematic) -> <init>
+    boolean partOfMask(int,int,int,awt) -> b
+    boolean inSchematic(int,int,int,awt) -> a
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+baritone.api.schematic.ReplaceSchematic -> baritone.ct:
+    baritone.api.utils.BlockOptionalMetaLookup filter -> a
+    java.lang.Boolean[][][] cache -> a
+    void <init>(baritone.api.schematic.ISchematic,baritone.api.utils.BlockOptionalMetaLookup) -> <init>
+    void reset() -> a
+    boolean partOfMask(int,int,int,awt) -> b
+baritone.api.schematic.ShellSchematic -> baritone.cu:
+    void <init>(baritone.api.schematic.ISchematic) -> <init>
+    boolean partOfMask(int,int,int,awt) -> b
+baritone.api.schematic.SubstituteSchematic -> baritone.cv:
+    baritone.api.schematic.ISchematic schematic -> a
+    java.util.Map substitutions -> a
+    java.util.Map blockStateCache -> b
+    void <init>(baritone.api.schematic.ISchematic,java.util.Map) -> <init>
+    boolean inSchematic(int,int,int,awt) -> a
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+    awt withBlock(awt,aow) -> a
+    java.util.Map lambda$withBlock$0(awt) -> a
+baritone.api.schematic.WallsSchematic -> baritone.cw:
+    void <init>(baritone.api.schematic.ISchematic) -> <init>
+    boolean partOfMask(int,int,int,awt) -> b
+baritone.api.schematic.format.ISchematicFormat -> baritone.cx:
+    baritone.api.schematic.IStaticSchematic parse(java.io.InputStream) -> a
+    boolean isFileType(java.io.File) -> a
+baritone.api.selection.ISelection -> baritone.cy:
+    baritone.api.utils.BetterBlockPos pos1() -> a
+    baritone.api.utils.BetterBlockPos pos2() -> b
+    baritone.api.utils.BetterBlockPos min() -> c
+    baritone.api.utils.BetterBlockPos max() -> d
+    fq size() -> a
+    bhb aabb() -> a
+    baritone.api.selection.ISelection expand(fa,int) -> a
+    baritone.api.selection.ISelection contract(fa,int) -> b
+    baritone.api.selection.ISelection shift(fa,int) -> c
+baritone.api.selection.ISelectionManager -> baritone.cz:
+    baritone.api.selection.ISelection addSelection(baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> a
+    baritone.api.selection.ISelection removeSelection(baritone.api.selection.ISelection) -> a
+    baritone.api.selection.ISelection[] removeAllSelections() -> a
+    baritone.api.selection.ISelection[] getSelections() -> b
+    baritone.api.selection.ISelection expand(baritone.api.selection.ISelection,fa,int) -> a
+    baritone.api.selection.ISelection contract(baritone.api.selection.ISelection,fa,int) -> b
+    baritone.api.selection.ISelection shift(baritone.api.selection.ISelection,fa,int) -> c
+baritone.api.utils.BetterBlockPos -> baritone.da:
+    baritone.api.utils.BetterBlockPos ORIGIN -> a
+    int a -> a
+    int b -> b
+    int c -> c
+    void <init>(int,int,int) -> <init>
+    void <init>(double,double,double) -> <init>
+    void <init>(et) -> <init>
+    baritone.api.utils.BetterBlockPos from(et) -> a
+    int hashCode() -> hashCode
+    long longHash(baritone.api.utils.BetterBlockPos) -> a
+    long longHash(int,int,int) -> a
+    boolean equals(java.lang.Object) -> equals
+    baritone.api.utils.BetterBlockPos up() -> a
+    baritone.api.utils.BetterBlockPos up(int) -> a
+    baritone.api.utils.BetterBlockPos down() -> b
+    baritone.api.utils.BetterBlockPos down(int) -> b
+    baritone.api.utils.BetterBlockPos offset(fa) -> a
+    baritone.api.utils.BetterBlockPos offset(fa,int) -> a
+    baritone.api.utils.BetterBlockPos north() -> c
+    baritone.api.utils.BetterBlockPos south() -> d
+    baritone.api.utils.BetterBlockPos east() -> e
+    baritone.api.utils.BetterBlockPos west() -> f
+    java.lang.String toString() -> toString
+    et a(fa,int) -> a
+    et a(fa) -> a
+    et g(int) -> g
+    et f() -> f
+    et f(int) -> f
+    et e() -> e
+    et e(int) -> e
+    et d() -> d
+    et d(int) -> d
+    et c() -> c
+    et c(int) -> c
+    et b() -> b
+    et b(int) -> b
+    et a() -> a
+    void <clinit>() -> <clinit>
+baritone.api.utils.BlockOptionalMeta -> baritone.api.utils.BlockOptionalMeta:
+    aow block -> a
+    int meta -> a
+    boolean noMeta -> a
+    java.util.Set blockstates -> a
+    java.util.Set stateHashes -> c
+    java.util.Set stackHashes -> b
+    java.util.regex.Pattern pattern -> a
+    java.util.Map normalizations -> a
+    void <init>(aow,java.lang.Integer) -> <init>
+    void <init>(aow) -> <init>
+    void <init>(java.lang.String) -> <init>
+    awt normalize(awt) -> a
+    java.util.Set getStates(aow,java.lang.Integer) -> a
+    com.google.common.collect.ImmutableSet getStateHashes(java.util.Set) -> a
+    com.google.common.collect.ImmutableSet getStackHashes(java.util.Set) -> b
+    java.lang.Integer getMeta() -> a
+    boolean matches(awt) -> a
+    java.lang.String toString() -> toString
+    java.lang.Integer[] lambda$getStackHashes$5(int) -> a
+    java.lang.Integer lambda$getStackHashes$4(aip) -> a
+    aip lambda$getStackHashes$3(awt) -> a
+    java.lang.Integer[] lambda$getStateHashes$2(int) -> b
+    boolean lambda$getStates$1(java.lang.Integer,awt) -> a
+    void lambda$static$0(java.util.Map,java.lang.Enum) -> a
+    void <clinit>() -> <clinit>
+baritone.api.utils.BlockOptionalMetaLookup -> baritone.db:
+    java.util.Set blockSet -> a
+    java.util.Set blockStateSet -> b
+    baritone.api.utils.BlockOptionalMeta[] boms -> a
+    void <init>(baritone.api.utils.BlockOptionalMeta[]) -> <init>
+    void <init>(aow[]) -> <init>
+    boolean has(awt) -> a
+    boolean has(aip) -> a
+    java.lang.String toString() -> toString
+    baritone.api.utils.BlockOptionalMeta[] lambda$new$0(int) -> a
+baritone.api.utils.BlockUtils -> baritone.dc:
+    java.util.Map resourceCache -> a
+    java.lang.String blockToString(aow) -> a
+    aow stringToBlockRequired(java.lang.String) -> a
+    void <clinit>() -> <clinit>
+baritone.api.utils.Helper -> baritone.dd:
+    baritone.api.utils.Helper HELPER -> a
+    bib mc -> a
+    hh getPrefix() -> a
+    void logToast(hh,hh) -> a
+    void logNotification(java.lang.String,boolean) -> a
+    void logNotificationDirect(java.lang.String,boolean) -> b
+    void logDebug(java.lang.String) -> a
+    void logDirect(boolean,hh[]) -> a
+    void logDirect(hh[]) -> a
+    void logDirect(java.lang.String,a,boolean) -> a
+    void logDirect(java.lang.String,a) -> a
+    void logDirect(java.lang.String,boolean) -> c
+    void logDirect(java.lang.String) -> b
+    void lambda$logDirect$3(a,boolean,java.lang.String) -> a
+    void lambda$logDirect$2(hh) -> a
+    void lambda$logNotificationDirect$1(java.lang.String,boolean) -> d
+    void lambda$logToast$0(hh,hh) -> b
+    void <clinit>() -> <clinit>
+baritone.api.utils.Helper$1 -> baritone.de:
+    void <init>() -> <init>
+baritone.api.utils.IInputOverrideHandler -> baritone.df:
+    void setInputForceState(baritone.api.utils.input.Input,boolean) -> a
+    void clearAllKeys() -> a
+baritone.api.utils.IPlayerContext -> baritone.dg:
+    bud player() -> a
+    baritone.api.utils.IPlayerController playerController() -> a
+    amu world() -> a
+    baritone.api.cache.IWorldData worldData() -> a
+    bhc objectMouseOver() -> a
+    baritone.api.utils.BetterBlockPos playerFeet() -> a
+    bhe playerFeetAsVec() -> a
+    bhe playerHead() -> b
+    baritone.api.utils.Rotation playerRotations() -> a
+    java.util.Optional getSelectedBlock() -> a
+    boolean isLookingAt(et) -> a
+baritone.api.utils.IPlayerController -> baritone.dh:
+    void syncHeldItem() -> a
+    boolean hasBrokenBlock() -> a
+    boolean onPlayerDamageBlock(et,fa) -> a
+    void resetBlockRemoving() -> b
+    aip windowClick(int,int,int,afw,aed) -> a
+    ams getGameType() -> a
+    ud processRightClickBlock(bud,amu,et,fa,bhe,ub) -> a
+    ud processRightClick(bud,amu,ub) -> a
+    boolean clickBlock(et,fa) -> b
+    void setHittingBlock(boolean) -> a
+    double getBlockReachDistance() -> a
+baritone.api.utils.MyChunkPos -> baritone.api.utils.MyChunkPos:
+    int x -> x
+    int z -> z
+    void <init>() -> <init>
+    java.lang.String toString() -> toString
+baritone.api.utils.NotificationHelper -> baritone.di:
+    java.awt.TrayIcon trayIcon -> a
+    java.util.Deque _entries -> a
+    java.util.Set registered -> a
+    java.util.Collection entries -> a
+    void notify(java.lang.String,boolean) -> a
+    void <init>() -> <init>
+    boolean register(java.lang.Object) -> a
+    java.util.stream.Stream descendingStream() -> a
+baritone.api.utils.PathCalculationResult -> baritone.dj:
+    baritone.api.pathing.calc.IPath path -> a
+    baritone.api.utils.PathCalculationResult$Type type -> a
+    void <init>(baritone.api.utils.PathCalculationResult$Type) -> <init>
+    void <init>(baritone.api.utils.PathCalculationResult$Type,baritone.api.pathing.calc.IPath) -> <init>
+baritone.api.utils.PathCalculationResult$Type -> baritone.dj$a:
+    baritone.api.utils.PathCalculationResult$Type SUCCESS_TO_GOAL -> a
+    baritone.api.utils.PathCalculationResult$Type SUCCESS_SEGMENT -> b
+    baritone.api.utils.PathCalculationResult$Type FAILURE -> c
+    baritone.api.utils.PathCalculationResult$Type CANCELLATION -> d
+    baritone.api.utils.PathCalculationResult$Type EXCEPTION -> e
+    baritone.api.utils.PathCalculationResult$Type[] $VALUES -> a
+    baritone.api.utils.PathCalculationResult$Type[] values() -> values
+    baritone.api.utils.PathCalculationResult$Type valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.utils.Rotation -> baritone.dk:
+    float yaw -> a
+    float pitch -> b
+    void <init>(float,float) -> <init>
+    boolean isReallyCloseTo(baritone.api.utils.Rotation) -> a
+    boolean yawIsReallyClose(baritone.api.utils.Rotation) -> b
+    float normalizeYaw(float) -> a
+    java.lang.String toString() -> toString
+baritone.api.utils.RotationUtils -> baritone.dl:
+    bhe[] BLOCK_SIDE_MULTIPLIERS -> a
+    baritone.api.utils.Rotation calcRotationFromVec3d(bhe,bhe,baritone.api.utils.Rotation) -> a
+    bhe calcVec3dFromRotation(baritone.api.utils.Rotation) -> a
+    java.util.Optional reachable(baritone.api.utils.IPlayerContext,et) -> a
+    java.util.Optional reachable(baritone.api.utils.IPlayerContext,et,boolean) -> a
+    java.util.Optional reachable(bud,et,double) -> a
+    java.util.Optional reachable(bud,et,double,boolean) -> a
+    java.util.Optional reachableOffset(vg,et,bhe,double,boolean) -> a
+    java.util.Optional reachableCenter(vg,et,double,boolean) -> a
+    void <clinit>() -> <clinit>
+baritone.api.utils.SettingsUtil -> baritone.dm:
+    java.util.regex.Pattern SETTING_PATTERN -> a
+    java.lang.String[] JAVA_ONLY_SETTINGS -> a
+    void readAndApply(baritone.api.Settings,java.lang.String) -> a
+    void save(baritone.api.Settings) -> a
+    java.nio.file.Path settingsByName(java.lang.String) -> a
+    java.util.List modifiedSettings(baritone.api.Settings) -> a
+    java.lang.String settingTypeToString(baritone.api.Settings$Setting) -> a
+    java.lang.String settingValueToString(baritone.api.Settings$Setting,java.lang.Object) -> a
+    java.lang.String settingValueToString(baritone.api.Settings$Setting) -> b
+    java.lang.String settingDefaultToString(baritone.api.Settings$Setting) -> c
+    java.lang.String maybeCensor(int) -> a
+    java.lang.String settingToString(baritone.api.Settings$Setting) -> d
+    boolean javaOnlySetting(baritone.api.Settings$Setting) -> a
+    void parseAndApply(baritone.api.Settings,java.lang.String,java.lang.String) -> a
+    void lambda$readAndApply$0(baritone.api.Settings,java.lang.String) -> b
+    void <clinit>() -> <clinit>
+baritone.api.utils.SettingsUtil$ISettingParser -> baritone.dm$a:
+    java.lang.Object parse(baritone.api.utils.SettingsUtil$ParserContext,java.lang.String) -> a
+baritone.api.utils.SettingsUtil$Parser -> baritone.dm$b:
+    baritone.api.utils.SettingsUtil$Parser DOUBLE -> a
+    baritone.api.utils.SettingsUtil$Parser BOOLEAN -> b
+    baritone.api.utils.SettingsUtil$Parser INTEGER -> c
+    baritone.api.utils.SettingsUtil$Parser FLOAT -> d
+    baritone.api.utils.SettingsUtil$Parser LONG -> e
+    baritone.api.utils.SettingsUtil$Parser STRING -> f
+    baritone.api.utils.SettingsUtil$Parser ENUMFACING -> g
+    baritone.api.utils.SettingsUtil$Parser COLOR -> h
+    baritone.api.utils.SettingsUtil$Parser VEC3I -> i
+    baritone.api.utils.SettingsUtil$Parser BLOCK -> j
+    baritone.api.utils.SettingsUtil$Parser ITEM -> k
+    baritone.api.utils.SettingsUtil$Parser LIST -> l
+    baritone.api.utils.SettingsUtil$Parser MAPPING -> m
+    java.lang.Class cla$$ -> a
+    java.util.function.Function parser -> a
+    java.util.function.Function toString -> b
+    baritone.api.utils.SettingsUtil$Parser[] $VALUES -> a
+    baritone.api.utils.SettingsUtil$Parser[] values() -> values
+    baritone.api.utils.SettingsUtil$Parser valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <init>(java.lang.String,int,java.lang.Class,java.util.function.Function) -> <init>
+    void <init>(java.lang.String,int,java.lang.Class,java.util.function.Function,java.util.function.Function) -> <init>
+    java.lang.Object parse(baritone.api.utils.SettingsUtil$ParserContext,java.lang.String) -> a
+    java.lang.String toString(baritone.api.utils.SettingsUtil$ParserContext,java.lang.Object) -> a
+    boolean accepts(java.lang.reflect.Type) -> a
+    baritone.api.utils.SettingsUtil$Parser getParser(java.lang.reflect.Type) -> a
+    boolean lambda$getParser$8(java.lang.reflect.Type,baritone.api.utils.SettingsUtil$Parser) -> a
+    java.lang.String lambda$new$7(java.util.function.Function,java.lang.Object) -> a
+    java.lang.String lambda$static$6(ain) -> a
+    ain lambda$static$5(java.lang.String) -> a
+    aow lambda$static$4(java.lang.String) -> a
+    java.lang.String lambda$static$3(fq) -> a
+    fq lambda$static$2(java.lang.String) -> a
+    java.lang.String lambda$static$1(java.awt.Color) -> a
+    java.awt.Color lambda$static$0(java.lang.String) -> a
+    void <init>(java.lang.String,int,byte) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.utils.SettingsUtil$Parser$1 -> baritone.dn:
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object parse(baritone.api.utils.SettingsUtil$ParserContext,java.lang.String) -> a
+    java.lang.String toString(baritone.api.utils.SettingsUtil$ParserContext,java.lang.Object) -> a
+    boolean accepts(java.lang.reflect.Type) -> a
+    java.lang.String lambda$toString$1(baritone.api.utils.SettingsUtil$Parser,baritone.api.utils.SettingsUtil$ParserContext,java.lang.Object) -> a
+    java.lang.Object lambda$parse$0(baritone.api.utils.SettingsUtil$Parser,baritone.api.utils.SettingsUtil$ParserContext,java.lang.String) -> a
+baritone.api.utils.SettingsUtil$Parser$2 -> baritone.do:
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object parse(baritone.api.utils.SettingsUtil$ParserContext,java.lang.String) -> a
+    java.lang.String toString(baritone.api.utils.SettingsUtil$ParserContext,java.lang.Object) -> a
+    boolean accepts(java.lang.reflect.Type) -> a
+    java.lang.String lambda$toString$3(baritone.api.utils.SettingsUtil$Parser,baritone.api.utils.SettingsUtil$ParserContext,baritone.api.utils.SettingsUtil$Parser,java.util.Map$Entry) -> a
+    java.lang.Object lambda$parse$2(baritone.api.utils.SettingsUtil$Parser,baritone.api.utils.SettingsUtil$ParserContext,java.lang.String[]) -> a
+    java.lang.Object lambda$parse$1(baritone.api.utils.SettingsUtil$Parser,baritone.api.utils.SettingsUtil$ParserContext,java.lang.String[]) -> b
+    java.lang.String[] lambda$parse$0(java.lang.String) -> a
+baritone.api.utils.SettingsUtil$ParserContext -> baritone.dm$c:
+    baritone.api.Settings$Setting setting -> a
+    void <init>(baritone.api.Settings$Setting) -> <init>
+    void <init>(baritone.api.Settings$Setting,byte) -> <init>
+baritone.api.utils.accessor.IItemStack -> baritone.dp:
+    int getBaritoneHash() -> getBaritoneHash
+baritone.api.utils.gui.BaritoneToast -> baritone.dq:
+    java.lang.String title -> a
+    java.lang.String subtitle -> b
+    long firstDrawTime -> a
+    boolean newDisplay -> a
+    long totalShowTime -> b
+    void <init>(hh,hh,long) -> <init>
+    bkb$a a(bkc,long) -> a
+    void addOrUpdate(hh,hh) -> a
+baritone.api.utils.input.Input -> baritone.dr:
+    baritone.api.utils.input.Input MOVE_FORWARD -> a
+    baritone.api.utils.input.Input MOVE_BACK -> b
+    baritone.api.utils.input.Input MOVE_LEFT -> c
+    baritone.api.utils.input.Input MOVE_RIGHT -> d
+    baritone.api.utils.input.Input CLICK_LEFT -> e
+    baritone.api.utils.input.Input CLICK_RIGHT -> f
+    baritone.api.utils.input.Input JUMP -> g
+    baritone.api.utils.input.Input SNEAK -> h
+    baritone.api.utils.input.Input SPRINT -> i
+    baritone.api.utils.input.Input[] $VALUES -> a
+    baritone.api.utils.input.Input[] values() -> values
+    baritone.api.utils.input.Input valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int) -> <init>
+    void <clinit>() -> <clinit>
+baritone.api.utils.interfaces.IGoalRenderPos -> baritone.ds:
+    et getGoalPos() -> a
+baritone.behavior.Behavior -> baritone.dt:
+    baritone.Baritone baritone -> a
+    baritone.api.utils.IPlayerContext ctx -> a
+    void <init>(baritone.Baritone) -> <init>
+baritone.behavior.InventoryBehavior -> baritone.du:
+    int ticksSinceLastInventoryMove -> a
+    int[] lastTickRequestedMove -> a
+    void <init>(baritone.Baritone) -> <init>
+    void onTick(baritone.api.event.events.TickEvent) -> a
+    boolean attemptToPutOnHotbar(int,java.util.function.Predicate) -> a
+    boolean requestSwapWithHotBar(int,int) -> a
+    int firstValidThrowaway() -> a
+    boolean hasGenericThrowaway() -> a
+    boolean selectThrowawayForLocation(boolean,int,int,int) -> a
+    boolean throwaway(boolean,java.util.function.Predicate) -> a
+    boolean throwaway(boolean,java.util.function.Predicate,boolean) -> a
+    boolean lambda$selectThrowawayForLocation$3(ain,aip) -> a
+    boolean lambda$selectThrowawayForLocation$2(awt,aip) -> a
+    boolean lambda$selectThrowawayForLocation$1(awt,aip) -> b
+    boolean lambda$hasGenericThrowaway$0(ain,aip) -> b
+baritone.behavior.LookBehavior -> baritone.dv:
+    baritone.api.utils.Rotation target -> a
+    boolean force -> a
+    float lastYaw -> a
+    void <init>(baritone.Baritone) -> <init>
+    void updateTarget(baritone.api.utils.Rotation,boolean) -> a
+    void onPlayerUpdate(baritone.api.event.events.PlayerUpdateEvent) -> a
+    void onPlayerRotationMove(baritone.api.event.events.RotationMoveEvent) -> a
+baritone.behavior.LookBehavior$1 -> baritone.dw:
+    int[] $SwitchMap$baritone$api$event$events$type$EventState -> a
+    void <clinit>() -> <clinit>
+baritone.behavior.PathingBehavior -> baritone.dx:
+    baritone.pathing.path.PathExecutor current -> a
+    baritone.pathing.path.PathExecutor next -> b
+    baritone.api.pathing.goals.Goal goal -> a
+    baritone.pathing.movement.CalculationContext context -> a
+    int ticksElapsedSoFar -> a
+    baritone.api.utils.BetterBlockPos startPosition -> a
+    boolean safeToCancel -> b
+    boolean pauseRequestedLastTick -> c
+    boolean unpausedLastTick -> d
+    boolean pausedThisTick -> e
+    boolean cancelRequested -> f
+    boolean calcFailedLastTick -> a
+    baritone.pathing.calc.AbstractNodeCostSearch inProgress -> a
+    java.lang.Object pathCalcLock -> a
+    java.lang.Object pathPlanLock -> b
+    boolean lastAutoJump -> g
+    baritone.api.utils.BetterBlockPos expectedSegmentStart -> b
+    java.util.concurrent.LinkedBlockingQueue toDispatch -> a
+    void <init>(baritone.Baritone) -> <init>
+    void queuePathEvent(baritone.api.event.events.PathEvent) -> b
+    void dispatchEvents() -> d
+    void onTick(baritone.api.event.events.TickEvent) -> a
+    void onPlayerSprintState(baritone.api.event.events.SprintStateEvent) -> a
+    void onPlayerUpdate(baritone.api.event.events.PlayerUpdateEvent) -> a
+    boolean secretInternalSetGoalAndPath(baritone.api.process.PathingCommand) -> a
+    boolean isPathing() -> a
+    boolean isSafeToCancel() -> d
+    boolean cancelSegmentIfSafe() -> e
+    boolean cancelEverything() -> c
+    void softCancelIfSafe() -> c
+    void secretInternalSegmentCancel() -> e
+    void forceCancel() -> a
+    java.util.Optional estimatedTicksToGoal() -> b
+    void resetEstimatedTicksToGoal(baritone.api.utils.BetterBlockPos) -> a
+    baritone.api.utils.BetterBlockPos pathStart() -> a
+    void findPathInNewThread(et,boolean,baritone.pathing.movement.CalculationContext) -> a
+    baritone.pathing.calc.AbstractNodeCostSearch createPathfinder(et,baritone.api.pathing.goals.Goal,baritone.api.pathing.calc.IPath,baritone.pathing.movement.CalculationContext) -> a
+    void onRenderPass(baritone.api.event.events.RenderEvent) -> a
+    baritone.api.pathing.path.IPathExecutor getCurrent() -> a
+    baritone.pathing.calc.AbstractNodeCostSearch lambda$createPathfinder$4(et,baritone.api.pathing.goals.Goal,baritone.utils.pathing.Favoring,baritone.pathing.movement.CalculationContext) -> a
+    baritone.pathing.calc.AbstractNodeCostSearch lambda$createPathfinder$3(et,baritone.api.pathing.goals.Goal,baritone.utils.pathing.Favoring,baritone.pathing.movement.CalculationContext) -> b
+    void lambda$findPathInNewThread$2(boolean,et,baritone.api.pathing.goals.Goal,baritone.pathing.calc.AbstractNodeCostSearch,long,long) -> a
+    baritone.pathing.path.PathExecutor lambda$null$1(baritone.api.pathing.calc.IPath) -> a
+    double lambda$pathStart$0(double,double,baritone.api.utils.BetterBlockPos) -> a
+baritone.behavior.PathingBehavior$1 -> baritone.dy:
+    int[] $SwitchMap$baritone$api$event$events$type$EventState -> a
+    void <clinit>() -> <clinit>
+baritone.behavior.WaypointBehavior -> baritone.dz:
+    void <init>(baritone.Baritone) -> <init>
+    void onBlockInteract(baritone.api.event.events.BlockInteractEvent) -> a
+    void onPlayerDeath() -> b
+baritone.cache.CachedChunk -> baritone.ea:
+    com.google.common.collect.ImmutableSet BLOCKS_TO_KEEP_TRACK_OF -> a
+    int x -> a
+    int z -> b
+    java.util.BitSet data -> a
+    it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap special -> a
+    awt[] overview -> a
+    int[] heightMap -> a
+    java.util.Map specialBlockLocations -> a
+    long cacheTimestamp -> a
+    void <init>(int,int,java.util.BitSet,awt[],java.util.Map,long) -> <init>
+    void setSpecial() -> a
+    void calculateHeightMap() -> b
+    java.util.ArrayList getAbsoluteBlocks(java.lang.String) -> a
+    int getPositionIndex(int,int,int) -> a
+    void <clinit>() -> <clinit>
+baritone.cache.CachedRegion -> baritone.eb:
+    baritone.cache.CachedChunk[][] chunks -> a
+    int x -> a
+    int z -> b
+    int dimension -> c
+    boolean hasUnsavedChanges -> a
+    void <init>(int,int,int) -> <init>
+    awt getBlock(int,int,int) -> a
+    boolean isCached(int,int) -> a
+    java.util.ArrayList getLocationsOf(java.lang.String) -> a
+    void updateCachedChunk(int,int,baritone.cache.CachedChunk) -> a
+    void save(java.lang.String) -> a
+    void load(java.lang.String) -> b
+    void removeExpired() -> a
+    baritone.cache.CachedChunk mostRecentlyModified() -> a
+    java.nio.file.Path getRegionFile(java.nio.file.Path,int,int) -> a
+baritone.cache.CachedWorld -> baritone.ec:
+    it.unimi.dsi.fastutil.longs.Long2ObjectMap cachedRegions -> a
+    java.lang.String directory -> a
+    java.util.concurrent.LinkedBlockingQueue toPackQueue -> a
+    java.util.Map toPackMap -> a
+    int dimension -> a
+    void <init>(java.nio.file.Path,int) -> <init>
+    void queueForPacking(axw) -> a
+    boolean isCached(int,int) -> a
+    java.util.ArrayList getLocationsOf(java.lang.String,int,int,int,int) -> a
+    void save() -> b
+    void prune() -> c
+    java.util.List allRegions() -> a
+    void reloadAllFromDisk() -> a
+    baritone.cache.CachedRegion getRegion(int,int) -> a
+    baritone.cache.CachedRegion getOrCreateRegion(int,int) -> b
+    long getRegionID(int,int) -> a
+    boolean isRegionInWorld(int,int) -> b
+    baritone.cache.CachedRegion lambda$getOrCreateRegion$4(int,int,java.lang.Long) -> a
+    void lambda$reloadAllFromDisk$3(baritone.cache.CachedRegion) -> a
+    void lambda$save$2(baritone.cache.CachedRegion) -> b
+    void lambda$save$1(baritone.cache.CachedRegion) -> c
+    void lambda$new$0() -> d
+    java.util.concurrent.LinkedBlockingQueue access$100(baritone.cache.CachedWorld) -> a
+    java.util.Map access$200(baritone.cache.CachedWorld) -> a
+    void access$300(baritone.cache.CachedWorld,baritone.cache.CachedChunk) -> a
+baritone.cache.CachedWorld$PackerThread -> baritone.ec$a:
+    baritone.cache.CachedWorld this$0 -> a
+    void <init>(baritone.cache.CachedWorld) -> <init>
+    void run() -> run
+    void <init>(baritone.cache.CachedWorld,byte) -> <init>
+baritone.cache.ChunkPacker -> baritone.ed:
+    gw networkManager -> a
+    baritone.api.event.events.type.EventState state -> a
+    ht packet -> a
+    baritone.cache.CachedChunk pack(axw) -> a
+    java.util.List lambda$pack$0(java.lang.String) -> a
+    void <init>(gw,baritone.api.event.events.type.EventState,ht) -> <init>
+baritone.cache.ChunkPacker$1 -> baritone.ee:
+    int[] $SwitchMap$baritone$utils$pathing$PathingBlockType -> a
+    void <clinit>() -> <clinit>
+baritone.cache.FasterWorldScanner -> baritone.ef:
+    baritone.cache.FasterWorldScanner INSTANCE -> a
+    baritone.cache.FasterWorldScanner[] $VALUES -> a
+    boolean $assertionsDisabled -> a
+    baritone.cache.FasterWorldScanner[] values() -> values
+    baritone.cache.FasterWorldScanner valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.util.List scanChunkRadius$7fc9620e(baritone.api.utils.IPlayerContext,baritone.api.utils.BlockOptionalMetaLookup,int,int) -> a
+    int repack(baritone.api.utils.IPlayerContext) -> a
+    java.util.List getChunkRange(int,int,int) -> a
+    java.util.List scanChunksInternal(baritone.api.utils.IPlayerContext,baritone.api.utils.BlockOptionalMetaLookup,java.util.List,int) -> a
+    void visitSection(baritone.api.utils.BlockOptionalMetaLookup,axx,java.util.List,long,long) -> a
+    java.util.stream.Stream lambda$scanChunksInternal$0(baritone.api.utils.IPlayerContext,baritone.api.utils.BlockOptionalMetaLookup,amn) -> a
+    void <clinit>() -> <clinit>
+baritone.cache.WaypointCollection -> baritone.eg:
+    java.nio.file.Path directory -> a
+    java.util.Map waypoints -> a
+    void <init>(java.nio.file.Path) -> <init>
+    void load() -> a
+    void load(baritone.api.cache.IWaypoint$Tag) -> a
+    void save(baritone.api.cache.IWaypoint$Tag) -> b
+    void addWaypoint(baritone.api.cache.IWaypoint) -> a
+    void removeWaypoint(baritone.api.cache.IWaypoint) -> b
+    java.util.Set getByTag(baritone.api.cache.IWaypoint$Tag) -> a
+    java.util.Set getAllWaypoints() -> a
+baritone.cache.WorldData -> baritone.eh:
+    baritone.cache.CachedWorld cache -> a
+    baritone.cache.WaypointCollection waypoints -> a
+    java.nio.file.Path directory -> a
+    int dimension -> a
+    void <init>(java.nio.file.Path,int) -> <init>
+    void onClose() -> a
+    baritone.api.cache.ICachedWorld getCachedWorld() -> a
+    baritone.api.cache.IWaypointCollection getWaypoints() -> a
+    void lambda$onClose$0() -> b
+baritone.cache.WorldProvider -> baritone.ei:
+    java.util.Map worldCache -> a
+    baritone.cache.WorldData currentWorld -> a
+    amu mcWorld -> a
+    void <init>() -> <init>
+    baritone.cache.WorldData getCurrentWorld() -> a
+    void initWorld(int) -> a
+    void closeWorld() -> a
+    void detectAndHandleBrokenLoading() -> b
+    baritone.api.cache.IWorldData getCurrentWorld() -> a
+    baritone.cache.WorldData lambda$initWorld$0(int,java.nio.file.Path) -> a
+    void <clinit>() -> <clinit>
+baritone.command.ExampleBaritoneControl -> baritone.ej:
+    baritone.api.Settings settings -> a
+    baritone.api.command.manager.ICommandManager manager -> a
+    void <init>(baritone.api.IBaritone) -> <init>
+    void onSendChatMessage(baritone.api.event.events.ChatEvent) -> a
+    void logRanCommand(java.lang.String,java.lang.String) -> a
+    boolean runCommand(java.lang.String) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.ArgParserManager -> baritone.ek:
+    baritone.command.argparser.ArgParserManager INSTANCE -> a
+    baritone.api.utils.NotificationHelper registry$51316580 -> a
+    baritone.command.argparser.ArgParserManager[] $VALUES -> a
+    baritone.command.argparser.ArgParserManager[] values() -> values
+    baritone.command.argparser.ArgParserManager valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Object parseStateless(java.lang.Class,baritone.api.command.argument.ICommandArgument) -> a
+    boolean lambda$getParserStateless$0(java.lang.Class,baritone.api.command.argparser.IArgParser$Stateless) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.DefaultArgParsers -> baritone.el:
+    java.util.List ALL -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.DefaultArgParsers$BooleanArgumentParser -> baritone.el$a:
+    baritone.command.argparser.DefaultArgParsers$BooleanArgumentParser INSTANCE -> a
+    java.util.List TRUTHY_VALUES -> a
+    java.util.List FALSY_VALUES -> b
+    void <init>() -> <init>
+    java.lang.Class getTarget() -> a
+    java.lang.Object parseArg(baritone.api.command.argument.ICommandArgument) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.DefaultArgParsers$DoubleArgumentParser -> baritone.el$b:
+    baritone.command.argparser.DefaultArgParsers$DoubleArgumentParser INSTANCE -> a
+    baritone.command.argparser.DefaultArgParsers$DoubleArgumentParser[] $VALUES -> a
+    baritone.command.argparser.DefaultArgParsers$DoubleArgumentParser[] values() -> values
+    baritone.command.argparser.DefaultArgParsers$DoubleArgumentParser valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Class getTarget() -> a
+    java.lang.Object parseArg(baritone.api.command.argument.ICommandArgument) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.DefaultArgParsers$FloatArgumentParser -> baritone.el$c:
+    baritone.command.argparser.DefaultArgParsers$FloatArgumentParser INSTANCE -> a
+    baritone.command.argparser.DefaultArgParsers$FloatArgumentParser[] $VALUES -> a
+    baritone.command.argparser.DefaultArgParsers$FloatArgumentParser[] values() -> values
+    baritone.command.argparser.DefaultArgParsers$FloatArgumentParser valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Class getTarget() -> a
+    java.lang.Object parseArg(baritone.api.command.argument.ICommandArgument) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.DefaultArgParsers$IntArgumentParser -> baritone.el$d:
+    baritone.command.argparser.DefaultArgParsers$IntArgumentParser INSTANCE -> a
+    baritone.command.argparser.DefaultArgParsers$IntArgumentParser[] $VALUES -> a
+    baritone.command.argparser.DefaultArgParsers$IntArgumentParser[] values() -> values
+    baritone.command.argparser.DefaultArgParsers$IntArgumentParser valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Class getTarget() -> a
+    java.lang.Object parseArg(baritone.api.command.argument.ICommandArgument) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argparser.DefaultArgParsers$LongArgumentParser -> baritone.el$e:
+    baritone.command.argparser.DefaultArgParsers$LongArgumentParser INSTANCE -> a
+    baritone.command.argparser.DefaultArgParsers$LongArgumentParser[] $VALUES -> a
+    baritone.command.argparser.DefaultArgParsers$LongArgumentParser[] values() -> values
+    baritone.command.argparser.DefaultArgParsers$LongArgumentParser valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.lang.Class getTarget() -> a
+    java.lang.Object parseArg(baritone.api.command.argument.ICommandArgument) -> a
+    void <clinit>() -> <clinit>
+baritone.command.argument.ArgConsumer -> baritone.em:
+    baritone.api.command.manager.ICommandManager manager -> a
+    baritone.api.command.datatypes.IDatatypeContext context -> a
+    java.util.LinkedList args -> a
+    java.util.Deque consumed -> a
+    void <init>(baritone.api.command.manager.ICommandManager,java.util.Deque,java.util.Deque) -> <init>
+    void <init>(baritone.api.command.manager.ICommandManager,java.util.List) -> <init>
+    java.util.LinkedList getArgs() -> a
+    boolean has(int) -> a
+    boolean hasAny() -> a
+    boolean hasExactly(int) -> b
+    boolean hasExactlyOne() -> b
+    baritone.api.command.argument.ICommandArgument peek$12d00f26() -> c
+    boolean is(java.lang.Class) -> a
+    java.lang.String peekString() -> a
+    java.lang.Object peekAsOrDefault$d36c42d$295d4f7(java.lang.Class) -> c
+    java.lang.Object peekAsOrNull(java.lang.Class) -> a
+    java.lang.Object peekDatatypeOrNull(baritone.api.command.datatypes.IDatatypePost) -> a
+    java.lang.Object peekDatatypePostOrNull(baritone.api.command.datatypes.IDatatypePost,java.lang.Object) -> a
+    baritone.api.command.argument.ICommandArgument get() -> a
+    java.lang.String getString() -> b
+    java.lang.Enum getEnum(java.lang.Class) -> a
+    java.lang.Object getAs(java.lang.Class) -> b
+    java.lang.Object getAsOrDefault(java.lang.Class,java.lang.Object) -> a
+    java.lang.Object getDatatypePost(baritone.api.command.datatypes.IDatatypePost,java.lang.Object) -> b
+    java.lang.Object getDatatypePostOrDefault$6435a443(baritone.api.command.datatypes.IDatatypePost,java.lang.Object) -> c
+    java.lang.Object getDatatypeFor(baritone.api.command.datatypes.IDatatypeFor) -> a
+    java.lang.String rawRest() -> c
+    void requireMin(int) -> a
+    void requireMax(int) -> b
+    void requireExactly(int) -> c
+    baritone.api.command.argument.ICommandArgument consumed() -> b
+    java.lang.String consumedString() -> d
+    baritone.command.argument.ArgConsumer copy() -> a
+baritone.command.argument.ArgConsumer$Context -> baritone.em$a:
+    baritone.command.argument.ArgConsumer this$0 -> a
+    void <init>(baritone.command.argument.ArgConsumer) -> <init>
+    baritone.api.IBaritone getBaritone() -> a
+    baritone.api.command.argument.IArgConsumer getConsumer() -> a
+    void <init>(baritone.command.argument.ArgConsumer,byte) -> <init>
+baritone.command.argument.CommandArgument -> baritone.en:
+    int index -> a
+    java.lang.String value -> a
+    java.lang.String rawRest -> b
+    void <init>(int,java.lang.String,java.lang.String) -> <init>
+    int getIndex() -> a
+    java.lang.String getValue() -> a
+    java.lang.String getRawRest() -> b
+    java.lang.Enum getEnum(java.lang.Class) -> a
+    java.lang.Object getAs(java.lang.Class) -> a
+    boolean is(java.lang.Class) -> a
+    baritone.api.command.exception.CommandInvalidTypeException lambda$getEnum$1(java.lang.Class) -> a
+    boolean lambda$getEnum$0(java.lang.Enum) -> a
+baritone.command.argument.CommandArguments -> baritone.eo:
+    java.util.regex.Pattern ARG_PATTERN -> a
+    java.util.List from$15e38f0e(java.lang.String) -> a
+    baritone.command.argument.CommandArgument unknown() -> a
+    void <clinit>() -> <clinit>
+baritone.command.defaults.AxisCommand -> baritone.ep:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.BlacklistCommand -> baritone.eq:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.BuildCommand -> baritone.er:
+    java.io.File schematicsDir -> a
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    void <clinit>() -> <clinit>
+baritone.command.defaults.ClickCommand -> baritone.es:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ComeCommand -> baritone.et:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.CommandAlias -> baritone.eu:
+    java.lang.String shortDesc -> a
+    java.lang.String target -> b
+    void <init>(baritone.api.IBaritone,java.util.List,java.lang.String,java.lang.String) -> <init>
+    void <init>(baritone.api.IBaritone,java.lang.String,java.lang.String,java.lang.String) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ETACommand -> baritone.ev:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ExecutionControlCommands -> baritone.ew:
+    baritone.api.command.Command pauseCommand -> a
+    baritone.api.command.Command resumeCommand -> b
+    baritone.api.command.Command pausedCommand -> c
+    baritone.api.command.Command cancelCommand -> d
+    void <init>(baritone.api.IBaritone) -> <init>
+baritone.command.defaults.ExecutionControlCommands$1 -> baritone.ex:
+    boolean[] val$paused -> a
+    baritone.api.IBaritone val$baritone -> a
+    baritone.command.defaults.ExecutionControlCommands this$0 -> a
+    void <init>(baritone.command.defaults.ExecutionControlCommands,boolean[],baritone.api.IBaritone) -> <init>
+    boolean isActive() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    boolean isTemporary() -> b
+    void onLostControl() -> a
+    double priority() -> a
+    java.lang.String displayName0() -> b
+baritone.command.defaults.ExecutionControlCommands$2 -> baritone.ey:
+    boolean[] val$paused -> a
+    baritone.command.defaults.ExecutionControlCommands this$0 -> a
+    void <init>(baritone.command.defaults.ExecutionControlCommands,baritone.api.IBaritone,java.lang.String[],boolean[]) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ExecutionControlCommands$3 -> baritone.ez:
+    boolean[] val$paused -> a
+    baritone.command.defaults.ExecutionControlCommands this$0 -> a
+    void <init>(baritone.command.defaults.ExecutionControlCommands,baritone.api.IBaritone,java.lang.String[],boolean[]) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ExecutionControlCommands$4 -> baritone.fa:
+    boolean[] val$paused -> a
+    baritone.command.defaults.ExecutionControlCommands this$0 -> a
+    void <init>(baritone.command.defaults.ExecutionControlCommands,baritone.api.IBaritone,java.lang.String[],boolean[]) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ExecutionControlCommands$5 -> baritone.fb:
+    boolean[] val$paused -> a
+    baritone.command.defaults.ExecutionControlCommands this$0 -> a
+    void <init>(baritone.command.defaults.ExecutionControlCommands,baritone.api.IBaritone,java.lang.String[],boolean[]) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ExploreCommand -> baritone.fc:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ExploreFilterCommand -> baritone.fd:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.FarmCommand -> baritone.fe:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.FindCommand -> baritone.ff:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    hh positionToComponent(baritone.api.utils.BetterBlockPos) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    void lambda$execute$2(baritone.command.defaults.FindCommand,hh) -> a
+    hh[] lambda$execute$1(int) -> a
+    java.util.stream.Stream lambda$execute$0(baritone.api.utils.BetterBlockPos,aow) -> a
+baritone.command.defaults.FollowCommand -> baritone.command.defaults.FollowCommand:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    boolean lambda$execute$1(java.util.List,vg) -> a
+    boolean lambda$null$0(vg,java.lang.Class) -> a
+baritone.command.defaults.FollowCommand$FollowGroup -> baritone.command.defaults.FollowCommand$FollowGroup:
+    baritone.command.defaults.FollowCommand$FollowGroup ENTITIES -> a
+    baritone.command.defaults.FollowCommand$FollowGroup PLAYERS -> b
+    java.util.function.Predicate filter -> a
+    baritone.command.defaults.FollowCommand$FollowGroup[] $VALUES -> a
+    baritone.command.defaults.FollowCommand$FollowGroup[] values() -> values
+    baritone.command.defaults.FollowCommand$FollowGroup valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,java.util.function.Predicate) -> <init>
+    void <clinit>() -> <clinit>
+baritone.command.defaults.FollowCommand$FollowList -> baritone.command.defaults.FollowCommand$FollowList:
+    baritone.command.defaults.FollowCommand$FollowList ENTITY -> a
+    baritone.command.defaults.FollowCommand$FollowList PLAYER -> b
+    baritone.api.command.datatypes.IDatatypeFor datatype -> a
+    baritone.command.defaults.FollowCommand$FollowList[] $VALUES -> a
+    baritone.command.defaults.FollowCommand$FollowList[] values() -> values
+    baritone.command.defaults.FollowCommand$FollowList valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,baritone.api.command.datatypes.IDatatypeFor) -> <init>
+    void <clinit>() -> <clinit>
+baritone.command.defaults.FollowCommand$NoEntitiesException -> baritone.command.defaults.FollowCommand$a:
+    void <init>() -> <init>
+    void <init>(java.lang.String) -> <init>
+    void <init>(int) -> <init>
+baritone.command.defaults.ForceCancelCommand -> baritone.fg:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.GcCommand -> baritone.fh:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.GoalCommand -> baritone.fi:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.GotoCommand -> baritone.fj:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.HelpCommand -> baritone.fk:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    hh lambda$execute$2(java.lang.String,baritone.api.command.ICommand) -> a
+    void lambda$execute$1() -> a
+    boolean lambda$execute$0(baritone.api.command.ICommand) -> a
+baritone.command.defaults.InvertCommand -> baritone.fl:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.LitematicaCommand -> baritone.fm:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.MineCommand -> baritone.fn:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.PathCommand -> baritone.fo:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ProcCommand -> baritone.fp:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ReloadAllCommand -> baritone.fq:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.RenderCommand -> baritone.fr:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.RepackCommand -> baritone.fs:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.SaveAllCommand -> baritone.ft:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.SchematicaCommand -> baritone.fu:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.SelCommand -> baritone.fv:
+    baritone.api.selection.ISelectionManager manager -> a
+    baritone.api.utils.BetterBlockPos pos1 -> a
+    baritone.api.schematic.ISchematic clipboard -> a
+    fq clipboardOffset -> a
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    baritone.api.utils.BetterBlockPos access$000(baritone.command.defaults.SelCommand) -> a
+baritone.command.defaults.SelCommand$1 -> baritone.fw:
+    baritone.command.defaults.SelCommand this$0 -> a
+    void <init>(baritone.command.defaults.SelCommand) -> <init>
+    void onRenderPass(baritone.api.event.events.RenderEvent) -> a
+baritone.command.defaults.SelCommand$2 -> baritone.fx:
+    awt[][][] val$blockstates -> b
+    fq val$size -> a
+    baritone.command.defaults.SelCommand this$0 -> a
+    void <init>(baritone.command.defaults.SelCommand,awt[][][],fq) -> <init>
+baritone.command.defaults.SelCommand$Action -> baritone.fv$a:
+    baritone.command.defaults.SelCommand$Action POS1 -> a
+    baritone.command.defaults.SelCommand$Action POS2 -> b
+    baritone.command.defaults.SelCommand$Action CLEAR -> c
+    baritone.command.defaults.SelCommand$Action UNDO -> d
+    baritone.command.defaults.SelCommand$Action SET -> e
+    baritone.command.defaults.SelCommand$Action WALLS -> f
+    baritone.command.defaults.SelCommand$Action SHELL -> g
+    baritone.command.defaults.SelCommand$Action CLEARAREA -> h
+    baritone.command.defaults.SelCommand$Action REPLACE -> i
+    baritone.command.defaults.SelCommand$Action EXPAND -> j
+    baritone.command.defaults.SelCommand$Action COPY -> k
+    baritone.command.defaults.SelCommand$Action PASTE -> l
+    baritone.command.defaults.SelCommand$Action CONTRACT -> m
+    baritone.command.defaults.SelCommand$Action SHIFT -> n
+    java.lang.String[] names -> a
+    baritone.command.defaults.SelCommand$Action[] $VALUES -> a
+    baritone.command.defaults.SelCommand$Action[] values() -> values
+    baritone.command.defaults.SelCommand$Action valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,java.lang.String[]) -> <init>
+    baritone.command.defaults.SelCommand$Action getByName(java.lang.String) -> a
+    void <clinit>() -> <clinit>
+baritone.command.defaults.SelCommand$TransformTarget -> baritone.fv$b:
+    baritone.command.defaults.SelCommand$TransformTarget ALL -> a
+    baritone.command.defaults.SelCommand$TransformTarget NEWEST -> b
+    baritone.command.defaults.SelCommand$TransformTarget OLDEST -> c
+    java.util.function.Function transform -> a
+    java.lang.String[] names -> a
+    baritone.command.defaults.SelCommand$TransformTarget[] $VALUES -> a
+    baritone.command.defaults.SelCommand$TransformTarget[] values() -> values
+    baritone.command.defaults.SelCommand$TransformTarget valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,java.util.function.Function,java.lang.String[]) -> <init>
+    baritone.command.defaults.SelCommand$TransformTarget getByName(java.lang.String) -> a
+    baritone.api.selection.ISelection[] lambda$static$2(baritone.api.selection.ISelection[]) -> a
+    baritone.api.selection.ISelection[] lambda$static$1(baritone.api.selection.ISelection[]) -> b
+    baritone.api.selection.ISelection[] lambda$static$0(baritone.api.selection.ISelection[]) -> c
+    void <clinit>() -> <clinit>
+baritone.command.defaults.SetCommand -> baritone.fy:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    boolean lambda$execute$5(java.lang.String,baritone.api.Settings$Setting) -> a
+    hh lambda$execute$4(baritone.api.Settings$Setting) -> a
+    void lambda$execute$3(java.lang.String,boolean) -> d
+    int lambda$execute$2(baritone.api.Settings$Setting,baritone.api.Settings$Setting) -> a
+    boolean lambda$execute$1(java.lang.String,baritone.api.Settings$Setting) -> b
+    boolean lambda$execute$0(baritone.api.Settings$Setting) -> a
+baritone.command.defaults.SurfaceCommand -> baritone.fz:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.ThisWayCommand -> baritone.ga:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.TunnelCommand -> baritone.gb:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.TunnelCommand$1 -> baritone.gc:
+    int[] $SwitchMap$net$minecraft$util$EnumFacing -> a
+    void <clinit>() -> <clinit>
+baritone.command.defaults.VersionCommand -> baritone.gd:
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+baritone.command.defaults.WaypointsCommand -> baritone.ge:
+    java.util.Map deletedWaypoints -> a
+    void <init>(baritone.api.IBaritone) -> <init>
+    void execute(java.lang.String,baritone.api.command.argument.IArgConsumer) -> a
+    java.lang.String getShortDesc() -> a
+    java.util.List getLongDesc() -> b
+    java.util.List lambda$execute$6(baritone.api.cache.IWorldData) -> a
+    void lambda$execute$5() -> a
+    java.lang.String lambda$execute$4(baritone.api.cache.IWaypoint) -> a
+    java.util.List lambda$execute$3(baritone.api.cache.IWorldData) -> b
+    void lambda$execute$2(baritone.api.cache.IWaypoint$Tag) -> a
+    hh lambda$execute$1(java.util.function.BiFunction,baritone.command.defaults.WaypointsCommand$Action,baritone.api.cache.IWaypoint) -> a
+    hh lambda$execute$0(java.lang.String,baritone.api.cache.IWaypoint,baritone.command.defaults.WaypointsCommand$Action) -> a
+baritone.command.defaults.WaypointsCommand$Action -> baritone.ge$a:
+    baritone.command.defaults.WaypointsCommand$Action LIST -> a
+    baritone.command.defaults.WaypointsCommand$Action CLEAR -> b
+    baritone.command.defaults.WaypointsCommand$Action SAVE -> c
+    baritone.command.defaults.WaypointsCommand$Action INFO -> d
+    baritone.command.defaults.WaypointsCommand$Action DELETE -> e
+    baritone.command.defaults.WaypointsCommand$Action RESTORE -> f
+    baritone.command.defaults.WaypointsCommand$Action GOAL -> g
+    baritone.command.defaults.WaypointsCommand$Action GOTO -> h
+    java.lang.String[] names -> a
+    baritone.command.defaults.WaypointsCommand$Action[] $VALUES -> a
+    baritone.command.defaults.WaypointsCommand$Action[] values() -> values
+    baritone.command.defaults.WaypointsCommand$Action valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,java.lang.String[]) -> <init>
+    baritone.command.defaults.WaypointsCommand$Action getByName(java.lang.String) -> a
+    java.lang.String[] access$000(baritone.command.defaults.WaypointsCommand$Action) -> a
+    void <clinit>() -> <clinit>
+baritone.command.manager.CommandManager -> baritone.gf:
+    baritone.api.utils.NotificationHelper registry$51316580 -> a
+    baritone.Baritone baritone -> a
+    void <init>(baritone.Baritone) -> <init>
+    baritone.api.IBaritone getBaritone() -> a
+    baritone.api.utils.NotificationHelper getRegistry$5c45ca81() -> a
+    baritone.api.command.ICommand getCommand(java.lang.String) -> a
+    boolean execute(java.lang.String) -> a
+    boolean execute(rr) -> a
+    baritone.command.manager.CommandManager$ExecutionWrapper from(rr) -> a
+    rr expand$26e43570(java.lang.String) -> a
+baritone.command.manager.CommandManager$ExecutionWrapper -> baritone.gf$a:
+    baritone.api.command.ICommand command -> a
+    java.lang.String label -> a
+    baritone.command.argument.ArgConsumer args -> a
+    void <init>(baritone.api.command.ICommand,java.lang.String,baritone.command.argument.ArgConsumer) -> <init>
+    void execute() -> a
+    void <init>(baritone.api.command.ICommand,java.lang.String,baritone.command.argument.ArgConsumer,byte) -> <init>
+baritone.event.GameEventHandler -> baritone.gg:
+    baritone.Baritone baritone -> a
+    java.util.List listeners -> a
+    void <init>(baritone.Baritone) -> <init>
+    void onTick(baritone.api.event.events.TickEvent) -> a
+    void onPlayerUpdate(baritone.api.event.events.PlayerUpdateEvent) -> a
+    void onSendChatMessage(baritone.api.event.events.ChatEvent) -> a
+    void onChunkEvent(baritone.api.event.events.ChunkEvent) -> a
+    void onRenderPass(baritone.api.event.events.RenderEvent) -> a
+    void onWorldEvent(baritone.api.event.events.WorldEvent) -> a
+    void onSendPacket$1f25927f(baritone.cache.ChunkPacker) -> a
+    void onReceivePacket$1f25927f(baritone.cache.ChunkPacker) -> b
+    void onPlayerRotationMove(baritone.api.event.events.RotationMoveEvent) -> a
+    void onPlayerSprintState(baritone.api.event.events.SprintStateEvent) -> a
+    void onBlockInteract(baritone.api.event.events.BlockInteractEvent) -> a
+    void onPlayerDeath() -> b
+    void onPathEvent(baritone.api.event.events.PathEvent) -> a
+    void registerEventListener(baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onPathEvent$13(baritone.api.event.events.PathEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onBlockInteract$12(baritone.api.event.events.BlockInteractEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onPlayerSprintState$11(baritone.api.event.events.SprintStateEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onPlayerRotationMove$10(baritone.api.event.events.RotationMoveEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onReceivePacket$9$69ed122f(baritone.cache.ChunkPacker,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onSendPacket$8$69ed122f(baritone.cache.ChunkPacker,baritone.api.event.listener.IGameEventListener) -> b
+    void lambda$onWorldEvent$7(baritone.api.event.events.WorldEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onRenderPass$6(baritone.api.event.events.RenderEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onChunkEvent$5(baritone.api.event.events.ChunkEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onChunkEvent$4(amu,baritone.api.event.events.ChunkEvent,baritone.cache.WorldData) -> a
+    void lambda$onSendChatMessage$2(baritone.api.event.events.ChatEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onPlayerUpdate$1(baritone.api.event.events.PlayerUpdateEvent,baritone.api.event.listener.IGameEventListener) -> a
+    void lambda$onTick$0(baritone.api.event.events.TickEvent,baritone.api.event.listener.IGameEventListener) -> a
+baritone.launch.BaritoneTweaker -> baritone.launch.BaritoneTweaker:
+    void <init>() -> <init>
+    void injectIntoClassLoader(net.minecraft.launchwrapper.LaunchClassLoader) -> injectIntoClassLoader
+    boolean lambda$injectIntoClassLoader$0(java.lang.String) -> lambda$injectIntoClassLoader$0
+baritone.launch.mixins.MixinAnvilChunkLoader -> baritone.launch.mixins.MixinAnvilChunkLoader:
+    java.io.File d -> d
+    void <init>() -> <init>
+    java.io.File getChunkSaveLocation() -> getChunkSaveLocation
+baritone.launch.mixins.MixinBitArray -> baritone.launch.mixins.MixinBitArray:
+    long[] a -> a
+    int b -> b
+    long c -> c
+    int d -> d
+    void <init>() -> <init>
+    int[] toArray() -> toArray
+    long getMaxEntryValue() -> getMaxEntryValue
+    int getBitsPerEntry() -> getBitsPerEntry
+baritone.launch.mixins.MixinBlockStateContainer -> baritone.launch.mixins.MixinBlockStateContainer:
+    qw b -> b
+    aya c -> c
+    void <init>() -> <init>
+    aya getPalette() -> getPalette
+    qw getStorage() -> getStorage
+    awt getAtPalette(int) -> getAtPalette
+    int[] storageArray() -> storageArray
+baritone.launch.mixins.MixinChatTabCompleter -> baritone.launch.mixins.MixinChatTabCompleter:
+    void <init>() -> <init>
+    void onComplete(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onComplete
+baritone.launch.mixins.MixinChunkProviderClient -> baritone.launch.mixins.MixinChunkProviderClient:
+    it.unimi.dsi.fastutil.longs.Long2ObjectMap c -> c
+    void <init>() -> <init>
+    it.unimi.dsi.fastutil.longs.Long2ObjectMap loadedChunks() -> loadedChunks
+baritone.launch.mixins.MixinChunkProviderServer -> baritone.launch.mixins.MixinChunkProviderServer:
+    ayf d -> d
+    void <init>() -> <init>
+    ayf getChunkLoader() -> getChunkLoader
+baritone.launch.mixins.MixinChunkRenderContainer -> baritone.launch.mixins.MixinChunkRenderContainer:
+    void <init>() -> <init>
+    et getPosition(bxr) -> getPosition
+baritone.launch.mixins.MixinChunkRenderWorker -> baritone.launch.mixins.MixinChunkRenderWorker:
+    void <init>() -> <init>
+    boolean a(et,amu) -> a
+    boolean isChunkExisting(bxn,et,amu) -> isChunkExisting
+baritone.launch.mixins.MixinEntityLivingBase -> baritone.launch.mixins.MixinEntityLivingBase:
+    baritone.api.event.events.RotationMoveEvent jumpRotationEvent -> jumpRotationEvent
+    void <init>(amu,baritone.api.event.events.RotationMoveEvent) -> <init>
+    void preMoveRelative(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> preMoveRelative
+    float overrideYaw(vp) -> overrideYaw
+    void travel(vp,float,float,float,float) -> travel
+baritone.launch.mixins.MixinEntityPlayerSP -> baritone.launch.mixins.MixinEntityPlayerSP:
+    void <init>() -> <init>
+    void sendChatMessage(java.lang.String,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> sendChatMessage
+    void onPreUpdate(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onPreUpdate
+    void onPostUpdate(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onPostUpdate
+    boolean isAllowFlying(aeb) -> isAllowFlying
+    boolean isKeyDown(bhy) -> isKeyDown
+    void updateRidden(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> updateRidden
+baritone.launch.mixins.MixinEntityRenderer -> baritone.launch.mixins.MixinEntityRenderer:
+    void <init>() -> <init>
+    void renderWorldPass(int,float,long,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> renderWorldPass
+baritone.launch.mixins.MixinGuiScreen -> baritone.launch.mixins.MixinGuiScreen:
+    void <init>() -> <init>
+    void openLink(java.net.URI) -> openLink
+baritone.launch.mixins.MixinItemStack -> baritone.launch.mixins.MixinItemStack:
+    ain e -> e
+    int h -> h
+    int baritoneHash -> baritoneHash
+    void <init>() -> <init>
+    void recalculateHash() -> recalculateHash
+    void onInit(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onInit
+    void onItemDamageSet(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onItemDamageSet
+    int getBaritoneHash() -> getBaritoneHash
+baritone.launch.mixins.MixinItemTool -> baritone.launch.mixins.MixinItemTool:
+    ain$a d -> d
+    void <init>() -> <init>
+    int getHarvestLevel() -> getHarvestLevel
+baritone.launch.mixins.MixinMinecraft -> baritone.launch.mixins.MixinMinecraft:
+    bud h -> h
+    bsb f -> f
+    void <init>() -> <init>
+    void postInit(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postInit
+    void runTick(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> runTick
+    void preLoadWorld(bsb,java.lang.String,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> preLoadWorld
+    void postLoadWorld(bsb,java.lang.String,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postLoadWorld
+    boolean isAllowUserInput(blk) -> isAllowUserInput
+    void onBlockBreak(org.spongepowered.asm.mixin.injection.callback.CallbackInfo,et) -> onBlockBreak
+    void onBlockUse(org.spongepowered.asm.mixin.injection.callback.CallbackInfo,ub[],int,int,ub,aip,et,int,ud) -> onBlockUse
+baritone.launch.mixins.MixinNBTTagLongArray -> baritone.launch.mixins.MixinNBTTagLongArray:
+    void <init>() -> <init>
+    long[] getLongArray() -> getLongArray
+baritone.launch.mixins.MixinNetHandlerPlayClient -> baritone.launch.mixins.MixinNetHandlerPlayClient:
+    void <init>() -> <init>
+    void preRead(je,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> preRead
+    void postHandleChunkData(je,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postHandleChunkData
+    void postHandleBlockChange(ij,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postHandleBlockChange
+    void postHandleMultiBlockChange(io,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postHandleMultiBlockChange
+    void onPlayerDeath(jo,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onPlayerDeath
+baritone.launch.mixins.MixinNetworkManager -> baritone.launch.mixins.MixinNetworkManager:
+    io.netty.channel.Channel k -> k
+    hu h -> h
+    void <init>() -> <init>
+    void preDispatchPacket(ht,io.netty.util.concurrent.GenericFutureListener[],org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> preDispatchPacket
+    void postDispatchPacket(ht,io.netty.util.concurrent.GenericFutureListener[],org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postDispatchPacket
+    void preProcessPacket(io.netty.channel.ChannelHandlerContext,ht,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> preProcessPacket
+    void postProcessPacket(io.netty.channel.ChannelHandlerContext,ht,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postProcessPacket
+baritone.launch.mixins.MixinPlayerControllerMP -> baritone.launch.mixins.MixinPlayerControllerMP:
+    void <init>() -> <init>
+    void setIsHittingBlock(boolean) -> setIsHittingBlock
+    et getCurrentBlock() -> getCurrentBlock
+    void callSyncCurrentPlayItem() -> callSyncCurrentPlayItem
+baritone.launch.mixins.MixinRenderChunk -> baritone.launch.mixins.MixinRenderChunk:
+    void <init>() -> <init>
+    boolean isEmpty(and) -> isEmpty
+    awt getBlockState(and,et) -> getBlockState
+baritone.launch.mixins.MixinRenderList -> baritone.launch.mixins.MixinRenderList:
+    void <init>() -> <init>
+    void popMatrix() -> popMatrix
+baritone.launch.mixins.MixinStateImplementation -> baritone.launch.mixins.MixinStateImplementation:
+    com.google.common.collect.ImmutableMap b -> b
+    int hashCode -> hashCode
+    void <init>() -> <init>
+    void onInit(org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onInit
+    int hashCode() -> hashCode
+baritone.launch.mixins.MixinTabCompleter -> baritone.launch.mixins.MixinTabCompleter:
+    bje a -> a
+    boolean d -> d
+    boolean dontComplete -> dontComplete
+    void <init>() -> <init>
+    void a(java.lang.String[]) -> a
+    void onRequestCompletions(java.lang.String,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> onRequestCompletions
+baritone.launch.mixins.MixinVboRenderList -> baritone.launch.mixins.MixinVboRenderList:
+    void <init>() -> <init>
+    void popMatrix() -> popMatrix
+baritone.launch.mixins.MixinWorldClient -> baritone.launch.mixins.MixinWorldClient:
+    void <init>() -> <init>
+    void preDoPreChunk(int,int,boolean,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> preDoPreChunk
+    void postDoPreChunk(int,int,boolean,org.spongepowered.asm.mixin.injection.callback.CallbackInfo) -> postDoPreChunk
+baritone.pathing.calc.AbstractNodeCostSearch -> baritone.gh:
+    int startX -> a
+    int startY -> b
+    int startZ -> c
+    baritone.api.pathing.goals.Goal goal -> a
+    baritone.pathing.movement.CalculationContext context -> a
+    it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap map -> a
+    baritone.pathing.calc.PathNode startNode -> a
+    baritone.pathing.calc.PathNode mostRecentConsidered -> b
+    baritone.pathing.calc.PathNode[] bestSoFar -> a
+    boolean isFinished -> b
+    boolean cancelRequested -> a
+    double[] COEFFICIENTS -> a
+    void <init>(int,int,int,baritone.api.pathing.goals.Goal,baritone.pathing.movement.CalculationContext) -> <init>
+    void cancel() -> a
+    baritone.api.utils.PathCalculationResult calculate(long,long) -> a
+    java.util.Optional calculate0(long,long) -> a
+    double getDistFromStartSq(baritone.pathing.calc.PathNode) -> a
+    baritone.pathing.calc.PathNode getNodeAtPosition(int,int,int,long) -> a
+    java.util.Optional pathToMostRecentNodeConsidered() -> a
+    java.util.Optional bestPathSoFar() -> b
+    java.util.Optional bestSoFar(boolean,int) -> a
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    baritone.api.utils.BetterBlockPos getStart() -> a
+    baritone.api.pathing.calc.IPath lambda$pathToMostRecentNodeConsidered$0(baritone.pathing.calc.PathNode) -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.calc.BellmanFordPathFinder -> baritone.gi:
+    baritone.pathing.movement.CalculationContext calcContext -> a
+    void <init>(int,int,int,baritone.api.pathing.goals.Goal,baritone.pathing.movement.CalculationContext) -> <init>
+    java.util.Optional calculate0(long,long) -> a
+baritone.pathing.calc.DijkstraPathFinder -> baritone.gj:
+    baritone.pathing.movement.CalculationContext calcContext -> a
+    boolean failing -> b
+    void <init>(int,int,int,baritone.api.pathing.goals.Goal,baritone.pathing.movement.CalculationContext) -> <init>
+    void logToFile(java.lang.String) -> c
+    java.util.Optional calculate0(long,long) -> a
+baritone.pathing.calc.Path -> baritone.gk:
+    baritone.api.utils.BetterBlockPos start -> a
+    baritone.api.utils.BetterBlockPos end -> b
+    java.util.List path -> a
+    java.util.List movements -> b
+    java.util.List nodes -> c
+    baritone.api.pathing.goals.Goal goal -> a
+    int numNodes -> a
+    baritone.pathing.movement.CalculationContext context -> a
+    boolean verified -> a
+    void <init>(baritone.pathing.calc.PathNode,baritone.pathing.calc.PathNode,int,baritone.api.pathing.goals.Goal,baritone.pathing.movement.CalculationContext) -> <init>
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    boolean assembleMovements() -> a
+    baritone.pathing.movement.Movement runBackwards(baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,double) -> a
+    baritone.api.pathing.calc.IPath postProcess() -> a
+    java.util.List movements() -> a
+    java.util.List positions() -> b
+    int getNumNodesConsidered() -> b
+    baritone.api.utils.BetterBlockPos getSrc() -> a
+    baritone.api.utils.BetterBlockPos getDest() -> b
+    void lambda$postProcess$0(baritone.pathing.movement.Movement) -> a
+baritone.pathing.calc.PathNode -> baritone.gl:
+    int x -> a
+    int y -> b
+    int z -> c
+    double estimatedCostToGoal -> b
+    double cost -> a
+    baritone.pathing.calc.PathNode previous -> a
+    int heapPosition -> d
+    void <init>(int,int,int,baritone.api.pathing.goals.Goal) -> <init>
+    int hashCode() -> hashCode
+    boolean equals(java.lang.Object) -> equals
+baritone.pathing.calc.openset.BinaryHeapOpenSet -> baritone.gm:
+    baritone.pathing.calc.PathNode[] array -> a
+    int size -> a
+    void <init>() -> <init>
+    void <init>(byte) -> <init>
+    void insert(baritone.pathing.calc.PathNode) -> a
+baritone.pathing.movement.CalculationContext -> baritone.gn:
+    aip STACK_BUCKET_WATER -> a
+    boolean safeForThreadedUse -> a
+    baritone.api.IBaritone baritone -> a
+    amu world -> a
+    baritone.cache.WorldData worldData -> a
+    baritone.utils.BlockStateInterface bsi -> a
+    baritone.utils.ToolSet toolSet -> a
+    boolean hasWaterBucket -> b
+    boolean hasThrowaway -> c
+    boolean canSprint -> d
+    double placeBlockCost -> a
+    boolean allowBreak -> e
+    java.util.List allowBreakAnyway -> a
+    boolean allowParkour -> f
+    boolean allowParkourPlace -> g
+    boolean allowJumpAt256 -> h
+    boolean allowParkourAscend -> i
+    boolean assumeWalkOnWater -> j
+    int frostWalker -> a
+    boolean allowDiagonalDescend -> k
+    boolean allowDiagonalAscend -> l
+    boolean allowDownward -> m
+    int maxFallHeightNoWater -> b
+    int maxFallHeightBucket -> c
+    double waterWalkSpeed -> b
+    double breakBlockAdditionalCost -> c
+    double backtrackCostFavoringCoefficient -> d
+    double jumpPenalty -> e
+    double walkOnWaterOnePenalty -> f
+    baritone.utils.pathing.BetterWorldBorder worldBorder -> a
+    baritone.pathing.precompute.PrecomputedData precomputedData -> a
+    void <init>(baritone.api.IBaritone) -> <init>
+    void <init>(baritone.api.IBaritone,boolean) -> <init>
+    awt get(int,int,int) -> a
+    awt get(et) -> a
+    aow getBlock(int,int,int) -> a
+    double costOfPlacingAt(int,int,int,awt) -> a
+    double breakCostMultiplierAt(int,int,int,awt) -> b
+    double placeBucketCost() -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.Movement -> baritone.go:
+    fa[] HORIZONTALS_BUT_ALSO_DOWN_____SO_EVERY_DIRECTION_EXCEPT_UP -> a
+    baritone.api.IBaritone baritone -> a
+    baritone.api.utils.IPlayerContext ctx -> a
+    baritone.pathing.movement.MovementState currentState -> a
+    baritone.api.utils.BetterBlockPos src -> a
+    baritone.api.utils.BetterBlockPos dest -> b
+    baritone.api.utils.BetterBlockPos[] positionsToBreak -> a
+    baritone.api.utils.BetterBlockPos positionToPlace -> c
+    java.lang.Double cost -> a
+    java.util.List toBreakCached -> a
+    java.util.List toPlaceCached -> b
+    java.util.List toWalkIntoCached -> c
+    java.util.Set validPositionsCached -> a
+    java.lang.Boolean calculatedWhileLoaded -> a
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos[],baritone.api.utils.BetterBlockPos) -> <init>
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos[]) -> <init>
+    double getCost() -> a
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    java.util.Set getValidPositions() -> b
+    boolean playerInValidPosition() -> b
+    baritone.api.pathing.movement.MovementStatus update() -> a
+    boolean prepared(baritone.pathing.movement.MovementState) -> a
+    boolean safeToCancel() -> a
+    boolean safeToCancel(baritone.pathing.movement.MovementState) -> b
+    baritone.api.utils.BetterBlockPos getSrc() -> a
+    baritone.api.utils.BetterBlockPos getDest() -> b
+    void reset() -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    et getDirection() -> a
+    void checkLoadedChunk(baritone.pathing.movement.CalculationContext) -> a
+    java.util.List toBreak(baritone.utils.BlockStateInterface) -> a
+    java.util.List toPlace(baritone.utils.BlockStateInterface) -> b
+    java.util.List toWalkInto(baritone.utils.BlockStateInterface) -> c
+    et[] toBreakAll() -> a
+    void lambda$update$2(baritone.api.utils.input.Input,java.lang.Boolean) -> a
+    void lambda$update$1(baritone.api.utils.Rotation) -> a
+    void lambda$update$0(et) -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.MovementHelper -> baritone.gp:
+    boolean avoidBreaking(baritone.utils.BlockStateInterface,int,int,int,awt) -> a
+    boolean avoidAdjacentBreaking(baritone.utils.BlockStateInterface,int,int,int,boolean) -> a
+    boolean canWalkThrough(baritone.api.utils.IPlayerContext,baritone.api.utils.BetterBlockPos) -> a
+    boolean canWalkThrough(baritone.utils.BlockStateInterface,int,int,int) -> a
+    boolean canWalkThrough(baritone.pathing.movement.CalculationContext,int,int,int,awt) -> a
+    boolean canWalkThrough(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+    boolean canWalkThrough(baritone.utils.BlockStateInterface,int,int,int,awt) -> b
+    int canWalkThroughBlockState$beacba6(awt) -> a
+    boolean canWalkThroughPosition(baritone.utils.BlockStateInterface,int,int,int,awt) -> c
+    int fullyPassableBlockState$beacba6(awt) -> b
+    boolean fullyPassable(baritone.pathing.movement.CalculationContext,int,int,int) -> b
+    boolean fullyPassable(baritone.pathing.movement.CalculationContext,int,int,int,awt) -> b
+    boolean fullyPassable(baritone.api.utils.IPlayerContext,et) -> a
+    boolean fullyPassablePosition(baritone.utils.BlockStateInterface,int,int,int,awt) -> d
+    boolean isReplaceable$134aad08(int,int,awt,baritone.utils.BlockStateInterface) -> a
+    boolean isDoorPassable(baritone.api.utils.IPlayerContext,et,et) -> a
+    boolean isGatePassable(baritone.api.utils.IPlayerContext,et,et) -> b
+    boolean avoidWalkingInto(aow) -> a
+    boolean canWalkOn(baritone.utils.BlockStateInterface,int,int,int,awt) -> e
+    int canWalkOnBlockState$beacba6(awt) -> c
+    boolean canWalkOnPosition(baritone.utils.BlockStateInterface,int,int,int,awt) -> f
+    boolean canWalkOn(baritone.pathing.movement.CalculationContext,int,int,int,awt) -> c
+    boolean canWalkOn(baritone.pathing.movement.CalculationContext,int,int,int) -> c
+    boolean canWalkOn(baritone.api.utils.IPlayerContext,et) -> b
+    boolean canWalkOn(baritone.api.utils.IPlayerContext,baritone.api.utils.BetterBlockPos) -> b
+    boolean canWalkOn(baritone.utils.BlockStateInterface,int,int,int) -> b
+    boolean canUseFrostWalker(baritone.pathing.movement.CalculationContext,awt) -> a
+    boolean canUseFrostWalker(baritone.api.utils.IPlayerContext,et) -> c
+    boolean mustBeSolidToWalkOn(baritone.pathing.movement.CalculationContext,int,int,int,awt) -> d
+    boolean canPlaceAgainst(baritone.utils.BlockStateInterface,int,int,int) -> c
+    boolean canPlaceAgainst(baritone.api.utils.IPlayerContext,et) -> d
+    double getMiningDurationTicks(baritone.pathing.movement.CalculationContext,int,int,int,boolean) -> a
+    double getMiningDurationTicks(baritone.pathing.movement.CalculationContext,int,int,int,awt,boolean) -> a
+    boolean isBottomSlab(awt) -> a
+    void switchToBestToolFor(baritone.api.utils.IPlayerContext,awt) -> a
+    void switchToBestToolFor(baritone.api.utils.IPlayerContext,awt,baritone.utils.ToolSet,boolean) -> a
+    void moveTowards(baritone.api.utils.IPlayerContext,baritone.pathing.movement.MovementState,et) -> a
+    boolean isWater(aow) -> b
+    boolean isWater(baritone.api.utils.IPlayerContext,et) -> e
+    boolean isLava(aow) -> c
+    boolean isLiquid(baritone.api.utils.IPlayerContext,et) -> f
+    boolean possiblyFlowing(awt) -> b
+    boolean isFlowing(int,int,int,awt,baritone.utils.BlockStateInterface) -> a
+    int attemptToPlaceABlock$b888ea(baritone.pathing.movement.MovementState,baritone.api.IBaritone,et,boolean,boolean) -> a
+    boolean isTransparent(aow) -> d
+baritone.pathing.movement.MovementHelper$PlaceResult -> baritone.gp$a:
+    int READY_TO_PLACE$c5a2b5 -> a
+    int ATTEMPTING$c5a2b5 -> b
+    int NO_OPTION$c5a2b5 -> c
+    int[] $VALUES$4fcb549a -> a
+    int[] values$3ef6a6bb() -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.MovementState -> baritone.gq:
+    baritone.api.pathing.movement.MovementStatus status -> a
+    baritone.pathing.movement.MovementState$MovementTarget target -> a
+    java.util.Map inputState -> a
+    void <init>() -> <init>
+    baritone.pathing.movement.MovementState setTarget(baritone.pathing.movement.MovementState$MovementTarget) -> a
+    baritone.pathing.movement.MovementState setInput(baritone.api.utils.input.Input,boolean) -> a
+baritone.pathing.movement.MovementState$MovementTarget -> baritone.gq$a:
+    baritone.api.utils.Rotation rotation -> a
+    boolean forceRotations -> a
+    void <init>() -> <init>
+    void <init>(baritone.api.utils.Rotation,boolean) -> <init>
+baritone.pathing.movement.Moves -> baritone.gr:
+    baritone.pathing.movement.Moves DOWNWARD -> a
+    baritone.pathing.movement.Moves PILLAR -> b
+    baritone.pathing.movement.Moves TRAVERSE_NORTH -> c
+    baritone.pathing.movement.Moves TRAVERSE_SOUTH -> d
+    baritone.pathing.movement.Moves TRAVERSE_EAST -> e
+    baritone.pathing.movement.Moves TRAVERSE_WEST -> f
+    baritone.pathing.movement.Moves ASCEND_NORTH -> g
+    baritone.pathing.movement.Moves ASCEND_SOUTH -> h
+    baritone.pathing.movement.Moves ASCEND_EAST -> i
+    baritone.pathing.movement.Moves ASCEND_WEST -> j
+    baritone.pathing.movement.Moves DESCEND_EAST -> k
+    baritone.pathing.movement.Moves DESCEND_WEST -> l
+    baritone.pathing.movement.Moves DESCEND_NORTH -> m
+    baritone.pathing.movement.Moves DESCEND_SOUTH -> n
+    baritone.pathing.movement.Moves DIAGONAL_NORTHEAST -> o
+    baritone.pathing.movement.Moves DIAGONAL_NORTHWEST -> p
+    baritone.pathing.movement.Moves DIAGONAL_SOUTHEAST -> q
+    baritone.pathing.movement.Moves DIAGONAL_SOUTHWEST -> r
+    baritone.pathing.movement.Moves PARKOUR_NORTH -> s
+    baritone.pathing.movement.Moves PARKOUR_SOUTH -> t
+    baritone.pathing.movement.Moves PARKOUR_EAST -> u
+    baritone.pathing.movement.Moves PARKOUR_WEST -> v
+    boolean dynamicXZ -> a
+    boolean dynamicY -> b
+    int xOffset -> a
+    int yOffset -> b
+    int zOffset -> c
+    baritone.pathing.movement.Moves[] $VALUES -> a
+    baritone.pathing.movement.Moves[] values() -> values
+    baritone.pathing.movement.Moves valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,int,int,int,boolean,boolean) -> <init>
+    void <init>(java.lang.String,int,int,int,int) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+    void <init>(java.lang.String,int,int,int,int,byte) -> <init>
+    void <init>(java.lang.String,int,int,int,int,boolean) -> <init>
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.Moves$1 -> baritone.gs:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$10 -> baritone.gt:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$11 -> baritone.gu:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$12 -> baritone.gv:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$13 -> baritone.gw:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$14 -> baritone.gx:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$15 -> baritone.gy:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$16 -> baritone.gz:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$17 -> baritone.ha:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$18 -> baritone.hb:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$19 -> baritone.hc:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$2 -> baritone.hd:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$20 -> baritone.he:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$21 -> baritone.hf:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$22 -> baritone.hg:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void apply(baritone.pathing.movement.CalculationContext,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+baritone.pathing.movement.Moves$3 -> baritone.hh:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$4 -> baritone.hi:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$5 -> baritone.hj:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$6 -> baritone.hk:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$7 -> baritone.hl:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$8 -> baritone.hm:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.Moves$9 -> baritone.hn:
+    void <init>(java.lang.String) -> <init>
+    baritone.pathing.movement.Movement apply0(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+baritone.pathing.movement.movements.MovementAscend -> baritone.ho:
+    int ticksWithoutPlacement -> a
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    void reset() -> a
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int,int,int) -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    boolean safeToCancel(baritone.pathing.movement.MovementState) -> b
+baritone.pathing.movement.movements.MovementDescend -> baritone.hp:
+    int numTicks -> a
+    boolean forceSafeMode -> a
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    void reset() -> a
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    void cost(baritone.pathing.movement.CalculationContext,int,int,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+    boolean dynamicFallCost$6e2985b9(baritone.pathing.movement.CalculationContext,int,int,int,double,awt,baritone.utils.pathing.MutableMoveResult) -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    boolean safeMode() -> c
+    boolean skipToAscend() -> d
+baritone.pathing.movement.movements.MovementDiagonal -> baritone.hq:
+    double SQRT_2 -> d
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,fa,fa,int) -> <init>
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,fa,int) -> <init>
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    boolean safeToCancel(baritone.pathing.movement.MovementState) -> b
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    void cost(baritone.pathing.movement.CalculationContext,int,int,int,int,int,baritone.utils.pathing.MutableMoveResult) -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    boolean prepared(baritone.pathing.movement.MovementState) -> a
+    java.util.List toBreak(baritone.utils.BlockStateInterface) -> a
+    java.util.List toWalkInto(baritone.utils.BlockStateInterface) -> c
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.movements.MovementDownward -> baritone.hr:
+    int numTicks -> a
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    void reset() -> a
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+baritone.pathing.movement.movements.MovementFall -> baritone.hs:
+    aip STACK_BUCKET_WATER -> a
+    aip STACK_BUCKET_EMPTY -> b
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    boolean safeToCancel(baritone.pathing.movement.MovementState) -> b
+    baritone.api.utils.BetterBlockPos[] buildPositionsToBreak(baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> a
+    boolean prepared(baritone.pathing.movement.MovementState) -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.movements.MovementParkour -> baritone.ht:
+    baritone.api.utils.BetterBlockPos[] EMPTY -> b
+    fa direction -> a
+    int dist -> a
+    boolean ascend -> a
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,int,fa,boolean) -> <init>
+    baritone.pathing.movement.movements.MovementParkour cost(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos,fa) -> a
+    void cost(baritone.pathing.movement.CalculationContext,int,int,int,fa,baritone.utils.pathing.MutableMoveResult) -> a
+    boolean checkOvershootSafety(baritone.utils.BlockStateInterface,int,int,int) -> d
+    double costFromJumpDistance(int) -> a
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    boolean safeToCancel(baritone.pathing.movement.MovementState) -> b
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.movement.movements.MovementPillar -> baritone.hu:
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int) -> a
+    boolean hasAgainst(baritone.pathing.movement.CalculationContext,int,int,int) -> d
+    et getAgainst(baritone.pathing.movement.CalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    boolean prepared(baritone.pathing.movement.MovementState) -> a
+    baritone.pathing.movement.MovementState$MovementTarget lambda$updateState$0(baritone.api.utils.Rotation) -> a
+baritone.pathing.movement.movements.MovementTraverse -> baritone.hv:
+    boolean wasTheBridgeBlockAlwaysThere -> a
+    void <init>(baritone.api.IBaritone,baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    void reset() -> a
+    double calculateCost(baritone.pathing.movement.CalculationContext) -> a
+    java.util.Set calculateValidPositions() -> a
+    double cost(baritone.pathing.movement.CalculationContext,int,int,int,int,int) -> a
+    baritone.pathing.movement.MovementState updateState(baritone.pathing.movement.MovementState) -> a
+    boolean safeToCancel(baritone.pathing.movement.MovementState) -> b
+    boolean prepared(baritone.pathing.movement.MovementState) -> a
+baritone.pathing.movement.movements.MovementTraverse$1 -> baritone.hw:
+    int[] $SwitchMap$baritone$pathing$movement$MovementHelper$PlaceResult -> a
+    void <clinit>() -> <clinit>
+baritone.pathing.path.CutoffPath -> baritone.hx:
+    java.util.List path -> b
+    java.util.List movements -> a
+    int numNodes -> a
+    baritone.api.pathing.goals.Goal goal -> a
+    void <init>(baritone.api.pathing.calc.IPath,int,int) -> <init>
+    void <init>(baritone.api.pathing.calc.IPath,int) -> <init>
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    java.util.List movements() -> a
+    java.util.List positions() -> b
+    int getNumNodesConsidered() -> b
+baritone.pathing.path.PathExecutor -> baritone.hy:
+    baritone.api.pathing.calc.IPath path -> a
+    int pathPosition -> a
+    int ticksAway -> b
+    int ticksOnCurrent -> c
+    java.lang.Double currentMovementOriginalCostEstimate -> a
+    java.lang.Integer costEstimateIndex -> a
+    boolean failed -> a
+    boolean recalcBP -> c
+    java.util.HashSet toBreak -> a
+    java.util.HashSet toPlace -> b
+    java.util.HashSet toWalkInto -> c
+    baritone.behavior.PathingBehavior behavior -> a
+    baritone.api.utils.IPlayerContext ctx -> a
+    boolean sprintNextTick -> b
+    void <init>(baritone.behavior.PathingBehavior,baritone.api.pathing.calc.IPath) -> <init>
+    boolean onTick() -> a
+    rr closestPathPos(baritone.api.pathing.calc.IPath) -> a
+    boolean possiblyOffPath(rr,double) -> a
+    rr overrideFall(baritone.pathing.movement.movements.MovementFall) -> a
+    boolean sprintableAscend(baritone.api.utils.IPlayerContext,baritone.pathing.movement.movements.MovementTraverse,baritone.pathing.movement.movements.MovementAscend,baritone.api.pathing.movement.IMovement) -> a
+    boolean canSprintFromDescendInto(baritone.api.utils.IPlayerContext,baritone.api.pathing.movement.IMovement,baritone.api.pathing.movement.IMovement) -> a
+    void onChangeInPathPosition() -> b
+    void clearKeys() -> a
+    void cancel() -> c
+    int getPosition() -> a
+    baritone.pathing.path.PathExecutor trySplice(baritone.pathing.path.PathExecutor) -> a
+    baritone.pathing.path.PathExecutor cutIfTooLong() -> a
+    baritone.api.pathing.calc.IPath getPath() -> a
+    boolean finished() -> b
+    baritone.pathing.path.PathExecutor lambda$trySplice$0(baritone.pathing.path.PathExecutor,baritone.pathing.path.SplicedPath) -> a
+baritone.pathing.path.SplicedPath -> baritone.hz:
+    java.util.List path -> a
+    java.util.List movements -> b
+    int numNodes -> a
+    baritone.api.pathing.goals.Goal goal -> a
+    void <init>(java.util.List,java.util.List,int,baritone.api.pathing.goals.Goal) -> <init>
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    java.util.List movements() -> a
+    java.util.List positions() -> b
+    int getNumNodesConsidered() -> b
+    int length() -> a
+baritone.pathing.precompute.PrecomputedData -> baritone.ia:
+    int[] data -> a
+    void <init>() -> <init>
+    int fillData(int,awt) -> a
+    boolean canWalkThrough(baritone.utils.BlockStateInterface,int,int,int,awt) -> a
+    boolean fullyPassable(baritone.utils.BlockStateInterface,int,int,int,awt) -> b
+baritone.pathing.precompute.Ternary -> baritone.ib:
+    int YES$744e132 -> a
+    int MAYBE$744e132 -> b
+    int NO$744e132 -> c
+    void <clinit>() -> <clinit>
+baritone.process.BackfillProcess -> baritone.ic:
+    java.util.HashMap blocksToReplace -> a
+    void <init>(baritone.Baritone) -> <init>
+    boolean isActive() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    java.util.List toFillIn() -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    boolean isTemporary() -> b
+    double priority() -> a
+    boolean lambda$toFillIn$2(et) -> a
+    boolean lambda$toFillIn$1(et) -> b
+    boolean lambda$toFillIn$0(et) -> c
+baritone.process.BackfillProcess$1 -> baritone.id:
+    int[] $SwitchMap$baritone$pathing$movement$MovementHelper$PlaceResult -> a
+    void <clinit>() -> <clinit>
+baritone.process.BuilderProcess -> baritone.ie:
+    java.util.HashSet incorrectPositions -> a
+    it.unimi.dsi.fastutil.longs.LongOpenHashSet observedCompleted -> a
+    java.lang.String name -> a
+    baritone.api.schematic.ISchematic realSchematic -> b
+    baritone.api.schematic.ISchematic schematic -> a
+    fq origin -> a
+    int ticks -> a
+    boolean paused -> a
+    int layer -> b
+    int numRepeats -> c
+    java.util.List approxPlaceable -> a
+    int stopAtHeight -> d
+    java.util.Set orientationProps -> a
+    void <init>(baritone.Baritone) -> <init>
+    void build(java.lang.String,baritone.api.schematic.ISchematic,fq) -> a
+    void resume() -> c
+    boolean build(java.lang.String,java.io.File,fq) -> a
+    baritone.api.schematic.ISchematic applyMapArtAndSelection(fq,baritone.api.schematic.IStaticSchematic) -> a
+    void buildOpenSchematic() -> b
+    void buildOpenLitematic(int) -> a
+    void clearArea(et,et) -> a
+    boolean isActive() -> a
+    java.util.Optional toBreakNearPlayer(baritone.process.BuilderProcess$BuilderCalculationContext) -> a
+    java.util.Optional searchForPlaceables(baritone.process.BuilderProcess$BuilderCalculationContext,java.util.List) -> a
+    java.util.OptionalInt hasAnyItemThatWouldPlace(awt,bhc,baritone.api.utils.Rotation) -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    void recalcNearby(baritone.process.BuilderProcess$BuilderCalculationContext) -> a
+    void fullRecalc(baritone.process.BuilderProcess$BuilderCalculationContext) -> b
+    baritone.api.pathing.goals.Goal assemble(baritone.process.BuilderProcess$BuilderCalculationContext,java.util.List,boolean) -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    java.util.List approxPlaceable(int) -> a
+    boolean sameBlockstate(awt,awt) -> b
+    boolean valid(awt,awt,boolean) -> a
+    java.lang.String lambda$assemble$8(baritone.api.utils.BetterBlockPos) -> a
+    java.lang.String lambda$assemble$7(java.util.Map$Entry) -> a
+    void lambda$assemble$6(java.util.List,baritone.api.utils.BetterBlockPos) -> a
+    void lambda$assemble$5(java.util.List,java.util.List,baritone.process.BuilderProcess$BuilderCalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void lambda$assemble$4(java.util.List,baritone.process.BuilderProcess$BuilderCalculationContext,baritone.api.utils.BetterBlockPos) -> a
+    void lambda$assemble$3(baritone.process.BuilderProcess$BuilderCalculationContext,java.util.List,java.util.List,java.util.Map,java.util.List,java.util.List,java.util.List,baritone.api.utils.BetterBlockPos) -> a
+    boolean lambda$trim$2(baritone.api.utils.BetterBlockPos) -> a
+    int lambda$build$1(baritone.api.selection.ISelection) -> a
+    int lambda$build$0(baritone.api.selection.ISelection) -> b
+    java.util.List access$100(baritone.process.BuilderProcess) -> a
+    baritone.Baritone access$600(baritone.process.BuilderProcess) -> a
+    java.util.List access$700$6ed21d15(baritone.process.BuilderProcess) -> b
+    baritone.api.schematic.ISchematic access$800(baritone.process.BuilderProcess) -> a
+    fq access$900(baritone.process.BuilderProcess) -> a
+    boolean access$1000$12ba1627$6bf576d5(awt,awt) -> a
+    void <clinit>() -> <clinit>
+baritone.process.BuilderProcess$1 -> baritone.if:
+    baritone.api.schematic.ISchematic val$realSchematic -> a
+    int val$minYInclusive -> a
+    int val$maxYInclusive -> b
+    baritone.process.BuilderProcess this$0 -> a
+    void <init>(baritone.process.BuilderProcess,baritone.api.schematic.ISchematic,int,int) -> <init>
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+    boolean inSchematic(int,int,int,awt) -> a
+    void reset() -> a
+    int widthX() -> a
+    int heightY() -> b
+    int lengthZ() -> c
+baritone.process.BuilderProcess$2 -> baritone.ig:
+    baritone.process.BuilderProcess this$0 -> a
+    void <init>(baritone.process.BuilderProcess,et) -> <init>
+    boolean isInGoal(int,int,int) -> a
+baritone.process.BuilderProcess$3 -> baritone.ih:
+    int[] $SwitchMap$net$minecraft$util$EnumFacing -> a
+    void <clinit>() -> <clinit>
+baritone.process.BuilderProcess$BuilderCalculationContext -> baritone.ie$a:
+    java.util.List placeable -> b
+    baritone.api.schematic.ISchematic schematic -> a
+    int originX -> d
+    int originY -> e
+    int originZ -> f
+    baritone.process.BuilderProcess this$0 -> a
+    void <init>(baritone.process.BuilderProcess) -> <init>
+    awt getSchematic(int,int,int,awt) -> a
+    double costOfPlacingAt(int,int,int,awt) -> a
+    double breakCostMultiplierAt(int,int,int,awt) -> b
+    awt access$000(baritone.process.BuilderProcess$BuilderCalculationContext,int,int,int,awt) -> a
+baritone.process.BuilderProcess$GoalAdjacent -> baritone.ie$b:
+    boolean allowSameLevel -> a
+    et no -> a
+    void <init>(et,et,boolean) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+baritone.process.BuilderProcess$GoalBreak -> baritone.ie$c:
+    void <init>(et) -> <init>
+    boolean isInGoal(int,int,int) -> a
+baritone.process.BuilderProcess$GoalPlace -> baritone.ie$d:
+    void <init>(et) -> <init>
+    double heuristic(int,int,int) -> a
+baritone.process.BuilderProcess$JankyGoalComposite -> baritone.ie$e:
+    baritone.api.pathing.goals.Goal primary -> a
+    baritone.api.pathing.goals.Goal fallback -> b
+    void <init>(baritone.api.pathing.goals.Goal,baritone.api.pathing.goals.Goal) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+    java.lang.String toString() -> toString
+baritone.process.BuilderProcess$Placement -> baritone.ie$f:
+    int hotbarSelection -> a
+    et placeAgainst -> a
+    fa side -> a
+    baritone.api.utils.Rotation rot -> a
+    void <init>(int,et,fa,baritone.api.utils.Rotation) -> <init>
+baritone.process.CustomGoalProcess -> baritone.ii:
+    baritone.api.pathing.goals.Goal goal -> a
+    int state$755b9dfe -> a
+    void <init>(baritone.Baritone) -> <init>
+    void setGoal(baritone.api.pathing.goals.Goal) -> a
+    void path() -> b
+    baritone.api.pathing.goals.Goal getGoal() -> a
+    boolean isActive() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+baritone.process.CustomGoalProcess$1 -> baritone.ij:
+    int[] $SwitchMap$baritone$process$CustomGoalProcess$State -> a
+    void <clinit>() -> <clinit>
+baritone.process.CustomGoalProcess$State -> baritone.ii$a:
+    int NONE$755b9dfe -> a
+    int GOAL_SET$755b9dfe -> b
+    int PATH_REQUESTED$755b9dfe -> c
+    int EXECUTING$755b9dfe -> d
+    int[] $VALUES$c620367 -> a
+    int[] values$549940f8() -> a
+    void <clinit>() -> <clinit>
+baritone.process.ExploreProcess -> baritone.ik:
+    et explorationOrigin -> a
+    baritone.process.ExploreProcess$IChunkFilter filter -> a
+    int distanceCompleted -> a
+    void <init>(baritone.Baritone) -> <init>
+    boolean isActive() -> a
+    void explore(int,int) -> a
+    void applyJsonFilter(java.nio.file.Path,boolean) -> a
+    baritone.process.ExploreProcess$IChunkFilter calcFilter() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    baritone.api.pathing.goals.Goal[] closestUncachedChunks(et,baritone.process.ExploreProcess$IChunkFilter) -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    baritone.api.pathing.goals.Goal[] lambda$closestUncachedChunks$1(int) -> a
+    baritone.api.pathing.goals.Goal lambda$closestUncachedChunks$0(et) -> a
+    baritone.Baritone access$300(baritone.process.ExploreProcess) -> a
+baritone.process.ExploreProcess$1 -> baritone.il:
+    void <init>(int,int) -> <init>
+    double heuristic(int,int,int) -> a
+baritone.process.ExploreProcess$2 -> baritone.im:
+    int[] $SwitchMap$baritone$process$ExploreProcess$Status -> a
+    void <clinit>() -> <clinit>
+baritone.process.ExploreProcess$BaritoneChunkCache -> baritone.ik$a:
+    baritone.api.cache.ICachedWorld cache -> a
+    baritone.process.ExploreProcess this$0 -> a
+    void <init>(baritone.process.ExploreProcess) -> <init>
+    int isAlreadyExplored$5a5e5143(int,int) -> a
+    int countRemain() -> a
+    void lambda$isAlreadyExplored$0(int,int) -> a
+    void <init>(baritone.process.ExploreProcess,byte) -> <init>
+baritone.process.ExploreProcess$EitherChunk -> baritone.ik$b:
+    baritone.process.ExploreProcess$IChunkFilter a -> a
+    baritone.process.ExploreProcess$IChunkFilter b -> b
+    baritone.process.ExploreProcess this$0 -> a
+    void <init>(baritone.process.ExploreProcess,baritone.process.ExploreProcess$IChunkFilter,baritone.process.ExploreProcess$IChunkFilter) -> <init>
+    int isAlreadyExplored$5a5e5143(int,int) -> a
+    int countRemain() -> a
+    void <init>(baritone.process.ExploreProcess,baritone.process.ExploreProcess$IChunkFilter,baritone.process.ExploreProcess$IChunkFilter,byte) -> <init>
+baritone.process.ExploreProcess$IChunkFilter -> baritone.ik$c:
+    int isAlreadyExplored$5a5e5143(int,int) -> a
+    int countRemain() -> a
+baritone.process.ExploreProcess$JsonChunkFilter -> baritone.ik$d:
+    boolean invert -> a
+    it.unimi.dsi.fastutil.longs.LongOpenHashSet inFilter -> a
+    baritone.api.utils.MyChunkPos[] positions -> a
+    baritone.process.ExploreProcess this$0 -> a
+    void <init>(baritone.process.ExploreProcess,java.nio.file.Path,boolean) -> <init>
+    int isAlreadyExplored$5a5e5143(int,int) -> a
+    int countRemain() -> a
+    void <init>(baritone.process.ExploreProcess,java.nio.file.Path,boolean,byte) -> <init>
+baritone.process.ExploreProcess$Status -> baritone.ik$e:
+    int EXPLORED$2f8599dc -> a
+    int NOT_EXPLORED$2f8599dc -> b
+    int UNKNOWN$2f8599dc -> c
+    int[] $VALUES$2c74e337 -> a
+    int[] values$2de3b356() -> a
+    void <clinit>() -> <clinit>
+baritone.process.FarmProcess -> baritone.in:
+    boolean active -> a
+    java.util.List locations -> a
+    int tickCount -> a
+    int range -> b
+    et center -> a
+    java.util.List FARMLAND_PLANTABLE -> b
+    java.util.List PICKUP_DROPPED -> c
+    void <init>(baritone.Baritone) -> <init>
+    boolean isActive() -> a
+    void farm(int,et) -> a
+    boolean readyForHarvest(amu,et,awt) -> a
+    boolean isPlantable(aip) -> a
+    boolean isBoneMeal(aip) -> b
+    boolean isNetherWart(aip) -> c
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    void lambda$onTick$0(java.util.ArrayList) -> a
+    void <clinit>() -> <clinit>
+baritone.process.FarmProcess$Harvest -> baritone.in$a:
+    baritone.process.FarmProcess$Harvest WHEAT -> a
+    baritone.process.FarmProcess$Harvest CARROTS -> b
+    baritone.process.FarmProcess$Harvest POTATOES -> c
+    baritone.process.FarmProcess$Harvest BEETROOT -> d
+    baritone.process.FarmProcess$Harvest PUMPKIN -> e
+    baritone.process.FarmProcess$Harvest MELON -> f
+    baritone.process.FarmProcess$Harvest NETHERWART -> g
+    baritone.process.FarmProcess$Harvest SUGARCANE -> h
+    baritone.process.FarmProcess$Harvest CACTUS -> i
+    aow block -> a
+    java.util.function.Predicate readyToHarvest -> a
+    baritone.process.FarmProcess$Harvest[] $VALUES -> a
+    baritone.process.FarmProcess$Harvest[] values() -> values
+    baritone.process.FarmProcess$Harvest valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,aps) -> <init>
+    void <init>(java.lang.String,int,aow,java.util.function.Predicate) -> <init>
+    boolean readyToHarvest(amu,et,awt) -> a
+    boolean lambda$static$2(awt) -> a
+    boolean lambda$static$1(awt) -> b
+    boolean lambda$static$0(awt) -> c
+    void <init>(java.lang.String,int,aow) -> <init>
+    void <clinit>() -> <clinit>
+baritone.process.FarmProcess$Harvest$1 -> baritone.io:
+    void <init>(java.lang.String,aow) -> <init>
+    boolean readyToHarvest(amu,et,awt) -> a
+baritone.process.FarmProcess$Harvest$2 -> baritone.ip:
+    void <init>(java.lang.String,aow) -> <init>
+    boolean readyToHarvest(amu,et,awt) -> a
+baritone.process.FollowProcess -> baritone.iq:
+    java.util.function.Predicate filter -> a
+    java.util.List cache -> a
+    void <init>(baritone.Baritone) -> <init>
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    baritone.api.pathing.goals.Goal towards(vg) -> a
+    boolean followable(vg) -> a
+    void scanWorld() -> b
+    boolean isActive() -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    void follow(java.util.function.Predicate) -> a
+    baritone.api.pathing.goals.Goal[] lambda$onTick$0(int) -> a
+baritone.process.GetToBlockProcess -> baritone.ir:
+    baritone.api.utils.BlockOptionalMeta gettingTo -> a
+    java.util.List knownLocations -> a
+    java.util.List blacklist -> b
+    et start -> a
+    int tickCount -> a
+    int arrivalTickCount -> b
+    void <init>(baritone.Baritone) -> <init>
+    void getToBlock(baritone.api.utils.BlockOptionalMeta) -> a
+    boolean isActive() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    boolean blacklistClosest() -> c
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    void rescan(java.util.List,baritone.pathing.movement.CalculationContext) -> a
+    baritone.api.pathing.goals.Goal createGoal(et) -> a
+    boolean rightClick() -> d
+    boolean rightClickOnArrival(aow) -> a
+    void lambda$onTick$1(java.util.List,baritone.pathing.movement.CalculationContext) -> b
+    baritone.api.pathing.goals.Goal[] lambda$onTick$0(int) -> a
+    baritone.Baritone access$001(baritone.process.GetToBlockProcess) -> a
+baritone.process.GetToBlockProcess$1 -> baritone.is:
+    baritone.process.GetToBlockProcess this$0 -> a
+    void <init>(baritone.process.GetToBlockProcess,et[]) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic() -> a
+baritone.process.GetToBlockProcess$GetToBlockCalculationContext -> baritone.ir$a:
+    baritone.process.GetToBlockProcess this$0 -> a
+    void <init>(baritone.process.GetToBlockProcess,boolean) -> <init>
+    double breakCostMultiplierAt(int,int,int,awt) -> b
+baritone.process.InventoryPauserProcess -> baritone.it:
+    boolean pauseRequestedLastTick -> a
+    boolean safeToCancelLastTick -> b
+    int ticksOfStationary -> a
+    void <init>(baritone.Baritone) -> <init>
+    boolean isActive() -> a
+    boolean stationaryForInventoryMove() -> c
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    double priority() -> a
+    boolean isTemporary() -> b
+baritone.process.MineProcess -> baritone.iu:
+    baritone.api.utils.BlockOptionalMetaLookup filter -> a
+    java.util.List knownOreLocations -> a
+    java.util.List blacklist -> b
+    java.util.Map anticipatedDrops -> a
+    et branchPoint -> a
+    baritone.api.pathing.goals.GoalRunAway branchPointRunaway -> a
+    int desiredQuantity -> a
+    int tickCount -> b
+    void <init>(baritone.Baritone) -> <init>
+    boolean isActive() -> a
+    baritone.api.process.PathingCommand onTick(boolean,boolean) -> a
+    void updateLoucaSystem() -> c
+    void onLostControl() -> a
+    java.lang.String displayName0() -> b
+    void rescan(java.util.List,baritone.pathing.movement.CalculationContext) -> a
+    boolean internalMiningGoal(et,baritone.pathing.movement.CalculationContext,java.util.List) -> a
+    java.util.List droppedItemsScan() -> a
+    java.util.List searchWorld$ce463e5(baritone.pathing.movement.CalculationContext,baritone.api.utils.BlockOptionalMetaLookup,java.util.List,java.util.List,java.util.List) -> a
+    boolean addNearby() -> c
+    java.util.List prune$79f92267(baritone.pathing.movement.CalculationContext,java.util.List,baritone.api.utils.BlockOptionalMetaLookup,java.util.List,java.util.List) -> a
+    boolean plausibleToBreak(baritone.pathing.movement.CalculationContext,et) -> a
+    void mine(int,baritone.api.utils.BlockOptionalMetaLookup) -> a
+    baritone.api.utils.BlockOptionalMetaLookup filterFilter() -> a
+    baritone.api.utils.BlockOptionalMeta[] lambda$filterFilter$16(int) -> a
+    boolean lambda$filterFilter$15(baritone.api.utils.BlockOptionalMeta) -> a
+    boolean lambda$prune$14(java.util.List,et) -> a
+    boolean lambda$prune$13(et) -> a
+    boolean lambda$prune$12(baritone.pathing.movement.CalculationContext,et) -> b
+    boolean lambda$prune$11(baritone.pathing.movement.CalculationContext,et) -> c
+    boolean lambda$prune$10(baritone.pathing.movement.CalculationContext,baritone.api.utils.BlockOptionalMetaLookup,java.util.List,et) -> a
+    boolean lambda$prune$9(java.util.List,baritone.api.utils.BlockOptionalMetaLookup,baritone.pathing.movement.CalculationContext,et) -> a
+    boolean lambda$addNearby$8(et,et) -> a
+    baritone.api.pathing.goals.Goal[] lambda$updateGoal$7(int) -> a
+    baritone.api.pathing.goals.Goal lambda$updateGoal$6(java.util.List,baritone.pathing.movement.CalculationContext,et) -> a
+    void lambda$updateLoucaSystem$5(java.util.Map,et) -> a
+    boolean lambda$onTick$4(et) -> b
+    boolean lambda$onTick$3(et) -> c
+    boolean lambda$onTick$2(et) -> d
+    void lambda$onTick$1(java.util.List,baritone.pathing.movement.CalculationContext) -> b
+    boolean lambda$onTick$0(aip) -> a
+baritone.process.MineProcess$1 -> baritone.iv:
+    baritone.process.MineProcess this$0 -> a
+    void <init>(baritone.process.MineProcess,java.lang.Integer,et[]) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic() -> a
+baritone.process.MineProcess$GoalThreeBlocks -> baritone.iu$a:
+    void <init>(et) -> <init>
+    boolean isInGoal(int,int,int) -> a
+    double heuristic(int,int,int) -> a
+baritone.selection.Selection -> baritone.iw:
+    baritone.api.utils.BetterBlockPos pos1 -> a
+    baritone.api.utils.BetterBlockPos pos2 -> b
+    baritone.api.utils.BetterBlockPos min -> c
+    baritone.api.utils.BetterBlockPos max -> d
+    fq size -> a
+    bhb aabb -> a
+    void <init>(baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> <init>
+    baritone.api.utils.BetterBlockPos pos1() -> a
+    baritone.api.utils.BetterBlockPos pos2() -> b
+    baritone.api.utils.BetterBlockPos min() -> c
+    baritone.api.utils.BetterBlockPos max() -> d
+    fq size() -> a
+    bhb aabb() -> a
+    int hashCode() -> hashCode
+    java.lang.String toString() -> toString
+    boolean isPos2(fa) -> a
+    baritone.api.selection.ISelection expand(fa,int) -> a
+    baritone.api.selection.ISelection contract(fa,int) -> b
+    baritone.api.selection.ISelection shift(fa,int) -> c
+baritone.selection.Selection$1 -> baritone.ix:
+    int[] $SwitchMap$net$minecraft$util$EnumFacing$Axis -> a
+    void <clinit>() -> <clinit>
+baritone.selection.SelectionManager -> baritone.iy:
+    java.util.LinkedList selections -> a
+    baritone.api.selection.ISelection[] selectionsArr -> a
+    void <init>(baritone.Baritone) -> <init>
+    void resetSelectionsArr() -> a
+    baritone.api.selection.ISelection addSelection(baritone.api.selection.ISelection) -> b
+    baritone.api.selection.ISelection addSelection(baritone.api.utils.BetterBlockPos,baritone.api.utils.BetterBlockPos) -> a
+    baritone.api.selection.ISelection removeSelection(baritone.api.selection.ISelection) -> a
+    baritone.api.selection.ISelection[] removeAllSelections() -> a
+    baritone.api.selection.ISelection[] getSelections() -> b
+    baritone.api.selection.ISelection expand(baritone.api.selection.ISelection,fa,int) -> a
+    baritone.api.selection.ISelection contract(baritone.api.selection.ISelection,fa,int) -> b
+    baritone.api.selection.ISelection shift(baritone.api.selection.ISelection,fa,int) -> c
+baritone.selection.SelectionRenderer -> baritone.iz:
+    baritone.selection.SelectionManager manager -> a
+    void <init>(baritone.Baritone,baritone.selection.SelectionManager) -> <init>
+    void onRenderPass(baritone.api.event.events.RenderEvent) -> a
+baritone.utils.BaritoneProcessHelper -> baritone.ja:
+    baritone.Baritone baritone -> a
+    baritone.api.utils.IPlayerContext ctx -> a
+    void <init>(baritone.Baritone) -> <init>
+    boolean isTemporary() -> b
+baritone.utils.BlockBreakHelper -> baritone.jb:
+    baritone.api.utils.IPlayerContext ctx -> a
+    boolean didBreakLastTick -> a
+    void <init>(baritone.api.utils.IPlayerContext) -> <init>
+    void stopBreakingBlock() -> a
+baritone.utils.BlockPlaceHelper -> baritone.jc:
+    baritone.api.utils.IPlayerContext ctx -> a
+    int rightClickTimer -> a
+    void <init>(baritone.api.utils.IPlayerContext) -> <init>
+baritone.utils.BlockStateInterface -> baritone.jd:
+    it.unimi.dsi.fastutil.longs.Long2ObjectMap loadedChunks -> a
+    baritone.cache.WorldData worldData -> a
+    amy world -> a
+    et$a isPassableBlockPos -> a
+    amy access -> b
+    baritone.utils.pathing.BetterWorldBorder worldBorder -> a
+    axw prev -> a
+    baritone.cache.CachedRegion prevCached -> a
+    boolean useTheRealWorld -> a
+    awt AIR -> a
+    void <init>(baritone.api.utils.IPlayerContext) -> <init>
+    void <init>(baritone.api.utils.IPlayerContext,boolean) -> <init>
+    void <init>(amu,baritone.cache.WorldData,boolean) -> <init>
+    boolean worldContainsLoadedChunk(int,int) -> a
+    aow getBlock(baritone.api.utils.IPlayerContext,et) -> a
+    awt get(baritone.api.utils.IPlayerContext,et) -> a
+    awt get0(et) -> a
+    awt get0(int,int,int) -> a
+    boolean isLoaded(int,int) -> b
+    void <clinit>() -> <clinit>
+baritone.utils.BlockStateInterfaceAccessWrapper -> baritone.je:
+    baritone.utils.BlockStateInterface bsi -> a
+    void <init>(baritone.utils.BlockStateInterface) -> <init>
+    avj r(et) -> r
+    int b(et,int) -> b
+    awt o(et) -> o
+    boolean d(et) -> d
+    anh b(et) -> b
+    int a(et,fa) -> a
+    amz N() -> N
+baritone.utils.GuiClick -> baritone.jf:
+    java.nio.FloatBuffer MODELVIEW -> a
+    java.nio.FloatBuffer PROJECTION -> b
+    java.nio.IntBuffer VIEWPORT -> a
+    java.nio.FloatBuffer TO_WORLD_BUFFER -> c
+    et clickStart -> a
+    et currentMouseOver -> b
+    void <init>() -> <init>
+    boolean d() -> d
+    void a(int,int,float) -> a
+    void b(int,int,int) -> b
+    void a(int,int,int) -> a
+    void onRender() -> a
+    bhe toWorld(double,double,double) -> a
+baritone.utils.IRenderer -> baritone.jg:
+    bve tessellator -> a
+    buk buffer -> a
+    bzf renderManager -> a
+    baritone.api.Settings settings -> a
+    void glColor(java.awt.Color,float) -> a
+    void startLines(java.awt.Color,float,float,boolean) -> a
+    void startLines(java.awt.Color,float,boolean) -> a
+    void endLines(boolean) -> a
+    void drawAABB(bhb) -> a
+    void drawAABB(bhb,double) -> a
+    void <clinit>() -> <clinit>
+baritone.utils.InputOverrideHandler -> baritone.jh:
+    java.util.Map inputForceStateMap -> a
+    baritone.utils.BlockBreakHelper blockBreakHelper -> a
+    baritone.utils.BlockPlaceHelper blockPlaceHelper -> a
+    void <init>(baritone.Baritone) -> <init>
+    boolean isInputForcedDown(baritone.api.utils.input.Input) -> a
+    void setInputForceState(baritone.api.utils.input.Input,boolean) -> a
+    void clearAllKeys() -> a
+    void onTick(baritone.api.event.events.TickEvent) -> a
+baritone.utils.PathRenderer -> baritone.ji:
+    void render(baritone.api.event.events.RenderEvent,baritone.behavior.PathingBehavior) -> a
+    void drawPath$446c7aef(baritone.api.pathing.calc.IPath,int,java.awt.Color,boolean) -> a
+    void drawLine(double,double,double,double,double,double) -> a
+    void drawManySelectionBoxes(vg,java.util.Collection,java.awt.Color) -> a
+    void drawDankLitGoalBox(vg,baritone.api.pathing.goals.Goal,float,java.awt.Color) -> a
+    void renderHorizontalQuad(double,double,double,double,double) -> a
+    void lambda$drawManySelectionBoxes$3(baritone.utils.BlockStateInterface,vg,et) -> a
+    void lambda$render$2(vg,baritone.pathing.calc.AbstractNodeCostSearch) -> a
+    void lambda$null$1(vg,baritone.api.pathing.calc.IPath) -> a
+    void lambda$null$0(baritone.api.pathing.calc.IPath) -> a
+baritone.utils.PathingCommandContext -> baritone.jj:
+    baritone.pathing.movement.CalculationContext desiredCalcContext -> a
+    void <init>(baritone.api.pathing.goals.Goal,baritone.api.process.PathingCommandType,baritone.pathing.movement.CalculationContext) -> <init>
+baritone.utils.PathingControlManager -> baritone.jk:
+    baritone.Baritone baritone -> a
+    java.util.HashSet processes -> a
+    java.util.List active -> a
+    baritone.api.process.IBaritoneProcess inControlLastTick -> a
+    baritone.api.process.IBaritoneProcess inControlThisTick -> b
+    baritone.api.process.PathingCommand command -> a
+    void <init>(baritone.Baritone) -> <init>
+    void registerProcess(baritone.api.process.IBaritoneProcess) -> a
+    void cancelEverything() -> a
+    java.util.Optional mostRecentInControl() -> a
+    java.util.Optional mostRecentCommand() -> b
+    boolean revalidateGoal(baritone.api.pathing.goals.Goal) -> a
+    baritone.api.process.PathingCommand executeProcesses() -> a
+    void onTick(baritone.api.event.events.TickEvent) -> a
+baritone.utils.PathingControlManager$2 -> baritone.jl:
+    int[] $SwitchMap$baritone$api$process$PathingCommandType -> a
+    void <clinit>() -> <clinit>
+baritone.utils.PlayerMovementInput -> baritone.jm:
+    baritone.utils.InputOverrideHandler handler -> a
+    void <init>(baritone.utils.InputOverrideHandler) -> <init>
+    void a() -> a
+baritone.utils.ToolSet -> baritone.jn:
+    java.util.Map breakStrengthCache -> a
+    java.util.function.Function backendCalculation -> a
+    bud player -> a
+    void <init>(bud) -> <init>
+    double getStrVsBlock(awt) -> a
+    int getMaterialCost(aip) -> a
+    boolean hasSilkTouch(aip) -> a
+    int getBestSlot(aow,boolean,boolean) -> a
+    double getBestDestructionTime(aow) -> a
+    double calculateSpeedVsBlock(aip,awt) -> a
+    java.lang.Double lambda$new$0(double,java.lang.Double) -> a
+baritone.utils.accessor.IAnvilChunkLoader -> baritone.jo:
+    java.io.File getChunkSaveLocation() -> getChunkSaveLocation
+baritone.utils.accessor.IBitArray -> baritone.jp:
+    int[] toArray() -> toArray
+    long getMaxEntryValue() -> getMaxEntryValue
+    int getBitsPerEntry() -> getBitsPerEntry
+baritone.utils.accessor.IBlockStateContainer -> baritone.jq:
+    aya getPalette() -> getPalette
+    qw getStorage() -> getStorage
+baritone.utils.accessor.IChunkProviderClient -> baritone.jr:
+    it.unimi.dsi.fastutil.longs.Long2ObjectMap loadedChunks() -> loadedChunks
+baritone.utils.accessor.IChunkProviderServer -> baritone.js:
+    ayf getChunkLoader() -> getChunkLoader
+baritone.utils.accessor.IGuiScreen -> baritone.jt:
+    void openLink(java.net.URI) -> openLink
+baritone.utils.accessor.IItemTool -> baritone.ju:
+    int getHarvestLevel() -> getHarvestLevel
+baritone.utils.accessor.INBTTagLongArray -> baritone.jv:
+    long[] getLongArray() -> getLongArray
+baritone.utils.accessor.IPlayerControllerMP -> baritone.jw:
+    void setIsHittingBlock(boolean) -> setIsHittingBlock
+    et getCurrentBlock() -> getCurrentBlock
+    void callSyncCurrentPlayItem() -> callSyncCurrentPlayItem
+baritone.utils.pathing.Avoidance -> baritone.jx:
+    int centerX -> a
+    int centerY -> b
+    int centerZ -> c
+    double coefficient -> a
+    int radius -> d
+    int radiusSq -> e
+    void <init>(et,double,int) -> <init>
+    void <init>(int,int,int,double,int) -> <init>
+    java.util.List create(baritone.api.utils.IPlayerContext) -> a
+    void lambda$create$5(java.util.List,double,vg) -> a
+    boolean lambda$create$4(vg) -> a
+    boolean lambda$create$3(vg) -> b
+    boolean lambda$create$2(baritone.api.utils.IPlayerContext,vg) -> a
+    boolean lambda$create$1(vg) -> c
+    void lambda$create$0(java.util.List,double,et) -> a
+baritone.utils.pathing.BetterWorldBorder -> baritone.jy:
+    double minX -> a
+    double maxX -> b
+    double minZ -> c
+    double maxZ -> d
+    void <init>(axn) -> <init>
+    boolean entirelyContains(int,int) -> a
+    boolean canPlaceAt(int,int) -> b
+baritone.utils.pathing.Favoring -> baritone.jz:
+    it.unimi.dsi.fastutil.longs.Long2DoubleOpenHashMap favorings -> a
+    void <init>(baritone.api.utils.IPlayerContext,baritone.api.pathing.calc.IPath,baritone.pathing.movement.CalculationContext) -> <init>
+    void <init>(baritone.api.pathing.calc.IPath,baritone.pathing.movement.CalculationContext) -> <init>
+    void lambda$new$0(double,baritone.api.utils.BetterBlockPos) -> a
+baritone.utils.pathing.MutableMoveResult -> baritone.ka:
+    int x -> a
+    int y -> b
+    int z -> c
+    double cost -> a
+    void <init>() -> <init>
+    void reset() -> a
+baritone.utils.pathing.PathBase -> baritone.kb:
+    void <init>() -> <init>
+    baritone.api.pathing.calc.IPath staticCutoff(baritone.api.pathing.goals.Goal) -> a
+    baritone.api.pathing.calc.IPath cutoffAtLoadedChunks(java.lang.Object) -> a
+baritone.utils.pathing.PathingBlockType -> baritone.kc:
+    baritone.utils.pathing.PathingBlockType AIR -> a
+    baritone.utils.pathing.PathingBlockType WATER -> b
+    baritone.utils.pathing.PathingBlockType AVOID -> c
+    baritone.utils.pathing.PathingBlockType SOLID -> d
+    boolean[] bits -> a
+    baritone.utils.pathing.PathingBlockType[] $VALUES -> a
+    baritone.utils.pathing.PathingBlockType[] values() -> values
+    baritone.utils.pathing.PathingBlockType valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,int) -> <init>
+    baritone.utils.pathing.PathingBlockType fromBits(boolean,boolean) -> a
+    void <clinit>() -> <clinit>
+baritone.utils.player.PrimaryPlayerContext -> baritone.kd:
+    baritone.utils.player.PrimaryPlayerContext INSTANCE -> a
+    baritone.utils.player.PrimaryPlayerContext[] $VALUES -> a
+    baritone.utils.player.PrimaryPlayerContext[] values() -> values
+    baritone.utils.player.PrimaryPlayerContext valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    bud player() -> a
+    baritone.api.utils.IPlayerController playerController() -> a
+    amu world() -> a
+    baritone.api.cache.IWorldData worldData() -> a
+    bhc objectMouseOver() -> a
+    void <clinit>() -> <clinit>
+baritone.utils.player.PrimaryPlayerController -> baritone.ke:
+    baritone.utils.player.PrimaryPlayerController INSTANCE -> a
+    baritone.utils.player.PrimaryPlayerController[] $VALUES -> a
+    baritone.utils.player.PrimaryPlayerController[] values() -> values
+    baritone.utils.player.PrimaryPlayerController valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    void syncHeldItem() -> a
+    boolean hasBrokenBlock() -> a
+    boolean onPlayerDamageBlock(et,fa) -> a
+    void resetBlockRemoving() -> b
+    aip windowClick(int,int,int,afw,aed) -> a
+    ams getGameType() -> a
+    ud processRightClickBlock(bud,amu,et,fa,bhe,ub) -> a
+    ud processRightClick(bud,amu,ub) -> a
+    boolean clickBlock(et,fa) -> b
+    void setHittingBlock(boolean) -> a
+    void <clinit>() -> <clinit>
+baritone.utils.schematic.MapArtSchematic -> baritone.kf:
+    int[][] heightMap -> a
+    void <init>(baritone.api.schematic.IStaticSchematic) -> <init>
+    boolean partOfMask(int,int,int,awt) -> b
+    boolean lambda$generateHeightMap$0(awt) -> a
+baritone.utils.schematic.SchematicSystem -> baritone.kg:
+    baritone.utils.schematic.SchematicSystem INSTANCE -> a
+    baritone.api.utils.NotificationHelper registry$51316580 -> a
+    baritone.utils.schematic.SchematicSystem[] $VALUES -> a
+    baritone.utils.schematic.SchematicSystem[] values() -> values
+    baritone.utils.schematic.SchematicSystem valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String) -> <init>
+    java.util.Optional getByFile(java.io.File) -> a
+    boolean lambda$getByFile$0(java.io.File,baritone.api.schematic.format.ISchematicFormat) -> a
+    void <clinit>() -> <clinit>
+baritone.utils.schematic.SelectionSchematic -> baritone.kh:
+    baritone.api.selection.ISelection[] selections -> a
+    void <init>(baritone.api.schematic.ISchematic,fq,baritone.api.selection.ISelection[]) -> <init>
+    boolean partOfMask(int,int,int,awt) -> b
+    baritone.api.selection.ISelection[] lambda$new$1(int) -> a
+    baritone.api.selection.ISelection lambda$new$0(fq,baritone.api.selection.ISelection) -> a
+baritone.utils.schematic.StaticSchematic -> baritone.ki:
+    awt[][][] states -> a
+    void <init>() -> <init>
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+    awt getDirect(int,int,int) -> a
+    awt[] getColumn(int,int) -> a
+baritone.utils.schematic.format.DefaultSchematicFormats -> baritone.kj:
+    baritone.utils.schematic.format.DefaultSchematicFormats MCEDIT -> a
+    baritone.utils.schematic.format.DefaultSchematicFormats SPONGE -> b
+    baritone.utils.schematic.format.DefaultSchematicFormats LITEMATICA -> c
+    java.lang.String extension -> a
+    baritone.utils.schematic.format.DefaultSchematicFormats[] $VALUES -> a
+    baritone.utils.schematic.format.DefaultSchematicFormats[] values() -> values
+    baritone.utils.schematic.format.DefaultSchematicFormats valueOf(java.lang.String) -> valueOf
+    void <init>(java.lang.String,int,java.lang.String) -> <init>
+    boolean isFileType(java.io.File) -> a
+    void <init>(java.lang.String,int,java.lang.String,byte) -> <init>
+    void <clinit>() -> <clinit>
+baritone.utils.schematic.format.DefaultSchematicFormats$1 -> baritone.kk:
+    void <init>(java.lang.String,java.lang.String) -> <init>
+    baritone.api.schematic.IStaticSchematic parse(java.io.InputStream) -> a
+baritone.utils.schematic.format.DefaultSchematicFormats$2 -> baritone.kl:
+    void <init>(java.lang.String,java.lang.String) -> <init>
+    baritone.api.schematic.IStaticSchematic parse(java.io.InputStream) -> a
+baritone.utils.schematic.format.DefaultSchematicFormats$3 -> baritone.km:
+    void <init>(java.lang.String,java.lang.String) -> <init>
+    baritone.api.schematic.IStaticSchematic parse(java.io.InputStream) -> a
+baritone.utils.schematic.format.defaults.LitematicaSchematic -> baritone.kn:
+    fq offsetMinCorner -> a
+    fy nbt -> a
+    void <init>(fy,boolean) -> <init>
+    java.lang.String[] getRegions(fy) -> a
+    int getMinOfSubregion(fy,java.lang.String,java.lang.String) -> a
+    awt getBlockState(aow,fy) -> a
+    int getMinOfSchematic(java.lang.String) -> a
+    void fillInSchematic() -> b
+    void writeSubregionIntoSchematic(fy,java.lang.String,awt[],baritone.utils.schematic.format.defaults.LitematicaSchematic$LitematicaBitArray) -> a
+    int getX() -> d
+    int getY() -> e
+    int getZ() -> f
+    void setDirect(int,int,int,awt) -> a
+baritone.utils.schematic.format.defaults.LitematicaSchematic$LitematicaBitArray -> baritone.kn$a:
+    long[] longArray -> a
+    int bitsPerEntry -> a
+    long maxEntryValue -> a
+    long arraySize -> b
+    void <init>(int,long,long[]) -> <init>
+baritone.utils.schematic.format.defaults.MCEditSchematic -> baritone.ko:
+    void <init>(fy) -> <init>
+baritone.utils.schematic.format.defaults.SpongeSchematic -> baritone.kp:
+    void <init>(fy) -> <init>
+baritone.utils.schematic.format.defaults.SpongeSchematic$SerializedBlockState -> baritone.kp$a:
+    java.util.regex.Pattern REGEX -> a
+    nf resourceLocation -> a
+    java.util.Map properties -> a
+    awt blockState -> a
+    void <init>(nf,java.util.Map) -> <init>
+    baritone.utils.schematic.format.defaults.SpongeSchematic$SerializedBlockState getFromString(java.lang.String) -> b
+    void lambda$deserialize$0(aow,java.lang.String) -> a
+    baritone.utils.schematic.format.defaults.SpongeSchematic$SerializedBlockState access$000(java.lang.String) -> a
+    awt access$100(baritone.utils.schematic.format.defaults.SpongeSchematic$SerializedBlockState) -> a
+    void <clinit>() -> <clinit>
+baritone.utils.schematic.litematica.LitematicaHelper -> baritone.utils.schematic.litematica.LitematicaHelper:
+    void <init>() -> <init>
+    boolean isLitematicaPresent() -> a
+    boolean hasLoadedSchematic() -> b
+    java.lang.String getName(int) -> a
+    fq getOrigin(int) -> a
+    java.io.File getSchematicFile(int) -> a
+    atm getRotation(int) -> a
+    ary getMirror(int) -> a
+    fq getCorrectedOrigin(baritone.utils.schematic.format.defaults.LitematicaSchematic,int) -> a
+    fq rotate(fq,int,int) -> a
+    baritone.utils.schematic.format.defaults.LitematicaSchematic blackMagicFuckery(baritone.utils.schematic.format.defaults.LitematicaSchematic,int) -> a
+baritone.utils.schematic.litematica.LitematicaHelper$1 -> baritone.utils.schematic.litematica.LitematicaHelper$1:
+    int[] $SwitchMap$net$minecraft$util$Rotation -> a
+    int[] $SwitchMap$net$minecraft$util$Mirror -> b
+    void <clinit>() -> <clinit>
+baritone.utils.schematic.schematica.SchematicAdapter -> baritone.utils.schematic.schematica.SchematicAdapter:
+    com.github.lunatrius.schematica.client.world.SchematicWorld schematic -> a
+    void <init>(com.github.lunatrius.schematica.client.world.SchematicWorld) -> <init>
+    awt desiredState(int,int,int,awt,java.util.List) -> a
+    awt getDirect(int,int,int) -> a
+    int widthX() -> a
+    int heightY() -> b
+    int lengthZ() -> c
+baritone.utils.schematic.schematica.SchematicaHelper -> baritone.utils.schematic.schematica.SchematicaHelper:
+    baritone.utils.schematic.schematica.SchematicaHelper[] $VALUES -> a
+    baritone.utils.schematic.schematica.SchematicaHelper[] values() -> values
+    baritone.utils.schematic.schematica.SchematicaHelper valueOf(java.lang.String) -> valueOf
+    boolean isSchematicaPresent() -> a
+    java.util.Optional getOpenSchematic() -> a
+    rr lambda$getOpenSchematic$0(com.github.lunatrius.schematica.client.world.SchematicWorld) -> a
+    void <clinit>() -> <clinit>
+baritone.utils.type.VarInt -> baritone.kq:
+    int value -> a
+    byte[] serialized -> a
+    int size -> b
+    void <init>(int) -> <init>
+    byte[] serialize0(int) -> a
+    baritone.utils.type.VarInt read(byte[],int) -> a

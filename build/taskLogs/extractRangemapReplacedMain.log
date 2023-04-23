@@ -1,0 +1,436 @@
+Unsupposrted library path: C:\Users\sense\Desktop\DSA\Minecraft\baritone\build\resources\api
+Unsupposrted library path: C:\Users\sense\Desktop\DSA\Minecraft\baritone\build\resources\schematica_api
+Symbol range map extraction starting
+Processing 144 files
+startProcessing "baritone/Baritone.java" md5: 8d7ec23ab71f8fe4c7525b65ca41f7ad
+endProcessing "baritone/Baritone.java"
+
+startProcessing "baritone/BaritoneProvider.java" md5: 2084ae0065fa5e25c4e7fb9eabe4f52d
+endProcessing "baritone/BaritoneProvider.java"
+
+startProcessing "baritone/KeepName.java" md5: 7e02e94b747f176606526fd34ffcc50d
+endProcessing "baritone/KeepName.java"
+
+startProcessing "baritone/behavior/Behavior.java" md5: bb1bc04fd8c2806fff795fd9dd0e23ec
+endProcessing "baritone/behavior/Behavior.java"
+
+startProcessing "baritone/behavior/InventoryBehavior.java" md5: 1938547acae6c53fde65ade24aa482bb
+endProcessing "baritone/behavior/InventoryBehavior.java"
+
+startProcessing "baritone/behavior/LookBehavior.java" md5: 95f73ff2458cccb7412b1a239e685d99
+endProcessing "baritone/behavior/LookBehavior.java"
+
+startProcessing "baritone/behavior/PathingBehavior.java" md5: d39bb370900757a9cbc479baed1a7ec1
+endProcessing "baritone/behavior/PathingBehavior.java"
+
+startProcessing "baritone/behavior/Testing.java" md5: f75dc4aaa1849156616bdc3eb7591ba3
+endProcessing "baritone/behavior/Testing.java"
+
+startProcessing "baritone/behavior/WaypointBehavior.java" md5: 82aae47288b5e513ca002c2f928ee2c8
+endProcessing "baritone/behavior/WaypointBehavior.java"
+
+startProcessing "baritone/cache/CachedChunk.java" md5: 2de43315b83d620b73fd0ba5eb8b0197
+endProcessing "baritone/cache/CachedChunk.java"
+
+startProcessing "baritone/cache/CachedRegion.java" md5: 875ffe006cf1a1608e3633a29c3516b0
+endProcessing "baritone/cache/CachedRegion.java"
+
+startProcessing "baritone/cache/CachedWorld.java" md5: 63499774cc24db34ee394768bbba49cb
+endProcessing "baritone/cache/CachedWorld.java"
+
+startProcessing "baritone/cache/ChunkPacker.java" md5: fb15361974580a214086237438f1bc33
+endProcessing "baritone/cache/ChunkPacker.java"
+
+startProcessing "baritone/cache/FasterWorldScanner.java" md5: 22b17cde6c70ade50950282ef581c13a
+endProcessing "baritone/cache/FasterWorldScanner.java"
+
+startProcessing "baritone/cache/WaypointCollection.java" md5: 3c9775bf4edd9f8d4eae1e2c75716d02
+endProcessing "baritone/cache/WaypointCollection.java"
+
+startProcessing "baritone/cache/WorldData.java" md5: 624e25ca3d6732fac4d960e2e8d3c416
+endProcessing "baritone/cache/WorldData.java"
+
+startProcessing "baritone/cache/WorldProvider.java" md5: 6391f32acbc734999e3ae9d8f3862ae9
+endProcessing "baritone/cache/WorldProvider.java"
+
+startProcessing "baritone/cache/WorldScanner.java" md5: 41c07577a6e68fd671a6c7d0a8b4bd12
+endProcessing "baritone/cache/WorldScanner.java"
+
+startProcessing "baritone/command/CommandSystem.java" md5: 8726f04d633cf54e495ad1882d04a0fb
+endProcessing "baritone/command/CommandSystem.java"
+
+startProcessing "baritone/command/ExampleBaritoneControl.java" md5: 4cc8b46ad19dfc6bf51e446ff5a328a1
+endProcessing "baritone/command/ExampleBaritoneControl.java"
+
+startProcessing "baritone/command/argparser/ArgParserManager.java" md5: 6e4b78eef255452b757149ea18304570
+endProcessing "baritone/command/argparser/ArgParserManager.java"
+
+startProcessing "baritone/command/argparser/DefaultArgParsers.java" md5: a426cc8e1fcd26d3057aab61556f57b4
+endProcessing "baritone/command/argparser/DefaultArgParsers.java"
+
+startProcessing "baritone/command/argument/ArgConsumer.java" md5: 7ea492426e6ca880ccf8ab64b69077a7
+endProcessing "baritone/command/argument/ArgConsumer.java"
+
+startProcessing "baritone/command/argument/CommandArgument.java" md5: f425beb38ccd112be960fcffe02543ae
+endProcessing "baritone/command/argument/CommandArgument.java"
+
+startProcessing "baritone/command/argument/CommandArguments.java" md5: 175ad8a1230bd9cfb434e37d9362d547
+endProcessing "baritone/command/argument/CommandArguments.java"
+
+startProcessing "baritone/command/defaults/AxisCommand.java" md5: ac59cb76a60c9af647dce3a1b4256930
+endProcessing "baritone/command/defaults/AxisCommand.java"
+
+startProcessing "baritone/command/defaults/BlacklistCommand.java" md5: 874cd1de53ef7224ddf73200f7ea9a66
+endProcessing "baritone/command/defaults/BlacklistCommand.java"
+
+startProcessing "baritone/command/defaults/BuildCommand.java" md5: 9a8291ee1f1a896f67dbc48a877855b3
+endProcessing "baritone/command/defaults/BuildCommand.java"
+
+startProcessing "baritone/command/defaults/ClickCommand.java" md5: 3e63d563ec69bee3f729b0f000906877
+endProcessing "baritone/command/defaults/ClickCommand.java"
+
+startProcessing "baritone/command/defaults/ComeCommand.java" md5: 4c73cc64184791b202ff79de66ed97ce
+endProcessing "baritone/command/defaults/ComeCommand.java"
+
+startProcessing "baritone/command/defaults/CommandAlias.java" md5: 742e9a7f23695aca931ff9cbe5262f94
+endProcessing "baritone/command/defaults/CommandAlias.java"
+
+startProcessing "baritone/command/defaults/DefaultCommands.java" md5: 1a4f8ac0c0e2c1108a6dcd742c287d39
+endProcessing "baritone/command/defaults/DefaultCommands.java"
+
+startProcessing "baritone/command/defaults/ETACommand.java" md5: 83f115dd29b3088f9e4d2f5f65073aa9
+endProcessing "baritone/command/defaults/ETACommand.java"
+
+startProcessing "baritone/command/defaults/ExecutionControlCommands.java" md5: 3d68a41f5992aeec8a81d59a781ea222
+endProcessing "baritone/command/defaults/ExecutionControlCommands.java"
+
+startProcessing "baritone/command/defaults/ExploreCommand.java" md5: 72076e7da325a27b2fe8172299969213
+endProcessing "baritone/command/defaults/ExploreCommand.java"
+
+startProcessing "baritone/command/defaults/ExploreFilterCommand.java" md5: d60f5ee52c2e9989ef04154898a39f89
+endProcessing "baritone/command/defaults/ExploreFilterCommand.java"
+
+startProcessing "baritone/command/defaults/FarmCommand.java" md5: f9a7c31f012a211c91bd8e471c8e1c53
+endProcessing "baritone/command/defaults/FarmCommand.java"
+
+startProcessing "baritone/command/defaults/FindCommand.java" md5: 7a89a39da46e012f5a0dbbf28d129860
+endProcessing "baritone/command/defaults/FindCommand.java"
+
+startProcessing "baritone/command/defaults/FollowCommand.java" md5: 2d9bf9f1ab00ad7ba5f7e7500b069b19
+endProcessing "baritone/command/defaults/FollowCommand.java"
+
+startProcessing "baritone/command/defaults/ForceCancelCommand.java" md5: 39f197f86096b0a8057dca6863c8d904
+endProcessing "baritone/command/defaults/ForceCancelCommand.java"
+
+startProcessing "baritone/command/defaults/GcCommand.java" md5: 2dfc15ec3c2e108277572b37bd94b86b
+endProcessing "baritone/command/defaults/GcCommand.java"
+
+startProcessing "baritone/command/defaults/GoalCommand.java" md5: 2308f6c1d2df63a9bfa15387a6b9670f
+endProcessing "baritone/command/defaults/GoalCommand.java"
+
+startProcessing "baritone/command/defaults/GotoCommand.java" md5: 12a575af40a11298b8998310ea0a97cd
+endProcessing "baritone/command/defaults/GotoCommand.java"
+
+startProcessing "baritone/command/defaults/HelpCommand.java" md5: 4f48744c6bfdfb233c46a8f43d40e7b6
+endProcessing "baritone/command/defaults/HelpCommand.java"
+
+startProcessing "baritone/command/defaults/InvertCommand.java" md5: 5b39831011abe7c5bd3d8b9369750942
+endProcessing "baritone/command/defaults/InvertCommand.java"
+
+startProcessing "baritone/command/defaults/LitematicaCommand.java" md5: 44d32833ba9275dc2be17f64a26e1c4d
+endProcessing "baritone/command/defaults/LitematicaCommand.java"
+
+startProcessing "baritone/command/defaults/MineCommand.java" md5: a8087be7201bb55e4a5a4ad4506f5dc4
+endProcessing "baritone/command/defaults/MineCommand.java"
+
+startProcessing "baritone/command/defaults/PathCommand.java" md5: 2a7e22dc3b38778d76ac3fa2801244c4
+endProcessing "baritone/command/defaults/PathCommand.java"
+
+startProcessing "baritone/command/defaults/ProcCommand.java" md5: 39c949494e567f1608fd143836154dee
+endProcessing "baritone/command/defaults/ProcCommand.java"
+
+startProcessing "baritone/command/defaults/ReloadAllCommand.java" md5: 97838ace814271831246db357d49dcc7
+endProcessing "baritone/command/defaults/ReloadAllCommand.java"
+
+startProcessing "baritone/command/defaults/RenderCommand.java" md5: ab791269e9d238c5d2a080e4b0b49197
+endProcessing "baritone/command/defaults/RenderCommand.java"
+
+startProcessing "baritone/command/defaults/RepackCommand.java" md5: 946f7f729d054777c28c0ee9247052fc
+endProcessing "baritone/command/defaults/RepackCommand.java"
+
+startProcessing "baritone/command/defaults/SaveAllCommand.java" md5: 4d1616471e600c16af69af3550bf7bf9
+endProcessing "baritone/command/defaults/SaveAllCommand.java"
+
+startProcessing "baritone/command/defaults/SchematicaCommand.java" md5: c4551a56ff31c543a9b9286dd234c890
+endProcessing "baritone/command/defaults/SchematicaCommand.java"
+
+startProcessing "baritone/command/defaults/SelCommand.java" md5: eba70cffdf3ae11c38fb5bec7de3ac8c
+endProcessing "baritone/command/defaults/SelCommand.java"
+
+startProcessing "baritone/command/defaults/SetCommand.java" md5: fb0440173206ebd5179af179630eb179
+endProcessing "baritone/command/defaults/SetCommand.java"
+
+startProcessing "baritone/command/defaults/SurfaceCommand.java" md5: 8111d97cf643645d2c317eb42a78a516
+endProcessing "baritone/command/defaults/SurfaceCommand.java"
+
+startProcessing "baritone/command/defaults/ThisWayCommand.java" md5: d8a53fbf7afc5c832dbb4b29f1b94dc3
+endProcessing "baritone/command/defaults/ThisWayCommand.java"
+
+startProcessing "baritone/command/defaults/TunnelCommand.java" md5: 6a5116dabfedf936e0f22d6885466cc2
+endProcessing "baritone/command/defaults/TunnelCommand.java"
+
+startProcessing "baritone/command/defaults/VersionCommand.java" md5: 7019b308cf965532fde454181825dcd1
+endProcessing "baritone/command/defaults/VersionCommand.java"
+
+startProcessing "baritone/command/defaults/WaypointsCommand.java" md5: 3de3f1a4cc6e693d8a3c992dba4b7ae6
+endProcessing "baritone/command/defaults/WaypointsCommand.java"
+
+startProcessing "baritone/command/manager/CommandManager.java" md5: be4f543144ed454aefc498381a6baf24
+endProcessing "baritone/command/manager/CommandManager.java"
+
+startProcessing "baritone/event/GameEventHandler.java" md5: 72bf3879bd46bca39015cdecd82ed6e2
+endProcessing "baritone/event/GameEventHandler.java"
+
+startProcessing "baritone/pathing/calc/AStarPathFinder.java" md5: fbd4fec04799e20593f4fe40540e1058
+endProcessing "baritone/pathing/calc/AStarPathFinder.java"
+
+startProcessing "baritone/pathing/calc/AbstractNodeCostSearch.java" md5: fa08a4221f684acb634ab4f8e7e24172
+endProcessing "baritone/pathing/calc/AbstractNodeCostSearch.java"
+
+startProcessing "baritone/pathing/calc/BellmanFordPathFinder.java" md5: 6b23b1fac448bd11d9d270b9edc09f60
+endProcessing "baritone/pathing/calc/BellmanFordPathFinder.java"
+
+startProcessing "baritone/pathing/calc/DijkstraPathFinder.java" md5: f8d4f96ffadf81cc9000e1cc8f7b5910
+endProcessing "baritone/pathing/calc/DijkstraPathFinder.java"
+
+startProcessing "baritone/pathing/calc/Path.java" md5: 7d9847a3208fab6a199d225d6e126aea
+endProcessing "baritone/pathing/calc/Path.java"
+
+startProcessing "baritone/pathing/calc/PathNode.java" md5: 7f8e86a4523b107450d1be16471501c5
+endProcessing "baritone/pathing/calc/PathNode.java"
+
+startProcessing "baritone/pathing/calc/openset/BinaryHeapOpenSet.java" md5: d7183244968da9a165fbfdd3ddd28044
+endProcessing "baritone/pathing/calc/openset/BinaryHeapOpenSet.java"
+
+startProcessing "baritone/pathing/calc/openset/IOpenSet.java" md5: 09ba047f3b44a1356a4d43fe254d0ed4
+endProcessing "baritone/pathing/calc/openset/IOpenSet.java"
+
+startProcessing "baritone/pathing/calc/openset/LinkedListOpenSet.java" md5: e3a70821c62433983529b60f3480d5cb
+endProcessing "baritone/pathing/calc/openset/LinkedListOpenSet.java"
+
+startProcessing "baritone/pathing/movement/CalculationContext.java" md5: c70d51c08e36c45cbd913350b78944bb
+endProcessing "baritone/pathing/movement/CalculationContext.java"
+
+startProcessing "baritone/pathing/movement/Movement.java" md5: fa41d1ee5febbd6d713288ed44b5409a
+endProcessing "baritone/pathing/movement/Movement.java"
+
+startProcessing "baritone/pathing/movement/MovementHelper.java" md5: 08d0d6650171be652f1e79f84c8744a7
+endProcessing "baritone/pathing/movement/MovementHelper.java"
+
+startProcessing "baritone/pathing/movement/MovementState.java" md5: d1f315e233c4ad9588770bddc145d63c
+endProcessing "baritone/pathing/movement/MovementState.java"
+
+startProcessing "baritone/pathing/movement/Moves.java" md5: e40ea530a87fd404843d75b50a28e0f3
+endProcessing "baritone/pathing/movement/Moves.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementAscend.java" md5: c0b597edaea29635a8595ffab9b40696
+endProcessing "baritone/pathing/movement/movements/MovementAscend.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementDescend.java" md5: e761ee75b221c1152cc28af86480b73b
+endProcessing "baritone/pathing/movement/movements/MovementDescend.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementDiagonal.java" md5: 6416107998f03e3ecbcfdb9fdade27b9
+endProcessing "baritone/pathing/movement/movements/MovementDiagonal.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementDownward.java" md5: 54cd9138850f9b9ca65eda4d4494e614
+endProcessing "baritone/pathing/movement/movements/MovementDownward.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementFall.java" md5: de3dac4eb4127432a0bdf2aa2f71713d
+endProcessing "baritone/pathing/movement/movements/MovementFall.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementParkour.java" md5: 7ca677fe66b5827f930cf40b537fe259
+endProcessing "baritone/pathing/movement/movements/MovementParkour.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementPillar.java" md5: 2e344f27738742859d0fd420fa3fa039
+endProcessing "baritone/pathing/movement/movements/MovementPillar.java"
+
+startProcessing "baritone/pathing/movement/movements/MovementTraverse.java" md5: d4e5d0c85b131e1a59050419585ddb9d
+endProcessing "baritone/pathing/movement/movements/MovementTraverse.java"
+
+startProcessing "baritone/pathing/path/CutoffPath.java" md5: 4b877bc0db33addc1310991418d294f0
+endProcessing "baritone/pathing/path/CutoffPath.java"
+
+startProcessing "baritone/pathing/path/PathExecutor.java" md5: a5900113144f3e4e71cfa6e7e3b613e6
+endProcessing "baritone/pathing/path/PathExecutor.java"
+
+startProcessing "baritone/pathing/path/SplicedPath.java" md5: fe06283bfc142cb75b0abe6eb85dc7a2
+endProcessing "baritone/pathing/path/SplicedPath.java"
+
+startProcessing "baritone/pathing/precompute/PrecomputedData.java" md5: 146320d4e3bfe77899c3a5013f9683a8
+endProcessing "baritone/pathing/precompute/PrecomputedData.java"
+
+startProcessing "baritone/pathing/precompute/Ternary.java" md5: eacbd60c08398a82c8222712f28335dc
+endProcessing "baritone/pathing/precompute/Ternary.java"
+
+startProcessing "baritone/process/BackfillProcess.java" md5: 85b62e75bdfd50dc1429bb89c5f47ca4
+endProcessing "baritone/process/BackfillProcess.java"
+
+startProcessing "baritone/process/BuilderProcess.java" md5: bf59de6c034f21f3bc7282c9c814d7ff
+endProcessing "baritone/process/BuilderProcess.java"
+
+startProcessing "baritone/process/CustomGoalProcess.java" md5: 78799d1c060b894a9e8e9061bb397a31
+endProcessing "baritone/process/CustomGoalProcess.java"
+
+startProcessing "baritone/process/ExploreProcess.java" md5: 83c79c93ffff5eb25be35c80472316ed
+endProcessing "baritone/process/ExploreProcess.java"
+
+startProcessing "baritone/process/FarmProcess.java" md5: 8b6b9b8de924546b794bbd5eeeb109a2
+endProcessing "baritone/process/FarmProcess.java"
+
+startProcessing "baritone/process/FollowProcess.java" md5: d8a628347aac196f5e2c1d86e0fab7b8
+endProcessing "baritone/process/FollowProcess.java"
+
+startProcessing "baritone/process/GetToBlockProcess.java" md5: e0e07ef1b2993938c612201b7c025518
+endProcessing "baritone/process/GetToBlockProcess.java"
+
+startProcessing "baritone/process/InventoryPauserProcess.java" md5: 6779cd6e706055f6f5ffed3a0ef465c8
+endProcessing "baritone/process/InventoryPauserProcess.java"
+
+startProcessing "baritone/process/MineProcess.java" md5: e51a095cd117630f14ed3e2990b9319b
+endProcessing "baritone/process/MineProcess.java"
+
+startProcessing "baritone/selection/Selection.java" md5: 0c944523c61d23c07051bf92849fa3e0
+endProcessing "baritone/selection/Selection.java"
+
+startProcessing "baritone/selection/SelectionManager.java" md5: c8c0201b0b08a421915b6362a30ef7b9
+endProcessing "baritone/selection/SelectionManager.java"
+
+startProcessing "baritone/selection/SelectionRenderer.java" md5: 250156ff06ca37ebce296791b992cbd9
+endProcessing "baritone/selection/SelectionRenderer.java"
+
+startProcessing "baritone/utils/BaritoneProcessHelper.java" md5: 9feba7cc6873fd1116c760a9200d5d32
+endProcessing "baritone/utils/BaritoneProcessHelper.java"
+
+startProcessing "baritone/utils/BlockBreakHelper.java" md5: bcb7076641bbbb7acff350a2ea696c7f
+endProcessing "baritone/utils/BlockBreakHelper.java"
+
+startProcessing "baritone/utils/BlockPlaceHelper.java" md5: 3cb0c815f5b2f22740e70349ae195b56
+endProcessing "baritone/utils/BlockPlaceHelper.java"
+
+startProcessing "baritone/utils/BlockStateInterface.java" md5: 0451ab2c0722a3c34514fc8b073782cd
+endProcessing "baritone/utils/BlockStateInterface.java"
+
+startProcessing "baritone/utils/BlockStateInterfaceAccessWrapper.java" md5: 71f716435514a4790e09d3ffa6cbd576
+endProcessing "baritone/utils/BlockStateInterfaceAccessWrapper.java"
+
+startProcessing "baritone/utils/GuiClick.java" md5: f049b4c28f7a2ed4649108241d226139
+endProcessing "baritone/utils/GuiClick.java"
+
+startProcessing "baritone/utils/IRenderer.java" md5: 833cd930bea0737f06b8a6cd0e8072cc
+endProcessing "baritone/utils/IRenderer.java"
+
+startProcessing "baritone/utils/InputOverrideHandler.java" md5: 2a7c88b8129f814eee4033e3112d3f64
+endProcessing "baritone/utils/InputOverrideHandler.java"
+
+startProcessing "baritone/utils/PathRenderer.java" md5: 38a2d9dcce1bc5a486bb0e26d60d792a
+endProcessing "baritone/utils/PathRenderer.java"
+
+startProcessing "baritone/utils/PathingCommandContext.java" md5: e1108772d1b4c929e0e43abe56325b33
+endProcessing "baritone/utils/PathingCommandContext.java"
+
+startProcessing "baritone/utils/PathingControlManager.java" md5: 676f2873f7627b7f19007afb259d122d
+endProcessing "baritone/utils/PathingControlManager.java"
+
+startProcessing "baritone/utils/PlayerMovementInput.java" md5: 54e45b15ba69fd265f9b881b1f04116a
+endProcessing "baritone/utils/PlayerMovementInput.java"
+
+startProcessing "baritone/utils/ToolSet.java" md5: a85bc8a6b0c52f4a1b855bed2a2f30b7
+endProcessing "baritone/utils/ToolSet.java"
+
+startProcessing "baritone/utils/accessor/IAnvilChunkLoader.java" md5: 8a69e83b31c34fbea78b229d2f241828
+endProcessing "baritone/utils/accessor/IAnvilChunkLoader.java"
+
+startProcessing "baritone/utils/accessor/IBitArray.java" md5: c3b02d46c72364bdc644c3d3e098c19e
+endProcessing "baritone/utils/accessor/IBitArray.java"
+
+startProcessing "baritone/utils/accessor/IBlockStateContainer.java" md5: 569158226e721545822048695bc696f1
+endProcessing "baritone/utils/accessor/IBlockStateContainer.java"
+
+startProcessing "baritone/utils/accessor/IChunkProviderClient.java" md5: b3af78923f6973e18784fe4de0cbd9a7
+endProcessing "baritone/utils/accessor/IChunkProviderClient.java"
+
+startProcessing "baritone/utils/accessor/IChunkProviderServer.java" md5: e2c4f6aa9022cb5b89f9b1f0b6a0db2d
+endProcessing "baritone/utils/accessor/IChunkProviderServer.java"
+
+startProcessing "baritone/utils/accessor/IGuiScreen.java" md5: 3ac01ae0d4421e4771d3c9e134c5f41f
+endProcessing "baritone/utils/accessor/IGuiScreen.java"
+
+startProcessing "baritone/utils/accessor/IItemTool.java" md5: 9e5546cd8dd0a49c27a14614fd3c7c67
+endProcessing "baritone/utils/accessor/IItemTool.java"
+
+startProcessing "baritone/utils/accessor/INBTTagLongArray.java" md5: e82f93fe142de747fd240d7027b876e9
+endProcessing "baritone/utils/accessor/INBTTagLongArray.java"
+
+startProcessing "baritone/utils/accessor/IPlayerControllerMP.java" md5: f3f671a6f7aba90b874a3251ea0aff30
+endProcessing "baritone/utils/accessor/IPlayerControllerMP.java"
+
+startProcessing "baritone/utils/pathing/Avoidance.java" md5: 205e5dce9b92926cc15314afa69e6c16
+endProcessing "baritone/utils/pathing/Avoidance.java"
+
+startProcessing "baritone/utils/pathing/BetterWorldBorder.java" md5: e5470d6b1a6c3e11a1366799207e91ed
+endProcessing "baritone/utils/pathing/BetterWorldBorder.java"
+
+startProcessing "baritone/utils/pathing/Favoring.java" md5: bf4e70fe57ab2dabfdb5e9b483aafa1e
+endProcessing "baritone/utils/pathing/Favoring.java"
+
+startProcessing "baritone/utils/pathing/MutableMoveResult.java" md5: 8a68e5f4035923390783779a9710ac4b
+endProcessing "baritone/utils/pathing/MutableMoveResult.java"
+
+startProcessing "baritone/utils/pathing/PathBase.java" md5: 279c5c0155d07d297d8cbe8b1c899dd4
+endProcessing "baritone/utils/pathing/PathBase.java"
+
+startProcessing "baritone/utils/pathing/PathingBlockType.java" md5: 203057625fac9cf29710b17467352415
+endProcessing "baritone/utils/pathing/PathingBlockType.java"
+
+startProcessing "baritone/utils/player/PrimaryPlayerContext.java" md5: 68342d4a8c6bb9bcfe3b5042d9f4fe34
+endProcessing "baritone/utils/player/PrimaryPlayerContext.java"
+
+startProcessing "baritone/utils/player/PrimaryPlayerController.java" md5: 59cca640772e9ad0e77720710519b8ba
+endProcessing "baritone/utils/player/PrimaryPlayerController.java"
+
+startProcessing "baritone/utils/schematic/MapArtSchematic.java" md5: e1fb19a768c748c2f56d9ed73425dc6f
+endProcessing "baritone/utils/schematic/MapArtSchematic.java"
+
+startProcessing "baritone/utils/schematic/SchematicSystem.java" md5: 5d6ac304ffeec953faabbcf5a1863369
+endProcessing "baritone/utils/schematic/SchematicSystem.java"
+
+startProcessing "baritone/utils/schematic/SelectionSchematic.java" md5: 23e2165f5e49cb8d44873dcaaae07d5c
+endProcessing "baritone/utils/schematic/SelectionSchematic.java"
+
+startProcessing "baritone/utils/schematic/StaticSchematic.java" md5: 147c2f3bf17cded919b4f16ba7ce8cf0
+endProcessing "baritone/utils/schematic/StaticSchematic.java"
+
+startProcessing "baritone/utils/schematic/format/DefaultSchematicFormats.java" md5: 972e24d3980ca1e59d04a6d89ad92930
+endProcessing "baritone/utils/schematic/format/DefaultSchematicFormats.java"
+
+startProcessing "baritone/utils/schematic/format/defaults/LitematicaSchematic.java" md5: ad4601df3337544741c94761d5ec867c
+endProcessing "baritone/utils/schematic/format/defaults/LitematicaSchematic.java"
+
+startProcessing "baritone/utils/schematic/format/defaults/MCEditSchematic.java" md5: c4c7b7e1434ab764b58df776ba31af50
+endProcessing "baritone/utils/schematic/format/defaults/MCEditSchematic.java"
+
+startProcessing "baritone/utils/schematic/format/defaults/SpongeSchematic.java" md5: 86ca387678393b0b21d27c9bac72f0d9
+endProcessing "baritone/utils/schematic/format/defaults/SpongeSchematic.java"
+
+startProcessing "baritone/utils/schematic/litematica/LitematicaHelper.java" md5: 760ab8c585484bd1f814910ff2680e95
+endProcessing "baritone/utils/schematic/litematica/LitematicaHelper.java"
+
+startProcessing "baritone/utils/schematic/schematica/SchematicAdapter.java" md5: a965773d4a2852b506a7f537854ea0de
+endProcessing "baritone/utils/schematic/schematica/SchematicAdapter.java"
+
+startProcessing "baritone/utils/schematic/schematica/SchematicaHelper.java" md5: 01949ee49f2ec808a338a58a1d701be0
+endProcessing "baritone/utils/schematic/schematica/SchematicaHelper.java"
+
+startProcessing "baritone/utils/type/VarInt.java" md5: f48a62f46360277b272cade97514a0bc
+endProcessing "baritone/utils/type/VarInt.java"
+

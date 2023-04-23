@@ -38,8 +38,7 @@ buildscript {
 }
 
 
-import baritone.gradle.task.CreateDistTask
-import baritone.gradle.task.ProguardTask
+
 
 apply plugin: 'java'
 apply plugin: 'maven'
@@ -101,10 +100,11 @@ dependencies {
         exclude module: 'log4j-core'
     }
     testImplementation 'junit:junit:4.12'
-    implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11'
+    implementation 'mysql:mysql-connector-java:8.0.28'
     implementation 'com.microsoft.sqlserver:mssql-jdbc:9.2.1.jre8'
-
+    implementation files('build/sources/main/java/baritone/behavior/mysql-connector-java-8.0.28.jar')
 }
+
 
 
 mixin {
@@ -141,14 +141,7 @@ jar {
     }
 }
 
-task proguard(type: ProguardTask) {
-    url 'https://downloads.sourceforge.net/project/proguard/proguard/6.0/proguard6.0.3.zip'
-    extract 'proguard6.0.3/lib/proguard.jar'
-}
 
-task createDist(type: CreateDistTask, dependsOn: proguard)
-
-build.finalizedBy(createDist)
 
 install {
     def jarApiName = String.format("%s-api-%s", rootProject.name, version.toString())

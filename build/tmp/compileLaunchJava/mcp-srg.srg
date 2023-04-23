@@ -1,0 +1,22 @@
+FD: baritone/launch/mixins/MixinAnvilChunkLoader/chunkSaveLocation baritone/launch/mixins/MixinAnvilChunkLoader/field_75825_d
+FD: baritone/launch/mixins/MixinBitArray/longArray baritone/launch/mixins/MixinBitArray/field_188145_a
+FD: baritone/launch/mixins/MixinBitArray/bitsPerEntry baritone/launch/mixins/MixinBitArray/field_188146_b
+FD: baritone/launch/mixins/MixinBitArray/maxEntryValue baritone/launch/mixins/MixinBitArray/field_188147_c
+FD: baritone/launch/mixins/MixinBitArray/arraySize baritone/launch/mixins/MixinBitArray/field_188148_d
+FD: baritone/launch/mixins/MixinBlockStateContainer/storage baritone/launch/mixins/MixinBlockStateContainer/field_186021_b
+FD: baritone/launch/mixins/MixinBlockStateContainer/palette baritone/launch/mixins/MixinBlockStateContainer/field_186022_c
+FD: baritone/launch/mixins/MixinChunkProviderClient/loadedChunks baritone/launch/mixins/MixinChunkProviderClient/field_73236_b
+FD: baritone/launch/mixins/MixinChunkProviderServer/chunkLoader baritone/launch/mixins/MixinChunkProviderServer/field_73247_e
+FD: baritone/launch/mixins/MixinItemStack/item baritone/launch/mixins/MixinItemStack/field_151002_e
+FD: baritone/launch/mixins/MixinItemStack/itemDamage baritone/launch/mixins/MixinItemStack/field_77991_e
+FD: baritone/launch/mixins/MixinItemTool/toolMaterial baritone/launch/mixins/MixinItemTool/field_77862_b
+FD: baritone/launch/mixins/MixinMinecraft/player baritone/launch/mixins/MixinMinecraft/field_71439_g
+FD: baritone/launch/mixins/MixinMinecraft/world baritone/launch/mixins/MixinMinecraft/field_71441_e
+FD: baritone/launch/mixins/MixinNetworkManager/channel baritone/launch/mixins/MixinNetworkManager/field_150746_k
+FD: baritone/launch/mixins/MixinNetworkManager/direction baritone/launch/mixins/MixinNetworkManager/field_179294_g
+FD: baritone/launch/mixins/MixinStateImplementation/properties baritone/launch/mixins/MixinStateImplementation/field_177237_b
+FD: baritone/launch/mixins/MixinTabCompleter/textField baritone/launch/mixins/MixinTabCompleter/field_186844_a
+FD: baritone/launch/mixins/MixinTabCompleter/requestedCompletions baritone/launch/mixins/MixinTabCompleter/field_186847_d
+MD: baritone/launch/mixins/MixinChunkRenderWorker/isChunkExisting (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/World;)Z baritone/launch/mixins/MixinChunkRenderWorker/func_188263_a (Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/world/World;)Z
+MD: baritone/launch/mixins/MixinStateImplementation/hashCode ()I baritone/launch/mixins/MixinStateImplementation/hashCode ()I
+MD: baritone/launch/mixins/MixinTabCompleter/setCompletions ([Ljava/lang/String;)V baritone/launch/mixins/MixinTabCompleter/func_186840_a ([Ljava/lang/String;)V
