@@ -101,7 +101,11 @@ dependencies {
         exclude module: 'log4j-core'
     }
     testImplementation 'junit:junit:4.12'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:9.2.1.jre8'
+
 }
+
 
 mixin {
     defaultObfuscationEnv searge
